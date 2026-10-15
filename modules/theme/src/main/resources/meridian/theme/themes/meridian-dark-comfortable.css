@@ -1,4 +1,4 @@
-/* MeridianFX; source SHA-256 1c14eaf53bc0801d37c190a16a1abf3a91820502ee58a238028a2f8a20d81d25; AtlantaFX 61a48371c2873613a6a654e625fda156e3cbdf3f; Sass 1.93.2. */
+/* MeridianFX; source SHA-256 294a4a9a4e589f4ab03db82f6d6a3a588c6f83dbfa9eddd850afdbcd83b8e942; AtlantaFX 61a48371c2873613a6a654e625fda156e3cbdf3f; Sass 1.93.2. */
 /*! @module:root:start */
 .root {
   -color-dark: #1b1f24;
@@ -5704,9 +5704,9 @@ Text {
 }
 
 .table-view > .column-header-background .column-header {
-  -fx-size: 2.4615384615em;
-  -fx-min-height: 2.4615384615em;
-  -fx-pref-height: 2.4615384615em;
+  -fx-size: 32px;
+  -fx-min-height: 32px;
+  -fx-pref-height: 32px;
 }
 
 .table-view .table-row-cell {
@@ -5985,7 +5985,6 @@ Text {
 }
 
 .table-view > .column-header-background .column-header {
-  -fx-font-weight: bold;
   -fx-border-width: 0 0 1px 0;
 }
 
@@ -6423,7 +6422,7 @@ Text {
 
 .table-view > .column-header-background .column-header {
   -fx-font-weight: normal;
-  -fx-font-size: 0.9230769231em;
+  -fx-font-size: 12px;
   -fx-padding: 0 12px 0 0;
 }
 
@@ -6546,6 +6545,63 @@ Text {
   -fx-alignment: CENTER_RIGHT;
 }
 
+.meridian-status {
+  -fx-font-size: 12px;
+  -fx-font-weight: normal;
+  -fx-graphic-text-gap: 0.5em;
+  -fx-padding: 0;
+}
+
+.meridian-status > .status-dot {
+  -fx-min-width: 0.5em;
+  -fx-pref-width: 0.5em;
+  -fx-max-width: 0.5em;
+  -fx-min-height: 0.5em;
+  -fx-pref-height: 0.5em;
+  -fx-max-height: 0.5em;
+  -fx-background-radius: 99px;
+}
+
+.meridian-status.status-neutral {
+  -fx-text-fill: -meridian-status-neutral;
+}
+
+.meridian-status.status-neutral > .status-dot {
+  -fx-background-color: -meridian-status-neutral;
+}
+
+.meridian-status.status-progress {
+  -fx-text-fill: -meridian-status-progress;
+}
+
+.meridian-status.status-progress > .status-dot {
+  -fx-background-color: -meridian-status-progress;
+}
+
+.meridian-status.status-success {
+  -fx-text-fill: -meridian-status-success;
+}
+
+.meridian-status.status-success > .status-dot {
+  -fx-background-color: -meridian-status-success;
+}
+
+.meridian-status.status-warning {
+  -fx-text-fill: -meridian-status-warning;
+}
+
+.meridian-status.status-warning > .status-dot {
+  -fx-background-color: -meridian-status-warning;
+}
+
+.meridian-status.status-danger {
+  -fx-text-fill: -meridian-status-danger;
+}
+
+.meridian-status.status-danger > .status-dot {
+  -fx-background-color: -meridian-status-danger;
+}
+
 /*! @module:meridian:end */
 .root {
   -meridian-action-default: #6258D5;
@@ -6571,6 +6627,8 @@ Text {
   -meridian-status-danger-emphasis: #B8323C;
   -meridian-status-danger-muted: #5E2E33;
   -meridian-status-danger-subtle: #261618;
+  -meridian-status-neutral: #C1B9AE;
+  -meridian-status-progress: #79C8DB;
   -meridian-status-success: #87C9AB;
   -meridian-status-success-emphasis: #1F7A4D;
   -meridian-status-success-muted: #2A5440;

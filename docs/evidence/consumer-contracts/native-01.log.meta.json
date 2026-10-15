@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "started_utc": "2026-10-15T17:38:50.840989+00:00",
+  "finished_utc": "2026-10-15T17:39:03.659713+00:00",
+  "duration_seconds": 12.818427,
+  "command": [
+    "tools/sbt",
+    "scalafmtSbtCheck",
+    "scalafmtCheckAll",
+    "compile",
+    "theme/packageBin",
+    "workbench/packageBin",
+    "sampler/runMain meridian.sampler.ConsumerContractProbe docs/evidence/consumer-contracts/native-01"
+  ],
+  "cwd": "/Users/bbuchsbaum/code/scala/meridianfx",
+  "log": "/Users/bbuchsbaum/code/scala/meridianfx/docs/evidence/consumer-contracts/native-01.log",
+  "exit_code": 0,
+  "child_returncode": 0,
+  "reason": "exited",
+  "detail": null,
+  "timeout_seconds": 240.0,
+  "log_bytes": 3336
+}

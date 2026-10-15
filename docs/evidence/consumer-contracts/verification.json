@@ -1,0 +1,204 @@
+{
+  "base_git_head": "37a48d55891409a861aa517a508459ff9f07fb50",
+  "candidate_source_digest": "71e9f05e353f8cc9e937cd625ce2177e81ddf0ed045c2e5be3bd0cf8a36d5b8d",
+  "mote": "bd-01M50A36JQ1CSEP2NFBBSV8TT4",
+  "reported_issues": [
+    "https://github.com/canardlapin/meridianfx/issues/1",
+    "https://github.com/canardlapin/meridianfx/issues/2",
+    "https://github.com/canardlapin/meridianfx/issues/3"
+  ],
+  "runs": {
+    "python.log.meta.json": {
+      "schema_version": 1,
+      "started_utc": "2026-10-15T17:38:49.624533+00:00",
+      "finished_utc": "2026-10-15T17:38:54.316133+00:00",
+      "duration_seconds": 4.69141,
+      "command": [
+        "python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tools/tests",
+        "-v"
+      ],
+      "cwd": "/Users/bbuchsbaum/code/scala/meridianfx",
+      "log": "/Users/bbuchsbaum/code/scala/meridianfx/docs/evidence/consumer-contracts/python.log",
+      "exit_code": 0,
+      "child_returncode": 0,
+      "reason": "exited",
+      "detail": null,
+      "timeout_seconds": 240.0,
+      "log_bytes": 3603
+    },
+    "native-01.log.meta.json": {
+      "schema_version": 1,
+      "started_utc": "2026-10-15T17:38:50.840989+00:00",
+      "finished_utc": "2026-10-15T17:39:03.659713+00:00",
+      "duration_seconds": 12.818427,
+      "command": [
+        "tools/sbt",
+        "scalafmtSbtCheck",
+        "scalafmtCheckAll",
+        "compile",
+        "theme/packageBin",
+        "workbench/packageBin",
+        "sampler/runMain meridian.sampler.ConsumerContractProbe docs/evidence/consumer-contracts/native-01"
+      ],
+      "cwd": "/Users/bbuchsbaum/code/scala/meridianfx",
+      "log": "/Users/bbuchsbaum/code/scala/meridianfx/docs/evidence/consumer-contracts/native-01.log",
+      "exit_code": 0,
+      "child_returncode": 0,
+      "reason": "exited",
+      "detail": null,
+      "timeout_seconds": 240.0,
+      "log_bytes": 3336
+    },
+    "theme-smoke.log.meta.json": {
+      "schema_version": 1,
+      "started_utc": "2026-10-15T17:39:19.269112+00:00",
+      "finished_utc": "2026-10-15T17:39:26.823701+00:00",
+      "duration_seconds": 7.553023,
+      "command": [
+        "tools/sbt",
+        "sampler/runMain meridian.sampler.ThemeSmoke docs/evidence/consumer-contracts/theme-smoke",
+        "foundationReport"
+      ],
+      "cwd": "/Users/bbuchsbaum/code/scala/meridianfx",
+      "log": "/Users/bbuchsbaum/code/scala/meridianfx/docs/evidence/consumer-contracts/theme-smoke.log",
+      "exit_code": 0,
+      "child_returncode": 0,
+      "reason": "exited",
+      "detail": null,
+      "timeout_seconds": 240.0,
+      "log_bytes": 2974
+    },
+    "baseline.log.meta.json": {
+      "schema_version": 1,
+      "started_utc": "2026-10-15T17:35:41.902632+00:00",
+      "finished_utc": "2026-10-15T17:35:49.630984+00:00",
+      "duration_seconds": 7.728149,
+      "command": [
+        "tools/sbt",
+        "sampler/runMain meridian.sampler.ConsumerContractProbe docs/evidence/consumer-contracts/baseline baseline"
+      ],
+      "cwd": "/Users/bbuchsbaum/code/scala/meridianfx",
+      "log": "/Users/bbuchsbaum/code/scala/meridianfx/docs/evidence/consumer-contracts/baseline.log",
+      "exit_code": 0,
+      "child_returncode": 0,
+      "reason": "exited",
+      "detail": null,
+      "timeout_seconds": 240.0,
+      "log_bytes": 2073
+    }
+  },
+  "additional_executed_checks": [
+    {
+      "argv": [
+        "python3",
+        "tools/generate_tokens.py",
+        "--check"
+      ],
+      "exit_code": 0
+    },
+    {
+      "argv": [
+        "python3",
+        "tools/check_tokens.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "argv": [
+        "python3",
+        "tools/build_themes.py",
+        "--check"
+      ],
+      "exit_code": 0
+    },
+    {
+      "argv": [
+        "python3",
+        "tools/build_themes.py",
+        "--verify"
+      ],
+      "exit_code": 0
+    },
+    {
+      "argv": [
+        "python3",
+        "tools/verify_foundation.py",
+        "--classpath"
+      ],
+      "exit_code": 0
+    },
+    {
+      "argv": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "native_platform": {
+    "jdk": "25.0.1",
+    "javafx": "27+30",
+    "os": "macOS",
+    "version": "14.3",
+    "arch": "aarch64",
+    "pipeline": "Metal"
+  },
+  "counts": {
+    "python_tests": 30,
+    "contrast_required": 284,
+    "contrast_passed": 284,
+    "new_status_contrast_pairs": 40,
+    "contract_variants": 12,
+    "status_assertions": 192,
+    "theme_smoke_assertions": 249
+  },
+  "minimum_new_status_text_contrast": 4.621425164269725,
+  "artifacts": {
+    "meridian-theme-0.1.0-dev.1.jar": "f49b77c57cbddbc82fc75ff32d38a98373f5bba78057dfaa1e53df8c68700eca",
+    "meridian-workbench-0.1.0-dev.1.jar": "b1f381e87fb7d6e3816a8eef4f9c5c768ad6f65faa9540e69e702b2046fae188"
+  },
+  "outputs": {
+    "baseline/observed.txt": "19197e842f31d9e6a065d70d2a4ea10057bc0ce13421ac991dba4310effaf8a9",
+    "native-01/observed.txt": "f11d30b3332844e9ed9981c43798d5f2baaefafda6371e71f9cf983acabe5fe1",
+    "native-01/step-0.png": "a624816ddd12dd0ab4d3113464d5b96e631164ccff3a88780565c379c7151e27",
+    "native-01/step-1.png": "605410274265922777908ff02288e03224775e7db5efd89fc730d5285712d1e5",
+    "native-01/step-10.png": "be3e8dc7591a7bacfb5d91c85a3f512938e42a4608aa56f28a7b5ce09c506896",
+    "native-01/step-11.png": "19f956f61721fd80634f9ecbfcf663d0ff8267b4148cc65febe161b4d37f0518",
+    "native-01/step-2.png": "2f56eb897afc314cf8364ab0fabb3bacb42197e4cf541d7116ab85bcb7ac1f7b",
+    "native-01/step-3.png": "a53568067a2e335e96c70f3d0d7f3bc096677b0da304ed1501c73c9cc205f13e",
+    "native-01/step-4.png": "d7a1152936171736adaf622c0b3e10ac74f1643794c3d5639c1ecb1c61d15d7c",
+    "native-01/step-5.png": "bcc6be3ad47ae1dfe4e9628ee2b09db2e92419b8ab79b5684322ed3bf07043eb",
+    "native-01/step-6.png": "5b44d4db45c05b44747a4e1ce3d7352198812790c915198486d2d02ce74fd01a",
+    "native-01/step-7.png": "a772f2d1d7e30f825d803999efc39ba25eba7892dc8927b97dadb5b48e5df08a",
+    "native-01/step-8.png": "0d7fe0675d85d825f9e43af80b4773ca1947e7ef363955bf7c6701df57249da4",
+    "native-01/step-9.png": "82fb04759e3d826a778e9ab75807aa80326bc8ae645f17c78d62eaf3928523ec",
+    "theme-smoke/assertions.tsv": "e7b5f0d1b64a82dfbac74561c28cc97847d8fbc84b9f777b41855062ef9ca817",
+    "theme-smoke/dark-comfortable-dialog.png": "0880ee5761b2c20415d749a8e26f6b435ecc981566b4876607b5bf9d003af84e",
+    "theme-smoke/dark-comfortable-menu.png": "84a0c30183896b6aee339c00ab8a5d4df07f05488c93939600bc869f9ca5b715",
+    "theme-smoke/dark-comfortable.png": "5db8297474797b717e441ca97d48deb87867cc8264e17b934454ff2ad22a7377",
+    "theme-smoke/dark-compact-dialog.png": "91fccb50bc7f9444aeb69459de19beb83ea27e4b43f37cf0c87a797bf574f04c",
+    "theme-smoke/dark-compact-menu.png": "84a0c30183896b6aee339c00ab8a5d4df07f05488c93939600bc869f9ca5b715",
+    "theme-smoke/dark-compact.png": "5ee039f5f7f524b16bd7ece148e6519513e196ea058b440f47c48d0203de551f",
+    "theme-smoke/light-comfortable-dialog.png": "21a4c8ee77a1c1c711fbc30f0187039bf19cee0ae516d0d23dcafda7e53ba4db",
+    "theme-smoke/light-comfortable-menu.png": "c962caeb244b8b0d75919422abb415921ec593976d913d46998036827729d89a",
+    "theme-smoke/light-comfortable.png": "ab0767a81985939dae4d845db17d810c52554a53630c3e8396b9c2632817f050",
+    "theme-smoke/light-compact-dialog.png": "8a94647018c65a0baef9460c8b16646df4f291fbf62b983d846bb5502cb1f27c",
+    "theme-smoke/light-compact-menu.png": "c962caeb244b8b0d75919422abb415921ec593976d913d46998036827729d89a",
+    "theme-smoke/light-compact.png": "4ad53e00314d64e4cd807b1048de5c5e8580dfbecba1b4e18344a8a4ca762eec",
+    "theme-smoke/runtime.properties": "c8b69a952b1c619c1065647b333ee0c870b2d3c46cd3032d093cab0808b41c7d"
+  },
+  "provider_pin": "628c46fce92c4d31b0b08459ac0f18777b5ba527",
+  "limits": [
+    "Uncommitted source snapshot at verification; subsequent delivery is recorded in Git history. Upstream issue closure and publication are separate.",
+    "Only macOS arm64/JDK25.0.1/JavaFX27+30 executed; Linux/Windows and screen readers unqualified",
+    "Snapshots are owned JavaFX scene captures, not OS screenshots",
+    "Font probe covers every emitted keyword with default upright parent; relative weights depend on parent",
+    "Partial C1/C4 slice; full compositions, dock adapter and S6 remain outstanding"
+  ]
+}

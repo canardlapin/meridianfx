@@ -5,7 +5,13 @@ import java.util.HashSet;
 import java.util.Set;
 import meridian.theme.metrics.MeridianMetrics.DensityMode;
 
-/** Four compiled AtlantaFX-derived user-agent themes; no overlay on Modena. */
+/**
+ * Four compiled AtlantaFX-derived user-agent themes; no overlay on Modena.
+ * Direct Application.setUserAgentStylesheet installation supports the authored density
+ * at text scale 1. Use MeridianAppearance for live preferences, scene registration,
+ * text scale and lifecycle services. System-font weight/face qualification is platform-specific;
+ * see docs/THEMING.md.
+ */
 public enum MeridianTheme implements Theme {
     LIGHT_COMFORTABLE(false, DensityMode.COMFORTABLE),
     LIGHT_COMPACT(false, DensityMode.COMPACT),

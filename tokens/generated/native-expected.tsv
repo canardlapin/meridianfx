@@ -133,6 +133,8 @@ theme	dark	-meridian-status-danger	#F0A3A6
 theme	dark	-meridian-status-danger-emphasis	#B8323C
 theme	dark	-meridian-status-danger-muted	#5E2E33
 theme	dark	-meridian-status-danger-subtle	#261618
+theme	dark	-meridian-status-neutral	#C1B9AE
+theme	dark	-meridian-status-progress	#79C8DB
 theme	dark	-meridian-status-success	#87C9AB
 theme	dark	-meridian-status-success-emphasis	#1F7A4D
 theme	dark	-meridian-status-success-muted	#2A5440
@@ -255,6 +257,8 @@ theme	light	-meridian-status-danger	#A53A43
 theme	light	-meridian-status-danger-emphasis	#B8323C
 theme	light	-meridian-status-danger-muted	#F0C3C6
 theme	light	-meridian-status-danger-subtle	#FDF1F1
+theme	light	-meridian-status-neutral	#665A48
+theme	light	-meridian-status-progress	#096B81
 theme	light	-meridian-status-success	#286C51
 theme	light	-meridian-status-success-emphasis	#1F7A4D
 theme	light	-meridian-status-success-muted	#B9DFCB

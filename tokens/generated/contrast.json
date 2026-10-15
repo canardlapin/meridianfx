@@ -3168,6 +3168,586 @@
         1.0
       ],
       "effective_foreground_rgba": [
+        0.7568627450980392,
+        0.7254901960784313,
+        0.6823529411764706,
+        1.0
+      ],
+      "exception": null,
+      "foreground_role": "status.neutral",
+      "foreground_srgb": "#C1B9AE",
+      "kind": "text",
+      "minimum": 4.5,
+      "passed": true,
+      "ratio": 9.050906158591465,
+      "recipe": "status.neutral.canvas"
+    },
+    {
+      "appearance": "dark",
+      "background_layers": [
+        {
+          "role": "surface.canvas",
+          "srgb": "#17191F"
+        }
+      ],
+      "effective_background_rgba": [
+        0.09019607843137255,
+        0.09803921568627451,
+        0.12156862745098039,
+        1.0
+      ],
+      "effective_foreground_rgba": [
+        0.7568627450980392,
+        0.7254901960784313,
+        0.6823529411764706,
+        1.0
+      ],
+      "exception": null,
+      "foreground_role": "status.neutral",
+      "foreground_srgb": "#C1B9AE",
+      "kind": "essential",
+      "minimum": 3,
+      "passed": true,
+      "ratio": 9.050906158591465,
+      "recipe": "status.neutral.dot.canvas"
+    },
+    {
+      "appearance": "dark",
+      "background_layers": [
+        {
+          "role": "surface.raised",
+          "srgb": "#20232B"
+        }
+      ],
+      "effective_background_rgba": [
+        0.12549019607843137,
+        0.13725490196078433,
+        0.16862745098039217,
+        1.0
+      ],
+      "effective_foreground_rgba": [
+        0.7568627450980392,
+        0.7254901960784313,
+        0.6823529411764706,
+        1.0
+      ],
+      "exception": null,
+      "foreground_role": "status.neutral",
+      "foreground_srgb": "#C1B9AE",
+      "kind": "essential",
+      "minimum": 3,
+      "passed": true,
+      "ratio": 8.093200475592797,
+      "recipe": "status.neutral.dot.raised"
+    },
+    {
+      "appearance": "dark",
+      "background_layers": [
+        {
+          "role": "surface.shell",
+          "srgb": "#111318"
+        }
+      ],
+      "effective_background_rgba": [
+        0.06666666666666667,
+        0.07450980392156863,
+        0.09411764705882353,
+        1.0
+      ],
+      "effective_foreground_rgba": [
+        0.7568627450980392,
+        0.7254901960784313,
+        0.6823529411764706,
+        1.0
+      ],
+      "exception": null,
+      "foreground_role": "status.neutral",
+      "foreground_srgb": "#C1B9AE",
+      "kind": "essential",
+      "minimum": 3,
+      "passed": true,
+      "ratio": 9.572231731597848,
+      "recipe": "status.neutral.dot.shell"
+    },
+    {
+      "appearance": "dark",
+      "background_layers": [
+        {
+          "role": "state.hover",
+          "srgb": "#22252E"
+        }
+      ],
+      "effective_background_rgba": [
+        0.13333333333333333,
+        0.1450980392156863,
+        0.1803921568627451,
+        1.0
+      ],
+      "effective_foreground_rgba": [
+        0.7568627450980392,
+        0.7254901960784313,
+        0.6823529411764706,
+        1.0
+      ],
+      "exception": null,
+      "foreground_role": "status.neutral",
+      "foreground_srgb": "#C1B9AE",
+      "kind": "text",
+      "minimum": 4.5,
+      "passed": true,
+      "ratio": 7.884495209575539,
+      "recipe": "status.neutral.hover"
+    },
+    {
+      "appearance": "dark",
+      "background_layers": [
+        {
+          "role": "selection.inactive",
+          "srgb": "#2B2F3A"
+        }
+      ],
+      "effective_background_rgba": [
+        0.16862745098039217,
+        0.1843137254901961,
+        0.22745098039215686,
+        1.0
+      ],
+      "effective_foreground_rgba": [
+        0.7568627450980392,
+        0.7254901960784313,
+        0.6823529411764706,
+        1.0
+      ],
+      "exception": null,
+      "foreground_role": "status.neutral",
+      "foreground_srgb": "#C1B9AE",
+      "kind": "text",
+      "minimum": 4.5,
+      "passed": true,
+      "ratio": 6.888769091067338,
+      "recipe": "status.neutral.inactive-selected"
+    },
+    {
+      "appearance": "dark",
+      "background_layers": [
+        {
+          "role": "state.pressed",
+          "srgb": "#343946"
+        }
+      ],
+      "effective_background_rgba": [
+        0.20392156862745098,
+        0.2235294117647059,
+        0.27450980392156865,
+        1.0
+      ],
+      "effective_foreground_rgba": [
+        0.7568627450980392,
+        0.7254901960784313,
+        0.6823529411764706,
+        1.0
+      ],
+      "exception": null,
+      "foreground_role": "status.neutral",
+      "foreground_srgb": "#C1B9AE",
+      "kind": "text",
+      "minimum": 4.5,
+      "passed": true,
+      "ratio": 5.945076592676042,
+      "recipe": "status.neutral.pressed"
+    },
+    {
+      "appearance": "dark",
+      "background_layers": [
+        {
+          "role": "surface.raised",
+          "srgb": "#20232B"
+        }
+      ],
+      "effective_background_rgba": [
+        0.12549019607843137,
+        0.13725490196078433,
+        0.16862745098039217,
+        1.0
+      ],
+      "effective_foreground_rgba": [
+        0.7568627450980392,
+        0.7254901960784313,
+        0.6823529411764706,
+        1.0
+      ],
+      "exception": null,
+      "foreground_role": "status.neutral",
+      "foreground_srgb": "#C1B9AE",
+      "kind": "text",
+      "minimum": 4.5,
+      "passed": true,
+      "ratio": 8.093200475592797,
+      "recipe": "status.neutral.raised"
+    },
+    {
+      "appearance": "dark",
+      "background_layers": [
+        {
+          "role": "selection.active",
+          "srgb": "#2A2745"
+        }
+      ],
+      "effective_background_rgba": [
+        0.16470588235294117,
+        0.15294117647058825,
+        0.27058823529411763,
+        1.0
+      ],
+      "effective_foreground_rgba": [
+        0.7568627450980392,
+        0.7254901960784313,
+        0.6823529411764706,
+        1.0
+      ],
+      "exception": null,
+      "foreground_role": "status.neutral",
+      "foreground_srgb": "#C1B9AE",
+      "kind": "text",
+      "minimum": 4.5,
+      "passed": true,
+      "ratio": 7.3364629610545125,
+      "recipe": "status.neutral.selected"
+    },
+    {
+      "appearance": "dark",
+      "background_layers": [
+        {
+          "role": "surface.shell",
+          "srgb": "#111318"
+        }
+      ],
+      "effective_background_rgba": [
+        0.06666666666666667,
+        0.07450980392156863,
+        0.09411764705882353,
+        1.0
+      ],
+      "effective_foreground_rgba": [
+        0.7568627450980392,
+        0.7254901960784313,
+        0.6823529411764706,
+        1.0
+      ],
+      "exception": null,
+      "foreground_role": "status.neutral",
+      "foreground_srgb": "#C1B9AE",
+      "kind": "text",
+      "minimum": 4.5,
+      "passed": true,
+      "ratio": 9.572231731597848,
+      "recipe": "status.neutral.shell"
+    },
+    {
+      "appearance": "dark",
+      "background_layers": [
+        {
+          "role": "surface.canvas",
+          "srgb": "#17191F"
+        }
+      ],
+      "effective_background_rgba": [
+        0.09019607843137255,
+        0.09803921568627451,
+        0.12156862745098039,
+        1.0
+      ],
+      "effective_foreground_rgba": [
+        0.4745098039215686,
+        0.7843137254901961,
+        0.8588235294117647,
+        1.0
+      ],
+      "exception": null,
+      "foreground_role": "status.progress",
+      "foreground_srgb": "#79C8DB",
+      "kind": "text",
+      "minimum": 4.5,
+      "passed": true,
+      "ratio": 9.284594218040224,
+      "recipe": "status.progress.canvas"
+    },
+    {
+      "appearance": "dark",
+      "background_layers": [
+        {
+          "role": "surface.canvas",
+          "srgb": "#17191F"
+        }
+      ],
+      "effective_background_rgba": [
+        0.09019607843137255,
+        0.09803921568627451,
+        0.12156862745098039,
+        1.0
+      ],
+      "effective_foreground_rgba": [
+        0.4745098039215686,
+        0.7843137254901961,
+        0.8588235294117647,
+        1.0
+      ],
+      "exception": null,
+      "foreground_role": "status.progress",
+      "foreground_srgb": "#79C8DB",
+      "kind": "essential",
+      "minimum": 3,
+      "passed": true,
+      "ratio": 9.284594218040224,
+      "recipe": "status.progress.dot.canvas"
+    },
+    {
+      "appearance": "dark",
+      "background_layers": [
+        {
+          "role": "surface.raised",
+          "srgb": "#20232B"
+        }
+      ],
+      "effective_background_rgba": [
+        0.12549019607843137,
+        0.13725490196078433,
+        0.16862745098039217,
+        1.0
+      ],
+      "effective_foreground_rgba": [
+        0.4745098039215686,
+        0.7843137254901961,
+        0.8588235294117647,
+        1.0
+      ],
+      "exception": null,
+      "foreground_role": "status.progress",
+      "foreground_srgb": "#79C8DB",
+      "kind": "essential",
+      "minimum": 3,
+      "passed": true,
+      "ratio": 8.302161244904914,
+      "recipe": "status.progress.dot.raised"
+    },
+    {
+      "appearance": "dark",
+      "background_layers": [
+        {
+          "role": "surface.shell",
+          "srgb": "#111318"
+        }
+      ],
+      "effective_background_rgba": [
+        0.06666666666666667,
+        0.07450980392156863,
+        0.09411764705882353,
+        1.0
+      ],
+      "effective_foreground_rgba": [
+        0.4745098039215686,
+        0.7843137254901961,
+        0.8588235294117647,
+        1.0
+      ],
+      "exception": null,
+      "foreground_role": "status.progress",
+      "foreground_srgb": "#79C8DB",
+      "kind": "essential",
+      "minimum": 3,
+      "passed": true,
+      "ratio": 9.819380052302463,
+      "recipe": "status.progress.dot.shell"
+    },
+    {
+      "appearance": "dark",
+      "background_layers": [
+        {
+          "role": "state.hover",
+          "srgb": "#22252E"
+        }
+      ],
+      "effective_background_rgba": [
+        0.13333333333333333,
+        0.1450980392156863,
+        0.1803921568627451,
+        1.0
+      ],
+      "effective_foreground_rgba": [
+        0.4745098039215686,
+        0.7843137254901961,
+        0.8588235294117647,
+        1.0
+      ],
+      "exception": null,
+      "foreground_role": "status.progress",
+      "foreground_srgb": "#79C8DB",
+      "kind": "text",
+      "minimum": 4.5,
+      "passed": true,
+      "ratio": 8.088067355057323,
+      "recipe": "status.progress.hover"
+    },
+    {
+      "appearance": "dark",
+      "background_layers": [
+        {
+          "role": "selection.inactive",
+          "srgb": "#2B2F3A"
+        }
+      ],
+      "effective_background_rgba": [
+        0.16862745098039217,
+        0.1843137254901961,
+        0.22745098039215686,
+        1.0
+      ],
+      "effective_foreground_rgba": [
+        0.4745098039215686,
+        0.7843137254901961,
+        0.8588235294117647,
+        1.0
+      ],
+      "exception": null,
+      "foreground_role": "status.progress",
+      "foreground_srgb": "#79C8DB",
+      "kind": "text",
+      "minimum": 4.5,
+      "passed": true,
+      "ratio": 7.0666322853900425,
+      "recipe": "status.progress.inactive-selected"
+    },
+    {
+      "appearance": "dark",
+      "background_layers": [
+        {
+          "role": "state.pressed",
+          "srgb": "#343946"
+        }
+      ],
+      "effective_background_rgba": [
+        0.20392156862745098,
+        0.2235294117647059,
+        0.27450980392156865,
+        1.0
+      ],
+      "effective_foreground_rgba": [
+        0.4745098039215686,
+        0.7843137254901961,
+        0.8588235294117647,
+        1.0
+      ],
+      "exception": null,
+      "foreground_role": "status.progress",
+      "foreground_srgb": "#79C8DB",
+      "kind": "text",
+      "minimum": 4.5,
+      "passed": true,
+      "ratio": 6.098574307476447,
+      "recipe": "status.progress.pressed"
+    },
+    {
+      "appearance": "dark",
+      "background_layers": [
+        {
+          "role": "surface.raised",
+          "srgb": "#20232B"
+        }
+      ],
+      "effective_background_rgba": [
+        0.12549019607843137,
+        0.13725490196078433,
+        0.16862745098039217,
+        1.0
+      ],
+      "effective_foreground_rgba": [
+        0.4745098039215686,
+        0.7843137254901961,
+        0.8588235294117647,
+        1.0
+      ],
+      "exception": null,
+      "foreground_role": "status.progress",
+      "foreground_srgb": "#79C8DB",
+      "kind": "text",
+      "minimum": 4.5,
+      "passed": true,
+      "ratio": 8.302161244904914,
+      "recipe": "status.progress.raised"
+    },
+    {
+      "appearance": "dark",
+      "background_layers": [
+        {
+          "role": "selection.active",
+          "srgb": "#2A2745"
+        }
+      ],
+      "effective_background_rgba": [
+        0.16470588235294117,
+        0.15294117647058825,
+        0.27058823529411763,
+        1.0
+      ],
+      "effective_foreground_rgba": [
+        0.4745098039215686,
+        0.7843137254901961,
+        0.8588235294117647,
+        1.0
+      ],
+      "exception": null,
+      "foreground_role": "status.progress",
+      "foreground_srgb": "#79C8DB",
+      "kind": "text",
+      "minimum": 4.5,
+      "passed": true,
+      "ratio": 7.525885297619024,
+      "recipe": "status.progress.selected"
+    },
+    {
+      "appearance": "dark",
+      "background_layers": [
+        {
+          "role": "surface.shell",
+          "srgb": "#111318"
+        }
+      ],
+      "effective_background_rgba": [
+        0.06666666666666667,
+        0.07450980392156863,
+        0.09411764705882353,
+        1.0
+      ],
+      "effective_foreground_rgba": [
+        0.4745098039215686,
+        0.7843137254901961,
+        0.8588235294117647,
+        1.0
+      ],
+      "exception": null,
+      "foreground_role": "status.progress",
+      "foreground_srgb": "#79C8DB",
+      "kind": "text",
+      "minimum": 4.5,
+      "passed": true,
+      "ratio": 9.819380052302463,
+      "recipe": "status.progress.shell"
+    },
+    {
+      "appearance": "dark",
+      "background_layers": [
+        {
+          "role": "surface.canvas",
+          "srgb": "#17191F"
+        }
+      ],
+      "effective_background_rgba": [
+        0.09019607843137255,
+        0.09803921568627451,
+        0.12156862745098039,
+        1.0
+      ],
+      "effective_foreground_rgba": [
         0.5294117647058824,
         0.788235294117647,
         0.6705882352941176,
@@ -6900,6 +7480,586 @@
         1.0
       ],
       "effective_foreground_rgba": [
+        0.4,
+        0.35294117647058826,
+        0.2823529411764706,
+        1.0
+      ],
+      "exception": null,
+      "foreground_role": "status.neutral",
+      "foreground_srgb": "#665A48",
+      "kind": "text",
+      "minimum": 4.5,
+      "passed": true,
+      "ratio": 6.728617430897827,
+      "recipe": "status.neutral.canvas"
+    },
+    {
+      "appearance": "light",
+      "background_layers": [
+        {
+          "role": "surface.canvas",
+          "srgb": "#FFFFFF"
+        }
+      ],
+      "effective_background_rgba": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "effective_foreground_rgba": [
+        0.4,
+        0.35294117647058826,
+        0.2823529411764706,
+        1.0
+      ],
+      "exception": null,
+      "foreground_role": "status.neutral",
+      "foreground_srgb": "#665A48",
+      "kind": "essential",
+      "minimum": 3,
+      "passed": true,
+      "ratio": 6.728617430897827,
+      "recipe": "status.neutral.dot.canvas"
+    },
+    {
+      "appearance": "light",
+      "background_layers": [
+        {
+          "role": "surface.raised",
+          "srgb": "#FFFFFF"
+        }
+      ],
+      "effective_background_rgba": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "effective_foreground_rgba": [
+        0.4,
+        0.35294117647058826,
+        0.2823529411764706,
+        1.0
+      ],
+      "exception": null,
+      "foreground_role": "status.neutral",
+      "foreground_srgb": "#665A48",
+      "kind": "essential",
+      "minimum": 3,
+      "passed": true,
+      "ratio": 6.728617430897827,
+      "recipe": "status.neutral.dot.raised"
+    },
+    {
+      "appearance": "light",
+      "background_layers": [
+        {
+          "role": "surface.shell",
+          "srgb": "#F3F4F7"
+        }
+      ],
+      "effective_background_rgba": [
+        0.9529411764705882,
+        0.9568627450980393,
+        0.9686274509803922,
+        1.0
+      ],
+      "effective_foreground_rgba": [
+        0.4,
+        0.35294117647058826,
+        0.2823529411764706,
+        1.0
+      ],
+      "exception": null,
+      "foreground_role": "status.neutral",
+      "foreground_srgb": "#665A48",
+      "kind": "essential",
+      "minimum": 3,
+      "passed": true,
+      "ratio": 6.118008474520186,
+      "recipe": "status.neutral.dot.shell"
+    },
+    {
+      "appearance": "light",
+      "background_layers": [
+        {
+          "role": "state.hover",
+          "srgb": "#F1F3F6"
+        }
+      ],
+      "effective_background_rgba": [
+        0.9450980392156862,
+        0.9529411764705882,
+        0.9647058823529412,
+        1.0
+      ],
+      "effective_foreground_rgba": [
+        0.4,
+        0.35294117647058826,
+        0.2823529411764706,
+        1.0
+      ],
+      "exception": null,
+      "foreground_role": "status.neutral",
+      "foreground_srgb": "#665A48",
+      "kind": "text",
+      "minimum": 4.5,
+      "passed": true,
+      "ratio": 6.052921806481124,
+      "recipe": "status.neutral.hover"
+    },
+    {
+      "appearance": "light",
+      "background_layers": [
+        {
+          "role": "selection.inactive",
+          "srgb": "#E6E9EF"
+        }
+      ],
+      "effective_background_rgba": [
+        0.9019607843137255,
+        0.9137254901960784,
+        0.9372549019607843,
+        1.0
+      ],
+      "effective_foreground_rgba": [
+        0.4,
+        0.35294117647058826,
+        0.2823529411764706,
+        1.0
+      ],
+      "exception": null,
+      "foreground_role": "status.neutral",
+      "foreground_srgb": "#665A48",
+      "kind": "text",
+      "minimum": 4.5,
+      "passed": true,
+      "ratio": 5.532385633536375,
+      "recipe": "status.neutral.inactive-selected"
+    },
+    {
+      "appearance": "light",
+      "background_layers": [
+        {
+          "role": "state.pressed",
+          "srgb": "#DCE0E7"
+        }
+      ],
+      "effective_background_rgba": [
+        0.8627450980392157,
+        0.8784313725490196,
+        0.9058823529411765,
+        1.0
+      ],
+      "effective_foreground_rgba": [
+        0.4,
+        0.35294117647058826,
+        0.2823529411764706,
+        1.0
+      ],
+      "exception": null,
+      "foreground_role": "status.neutral",
+      "foreground_srgb": "#665A48",
+      "kind": "text",
+      "minimum": 4.5,
+      "passed": true,
+      "ratio": 5.081482300725247,
+      "recipe": "status.neutral.pressed"
+    },
+    {
+      "appearance": "light",
+      "background_layers": [
+        {
+          "role": "surface.raised",
+          "srgb": "#FFFFFF"
+        }
+      ],
+      "effective_background_rgba": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "effective_foreground_rgba": [
+        0.4,
+        0.35294117647058826,
+        0.2823529411764706,
+        1.0
+      ],
+      "exception": null,
+      "foreground_role": "status.neutral",
+      "foreground_srgb": "#665A48",
+      "kind": "text",
+      "minimum": 4.5,
+      "passed": true,
+      "ratio": 6.728617430897827,
+      "recipe": "status.neutral.raised"
+    },
+    {
+      "appearance": "light",
+      "background_layers": [
+        {
+          "role": "selection.active",
+          "srgb": "#EEEBFF"
+        }
+      ],
+      "effective_background_rgba": [
+        0.9333333333333333,
+        0.9215686274509803,
+        1.0,
+        1.0
+      ],
+      "effective_foreground_rgba": [
+        0.4,
+        0.35294117647058826,
+        0.2823529411764706,
+        1.0
+      ],
+      "exception": null,
+      "foreground_role": "status.neutral",
+      "foreground_srgb": "#665A48",
+      "kind": "text",
+      "minimum": 4.5,
+      "passed": true,
+      "ratio": 5.755454572008821,
+      "recipe": "status.neutral.selected"
+    },
+    {
+      "appearance": "light",
+      "background_layers": [
+        {
+          "role": "surface.shell",
+          "srgb": "#F3F4F7"
+        }
+      ],
+      "effective_background_rgba": [
+        0.9529411764705882,
+        0.9568627450980393,
+        0.9686274509803922,
+        1.0
+      ],
+      "effective_foreground_rgba": [
+        0.4,
+        0.35294117647058826,
+        0.2823529411764706,
+        1.0
+      ],
+      "exception": null,
+      "foreground_role": "status.neutral",
+      "foreground_srgb": "#665A48",
+      "kind": "text",
+      "minimum": 4.5,
+      "passed": true,
+      "ratio": 6.118008474520186,
+      "recipe": "status.neutral.shell"
+    },
+    {
+      "appearance": "light",
+      "background_layers": [
+        {
+          "role": "surface.canvas",
+          "srgb": "#FFFFFF"
+        }
+      ],
+      "effective_background_rgba": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "effective_foreground_rgba": [
+        0.03529411764705882,
+        0.4196078431372549,
+        0.5058823529411764,
+        1.0
+      ],
+      "exception": null,
+      "foreground_role": "status.progress",
+      "foreground_srgb": "#096B81",
+      "kind": "text",
+      "minimum": 4.5,
+      "passed": true,
+      "ratio": 6.1194352505088965,
+      "recipe": "status.progress.canvas"
+    },
+    {
+      "appearance": "light",
+      "background_layers": [
+        {
+          "role": "surface.canvas",
+          "srgb": "#FFFFFF"
+        }
+      ],
+      "effective_background_rgba": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "effective_foreground_rgba": [
+        0.03529411764705882,
+        0.4196078431372549,
+        0.5058823529411764,
+        1.0
+      ],
+      "exception": null,
+      "foreground_role": "status.progress",
+      "foreground_srgb": "#096B81",
+      "kind": "essential",
+      "minimum": 3,
+      "passed": true,
+      "ratio": 6.1194352505088965,
+      "recipe": "status.progress.dot.canvas"
+    },
+    {
+      "appearance": "light",
+      "background_layers": [
+        {
+          "role": "surface.raised",
+          "srgb": "#FFFFFF"
+        }
+      ],
+      "effective_background_rgba": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "effective_foreground_rgba": [
+        0.03529411764705882,
+        0.4196078431372549,
+        0.5058823529411764,
+        1.0
+      ],
+      "exception": null,
+      "foreground_role": "status.progress",
+      "foreground_srgb": "#096B81",
+      "kind": "essential",
+      "minimum": 3,
+      "passed": true,
+      "ratio": 6.1194352505088965,
+      "recipe": "status.progress.dot.raised"
+    },
+    {
+      "appearance": "light",
+      "background_layers": [
+        {
+          "role": "surface.shell",
+          "srgb": "#F3F4F7"
+        }
+      ],
+      "effective_background_rgba": [
+        0.9529411764705882,
+        0.9568627450980393,
+        0.9686274509803922,
+        1.0
+      ],
+      "effective_foreground_rgba": [
+        0.03529411764705882,
+        0.4196078431372549,
+        0.5058823529411764,
+        1.0
+      ],
+      "exception": null,
+      "foreground_role": "status.progress",
+      "foreground_srgb": "#096B81",
+      "kind": "essential",
+      "minimum": 3,
+      "passed": true,
+      "ratio": 5.564108393200084,
+      "recipe": "status.progress.dot.shell"
+    },
+    {
+      "appearance": "light",
+      "background_layers": [
+        {
+          "role": "state.hover",
+          "srgb": "#F1F3F6"
+        }
+      ],
+      "effective_background_rgba": [
+        0.9450980392156862,
+        0.9529411764705882,
+        0.9647058823529412,
+        1.0
+      ],
+      "effective_foreground_rgba": [
+        0.03529411764705882,
+        0.4196078431372549,
+        0.5058823529411764,
+        1.0
+      ],
+      "exception": null,
+      "foreground_role": "status.progress",
+      "foreground_srgb": "#096B81",
+      "kind": "text",
+      "minimum": 4.5,
+      "passed": true,
+      "ratio": 5.504914412441504,
+      "recipe": "status.progress.hover"
+    },
+    {
+      "appearance": "light",
+      "background_layers": [
+        {
+          "role": "selection.inactive",
+          "srgb": "#E6E9EF"
+        }
+      ],
+      "effective_background_rgba": [
+        0.9019607843137255,
+        0.9137254901960784,
+        0.9372549019607843,
+        1.0
+      ],
+      "effective_foreground_rgba": [
+        0.03529411764705882,
+        0.4196078431372549,
+        0.5058823529411764,
+        1.0
+      ],
+      "exception": null,
+      "foreground_role": "status.progress",
+      "foreground_srgb": "#096B81",
+      "kind": "text",
+      "minimum": 4.5,
+      "passed": true,
+      "ratio": 5.03150550807197,
+      "recipe": "status.progress.inactive-selected"
+    },
+    {
+      "appearance": "light",
+      "background_layers": [
+        {
+          "role": "state.pressed",
+          "srgb": "#DCE0E7"
+        }
+      ],
+      "effective_background_rgba": [
+        0.8627450980392157,
+        0.8784313725490196,
+        0.9058823529411765,
+        1.0
+      ],
+      "effective_foreground_rgba": [
+        0.03529411764705882,
+        0.4196078431372549,
+        0.5058823529411764,
+        1.0
+      ],
+      "exception": null,
+      "foreground_role": "status.progress",
+      "foreground_srgb": "#096B81",
+      "kind": "text",
+      "minimum": 4.5,
+      "passed": true,
+      "ratio": 4.621425164269725,
+      "recipe": "status.progress.pressed"
+    },
+    {
+      "appearance": "light",
+      "background_layers": [
+        {
+          "role": "surface.raised",
+          "srgb": "#FFFFFF"
+        }
+      ],
+      "effective_background_rgba": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "effective_foreground_rgba": [
+        0.03529411764705882,
+        0.4196078431372549,
+        0.5058823529411764,
+        1.0
+      ],
+      "exception": null,
+      "foreground_role": "status.progress",
+      "foreground_srgb": "#096B81",
+      "kind": "text",
+      "minimum": 4.5,
+      "passed": true,
+      "ratio": 6.1194352505088965,
+      "recipe": "status.progress.raised"
+    },
+    {
+      "appearance": "light",
+      "background_layers": [
+        {
+          "role": "selection.active",
+          "srgb": "#EEEBFF"
+        }
+      ],
+      "effective_background_rgba": [
+        0.9333333333333333,
+        0.9215686274509803,
+        1.0,
+        1.0
+      ],
+      "effective_foreground_rgba": [
+        0.03529411764705882,
+        0.4196078431372549,
+        0.5058823529411764,
+        1.0
+      ],
+      "exception": null,
+      "foreground_role": "status.progress",
+      "foreground_srgb": "#096B81",
+      "kind": "text",
+      "minimum": 4.5,
+      "passed": true,
+      "ratio": 5.234378674721859,
+      "recipe": "status.progress.selected"
+    },
+    {
+      "appearance": "light",
+      "background_layers": [
+        {
+          "role": "surface.shell",
+          "srgb": "#F3F4F7"
+        }
+      ],
+      "effective_background_rgba": [
+        0.9529411764705882,
+        0.9568627450980393,
+        0.9686274509803922,
+        1.0
+      ],
+      "effective_foreground_rgba": [
+        0.03529411764705882,
+        0.4196078431372549,
+        0.5058823529411764,
+        1.0
+      ],
+      "exception": null,
+      "foreground_role": "status.progress",
+      "foreground_srgb": "#096B81",
+      "kind": "text",
+      "minimum": 4.5,
+      "passed": true,
+      "ratio": 5.564108393200084,
+      "recipe": "status.progress.shell"
+    },
+    {
+      "appearance": "light",
+      "background_layers": [
+        {
+          "role": "surface.canvas",
+          "srgb": "#FFFFFF"
+        }
+      ],
+      "effective_background_rgba": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "effective_foreground_rgba": [
         0.1568627450980392,
         0.4235294117647059,
         0.3176470588235294,
@@ -7466,8 +8626,8 @@
       "recipe": "status.warning.subtle-title"
     }
   ],
-  "passed": 244,
-  "required": 244,
+  "passed": 284,
+  "required": 284,
   "schema": "meridian.contrast.v1",
-  "source_sha256": "1c14eaf53bc0801d37c190a16a1abf3a91820502ee58a238028a2f8a20d81d25"
+  "source_sha256": "294a4a9a4e589f4ab03db82f6d6a3a588c6f83dbfa9eddd850afdbcd83b8e942"
 }

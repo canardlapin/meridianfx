@@ -28,6 +28,26 @@ class TokenTests(unittest.TestCase):
         self.data = (ROOT / tokens.SOURCE).read_bytes()
         self.model = json.loads(self.data)
 
+    def test_status_roles_do_not_alias_selection_or_focus(self):
+        for mode in tokens.MODES:
+            altered = copy.deepcopy(self.model)
+            altered["roles"][mode]["status.neutral"] = altered["roles"][mode]["selection.inactive-marker"]
+            with self.subTest(mode=mode), self.assertRaisesRegex(tokens.TokenError, "Status roles"):
+                tokens.validate(altered)
+
+    def test_status_text_and_dot_contrast_independent_reference(self):
+        for mode in tokens.MODES:
+            palette = tokens.colors(self.model, mode)
+            for status in ("neutral", "progress"):
+                for surface in ("canvas", "shell", "raised"):
+                    with self.subTest(mode=mode, status=status, surface=surface):
+                        value = decimal_contrast(palette["status." + status], palette["surface." + surface])
+                        self.assertGreaterEqual(value, 4.5)
+                        self.assertEqual(self.model["recipes"][f"status.{status}.dot.{surface}"]["kind"], "essential")
+        self.model["recipes"].pop("status.progress.dot.raised")
+        with self.assertRaises(tokens.TokenError):
+            tokens.validate(self.model)
+
     def test_white_black_reference(self):
         self.assertEqual(tokens.ratio(tokens.rgba("#FFFFFF"), tokens.rgba("#000000")), 21.0)
 

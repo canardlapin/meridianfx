@@ -1,0 +1,62 @@
+java=25.0.1 javafx=27+30 os=Mac OS X/aarch64
+System faces=[System Regular, System Bold, System Italic, System Bold Italic]
+step=0 weight=bold face=System Bold
+step=0 weight=bolder face=System Bold
+step=0 weight=lighter face=System Regular
+step=0 weight=normal face=System Regular
+step=0 registered=false theme=LIGHT_COMFORTABLE scale=1.0 header=Font[name=System Regular, family=System, style=Regular, size=12.0]
+step=1 weight=bold face=System Bold
+step=1 weight=bolder face=System Bold
+step=1 weight=lighter face=System Regular
+step=1 weight=normal face=System Regular
+step=1 registered=false theme=LIGHT_COMPACT scale=1.0 header=Font[name=System Regular, family=System, style=Regular, size=12.0]
+step=2 weight=bold face=System Bold
+step=2 weight=bolder face=System Bold
+step=2 weight=lighter face=System Regular
+step=2 weight=normal face=System Regular
+step=2 registered=false theme=DARK_COMFORTABLE scale=1.0 header=Font[name=System Regular, family=System, style=Regular, size=12.0]
+step=3 weight=bold face=System Bold
+step=3 weight=bolder face=System Bold
+step=3 weight=lighter face=System Regular
+step=3 weight=normal face=System Regular
+step=3 registered=false theme=DARK_COMPACT scale=1.0 header=Font[name=System Regular, family=System, style=Regular, size=12.0]
+step=4 weight=bold face=System Bold
+step=4 weight=bolder face=System Bold
+step=4 weight=lighter face=System Regular
+step=4 weight=normal face=System Regular
+step=4 registered=true theme=LIGHT_COMFORTABLE scale=1.0 header=Font[name=System Regular, family=System, style=Regular, size=12.0]
+step=5 weight=bold face=System Bold
+step=5 weight=bolder face=System Bold
+step=5 weight=lighter face=System Regular
+step=5 weight=normal face=System Regular
+step=5 registered=true theme=LIGHT_COMPACT scale=1.0 header=Font[name=System Regular, family=System, style=Regular, size=12.0]
+step=6 weight=bold face=System Bold
+step=6 weight=bolder face=System Bold
+step=6 weight=lighter face=System Regular
+step=6 weight=normal face=System Regular
+step=6 registered=true theme=DARK_COMFORTABLE scale=1.0 header=Font[name=System Regular, family=System, style=Regular, size=12.0]
+step=7 weight=bold face=System Bold
+step=7 weight=bolder face=System Bold
+step=7 weight=lighter face=System Regular
+step=7 weight=normal face=System Regular
+step=7 registered=true theme=DARK_COMPACT scale=1.0 header=Font[name=System Regular, family=System, style=Regular, size=12.0]
+step=8 weight=bold face=System Bold
+step=8 weight=bolder face=System Bold
+step=8 weight=lighter face=System Regular
+step=8 weight=normal face=System Regular
+step=8 registered=true theme=LIGHT_COMFORTABLE scale=1.5 header=Font[name=System Regular, family=System, style=Regular, size=18.0]
+step=9 weight=bold face=System Bold
+step=9 weight=bolder face=System Bold
+step=9 weight=lighter face=System Regular
+step=9 weight=normal face=System Regular
+step=9 registered=true theme=LIGHT_COMPACT scale=1.5 header=Font[name=System Regular, family=System, style=Regular, size=18.0]
+step=10 weight=bold face=System Bold
+step=10 weight=bolder face=System Bold
+step=10 weight=lighter face=System Regular
+step=10 weight=normal face=System Regular
+step=10 registered=true theme=DARK_COMFORTABLE scale=1.5 header=Font[name=System Regular, family=System, style=Regular, size=18.0]
+step=11 weight=bold face=System Bold
+step=11 weight=bolder face=System Bold
+step=11 weight=lighter face=System Regular
+step=11 weight=normal face=System Regular
+step=11 registered=true theme=DARK_COMPACT scale=1.5 header=Font[name=System Regular, family=System, style=Regular, size=18.0]

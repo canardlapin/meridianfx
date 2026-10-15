@@ -47,7 +47,7 @@ appearance.close();
 
 Defaults follow the platform's typed scheme/motion preference, use comfortable
 density and text scale1. [Theming guide](docs/THEMING.md) covers explicit preferences,
-scene restoration, hidden/new scenes and disposal. The independent Java consumer
+scene restoration, hidden/new scenes, disposal, [status indicators](docs/THEMING.md#status-indicators) and the [native font-weight contract](docs/THEMING.md#native-typography-and-direct-installation). The independent Java consumer
 in [A3 evidence](docs/evidence/a3/README.md) uses the packaged theme without Scala,
 ScalaFX or ScalaDock.
 
@@ -56,7 +56,7 @@ ScalaFX or ScalaDock.
 | Module | Current foundation | Remaining responsibility |
 |---|---|---|
 | `theme` | Four compiled user-agent themes, semantic tokens, metrics and appearance binding | Exhaustive control/context qualification |
-| `workbench` | Java ViewHeader; depends on theme | Navigation, inspectors and command composition |
+| `workbench` | Java ViewHeader and semantic dot+label StatusIndicator; depends on theme | Navigation, inspectors and command composition |
 | `scaladock` | Isolated provider dependency and generated public-token palettes | Adapter through qualified generic provider hooks |
 | `sampler` | Native foundation, token and theme probes | Docked fixtures and complete interaction scenarios |
 
@@ -86,6 +86,16 @@ python3 tools/check_tokens.py
 python3 -m unittest discover -s tools/tests -p test_tokens.py -v
 ```
 
+For consumer status/typography regressions (qualified macOS System face profile):
+
+```sh
+tools/sbt 'sampler/runMain meridian.sampler.ConsumerContractProbe target/new-consumer-contract'
+```
+
+This checks standalone/registered themes, both densities/schemes and enlarged text.
+[Consumer-fix evidence](docs/evidence/consumer-contracts/README.md) records the baseline
+and bounded results for upstream issues 1–3.
+
 For the full generator suite and theme compilation:
 
 ```sh
@@ -110,8 +120,7 @@ application-owned.
 [PLAN.md](PLAN.md) contains acceptance criteria and Mote IDs. Mote owns status and
 claims. Evidence for [A1](docs/evidence/a1/README.md), [A2](docs/evidence/a2/README.md)
 and [A3](docs/evidence/a3/README.md) distinguishes local checks from broader
-accessibility, scientific, platform and application compatibility. ScalaDock S1 is
-the next provider step before its receipt and Meridian adapter gates.
+accessibility, scientific, platform and application compatibility. Provider qualification and Meridian adapter acceptance remain separate gates.
 
 ## License
 

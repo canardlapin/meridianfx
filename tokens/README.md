@@ -37,7 +37,7 @@ inventory; new roles/metric fields require an explicit schema/generator change.
 | `typography`, `geometry`, `densities`, `motion` | Logical pixels and integer milliseconds |
 | `contrast_policy`, `exclusions`, `provenance` | Thresholds, scoped exceptions, scientific boundary and reference identity |
 
-Each appearance has 31 semantic roles; 118 recipes cover text, placeholders,
+Each appearance includes dedicated neutral/progress status roles; contrast recipes cover text, placeholders,
 boundaries, focus, action states, selection, inactive selection, invalid/read-only
 fields, menus, dock tabs, indicators, statuses and composited drop markers.
 Only disabled button/field/menu foregrounds use the unavailable-control exception.
@@ -45,7 +45,7 @@ Meaningful data in inactive or disabled-selected rows remains tested.
 Separators, shadows and supplementary drop tint are decorative; essential drop
 and selection markers remain tested.
 
-Original references are hash-locked and unchanged. New pressed neutral surfaces
+Neutral/progress labels and dots are independently checked on canvas, shell and raised surfaces; their colors must not alias selection/focus. See [status and native weight contracts](../docs/THEMING.md#status-indicators). Generated browser weights are normal400/strong700; the locked browser study retains historical500/600 values with an explicit native translation in that guide.\n\nOriginal references are hash-locked and unchanged. New pressed neutral surfaces
 are dark `#2B2F39` and light `#E4E8EF`, calibrated to preserve essential-boundary
 contrast. Existing text, control borders, action and focus colors are retained.
 Decorative borders must not serve as the sole essential input boundary.
@@ -61,7 +61,7 @@ Decorative borders must not serve as the sole essential input boundary.
 | `tokens/generated/_palette-{dark,light}.scss` | Semantic/AtlantaFX maps for the A3 theme build |
 | `design-study/generated/tokens.css` | Browser aliases and metrics; original HTML is unchanged |
 | `tokens/generated/contrast.json` | Layer stacks, effective RGBA, ratios, thresholds and exemptions |
-| `tokens/generated/native-expected.tsv` | All 130 native semantic/alias expectations |
+| `tokens/generated/native-expected.tsv` | Native semantic/alias expectations |
 | `tokens/generated/manifest.json` | Source digest and hashes of the other generated outputs |
 
 These are token layers; complete user-agent themes are A3. JavaFX numeric values

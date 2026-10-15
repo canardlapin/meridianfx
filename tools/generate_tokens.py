@@ -19,7 +19,7 @@ surface.page surface.shell surface.canvas surface.raised state.hover state.press
 selection.active selection.inactive selection.marker selection.inactive-marker
 text.primary text.secondary text.placeholder text.on-action text.accent
 action.default action.hover action.pressed border.decorative border.control border.invalid
-focus.ring control.indicator status.success status.warning status.danger
+focus.ring control.indicator status.success status.warning status.danger status.neutral status.progress
 disabled.foreground overlay.shadow drop.fill drop.scrim drop.slot-fill
 status.success-emphasis status.warning-emphasis status.danger-emphasis
 status.success-subtle status.warning-subtle status.danger-subtle
@@ -52,8 +52,10 @@ REQUIRED_RECIPES = {
     **{f"row.marker.{state}": "essential" for state in ("selected", "selected-focused", "inactive-selected", "disabled-selected")},
     **{f"{group}.{state}": "text" for group in ("dock.tab", "menu")
        for state in ("default", "hover", "selected", "focused", "inactive-selected")},
-    **{f"status.{status}.{state}": "text" for status in ("success", "warning", "danger")
+    **{f"status.{status}.{state}": "text" for status in ("neutral", "progress", "success", "warning", "danger")
        for state in ("canvas", "shell", "raised", "hover", "pressed", "selected", "inactive-selected")},
+    **{f"status.{status}.dot.{surface}": "essential" for status in ("neutral", "progress")
+       for surface in ("canvas", "shell", "raised")},
     **{f"control.indicator.{state}": "essential" for state in ("canvas", "shell", "raised", "hover", "pressed", "selected", "inactive-selected")},
     **{name: "decorative" for name in DECORATIVE},
     **{name: "disabled" for name in DISABLED},
@@ -127,6 +129,12 @@ def validate(model):
         for role, raw in model["roles"][mode].items():
             require(raw in model["raw"], f"{mode}.{role}: unknown raw color {raw}")
             used.add(raw)
+    for mode in MODES:
+        palette = colors(model, mode)
+        interactive = {value for role, value in palette.items() if role.startswith(("selection.", "focus."))}
+        require(palette["status.neutral"] != palette["status.progress"] and
+                all(palette["status." + status] not in interactive for status in ("neutral", "progress")),
+                "Status roles must be distinct from one another and selection/focus colors")
     require(set(model["raw"]) == used, "Unreferenced raw colors are forbidden, including scientific palette inputs")
     exact_keys(model["mappings"], ("atlantafx", "scaladock", "browser"), "mappings")
     exact_keys(model["mappings"]["scaladock"], DOCK_NAMES, "ScalaDock public token mapping")
@@ -317,7 +325,9 @@ def rendered_outputs(source_bytes):
     sha = hashlib.sha256(source_bytes).hexdigest()
     outputs = {}
     browser = [f"/* Generated from {SOURCE}; SHA-256 {sha}. Do not edit. */",
-               ":root {"]
+               ":root {",
+               "  --meridian-weight-normal: 400;",
+               "  --meridian-weight-strong: 700;"]
     for key, value in sorted(model["typography"].items()):
         browser.append(f"  --meridian-font-{key}: {value}px;")
     for key, value in sorted(model["geometry"].items()):

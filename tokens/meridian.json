@@ -67,7 +67,11 @@
     "dark.danger-subtle": "#261618",
     "dark.success-muted": "#2A5440",
     "dark.warning-muted": "#5A4822",
-    "dark.danger-muted": "#5E2E33"
+    "dark.danger-muted": "#5E2E33",
+    "light.neutral": "#665A48",
+    "light.progress": "#096B81",
+    "dark.neutral": "#C1B9AE",
+    "dark.progress": "#79C8DB"
   },
   "roles": {
     "dark": {
@@ -110,7 +114,9 @@
       "status.warning-muted": "dark.warning-muted",
       "status.danger-emphasis": "dark.danger-emphasis",
       "status.danger-subtle": "dark.danger-subtle",
-      "status.danger-muted": "dark.danger-muted"
+      "status.danger-muted": "dark.danger-muted",
+      "status.neutral": "dark.neutral",
+      "status.progress": "dark.progress"
     },
     "light": {
       "surface.page": "light.page",
@@ -152,7 +158,9 @@
       "status.warning-muted": "light.warning-muted",
       "status.danger-emphasis": "light.danger-emphasis",
       "status.danger-subtle": "light.danger-subtle",
-      "status.danger-muted": "light.danger-muted"
+      "status.danger-muted": "light.danger-muted",
+      "status.neutral": "light.neutral",
+      "status.progress": "light.progress"
     }
   },
   "recipes": {
@@ -810,6 +818,106 @@
       "kind": "text",
       "foreground": "text.primary",
       "background": "selection.inactive"
+    },
+    "status.neutral.canvas": {
+      "kind": "text",
+      "foreground": "status.neutral",
+      "background": "surface.canvas"
+    },
+    "status.neutral.shell": {
+      "kind": "text",
+      "foreground": "status.neutral",
+      "background": "surface.shell"
+    },
+    "status.neutral.raised": {
+      "kind": "text",
+      "foreground": "status.neutral",
+      "background": "surface.raised"
+    },
+    "status.neutral.hover": {
+      "kind": "text",
+      "foreground": "status.neutral",
+      "background": "state.hover"
+    },
+    "status.neutral.pressed": {
+      "kind": "text",
+      "foreground": "status.neutral",
+      "background": "state.pressed"
+    },
+    "status.neutral.selected": {
+      "kind": "text",
+      "foreground": "status.neutral",
+      "background": "selection.active"
+    },
+    "status.neutral.inactive-selected": {
+      "kind": "text",
+      "foreground": "status.neutral",
+      "background": "selection.inactive"
+    },
+    "status.neutral.dot.canvas": {
+      "kind": "essential",
+      "foreground": "status.neutral",
+      "background": "surface.canvas"
+    },
+    "status.neutral.dot.shell": {
+      "kind": "essential",
+      "foreground": "status.neutral",
+      "background": "surface.shell"
+    },
+    "status.neutral.dot.raised": {
+      "kind": "essential",
+      "foreground": "status.neutral",
+      "background": "surface.raised"
+    },
+    "status.progress.canvas": {
+      "kind": "text",
+      "foreground": "status.progress",
+      "background": "surface.canvas"
+    },
+    "status.progress.shell": {
+      "kind": "text",
+      "foreground": "status.progress",
+      "background": "surface.shell"
+    },
+    "status.progress.raised": {
+      "kind": "text",
+      "foreground": "status.progress",
+      "background": "surface.raised"
+    },
+    "status.progress.hover": {
+      "kind": "text",
+      "foreground": "status.progress",
+      "background": "state.hover"
+    },
+    "status.progress.pressed": {
+      "kind": "text",
+      "foreground": "status.progress",
+      "background": "state.pressed"
+    },
+    "status.progress.selected": {
+      "kind": "text",
+      "foreground": "status.progress",
+      "background": "selection.active"
+    },
+    "status.progress.inactive-selected": {
+      "kind": "text",
+      "foreground": "status.progress",
+      "background": "selection.inactive"
+    },
+    "status.progress.dot.canvas": {
+      "kind": "essential",
+      "foreground": "status.progress",
+      "background": "surface.canvas"
+    },
+    "status.progress.dot.shell": {
+      "kind": "essential",
+      "foreground": "status.progress",
+      "background": "surface.shell"
+    },
+    "status.progress.dot.raised": {
+      "kind": "essential",
+      "foreground": "status.progress",
+      "background": "surface.raised"
     }
   },
   "mappings": {
@@ -932,7 +1040,9 @@
       "--selection": "selection.active",
       "--success": "status.success",
       "--warning": "status.warning",
-      "--danger": "status.danger"
+      "--danger": "status.danger",
+      "--neutral": "status.neutral",
+      "--progress": "status.progress"
     }
   },
   "typography": {

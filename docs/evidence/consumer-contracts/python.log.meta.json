@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "started_utc": "2026-10-15T17:38:49.624533+00:00",
+  "finished_utc": "2026-10-15T17:38:54.316133+00:00",
+  "duration_seconds": 4.69141,
+  "command": [
+    "python3",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tools/tests",
+    "-v"
+  ],
+  "cwd": "/Users/bbuchsbaum/code/scala/meridianfx",
+  "log": "/Users/bbuchsbaum/code/scala/meridianfx/docs/evidence/consumer-contracts/python.log",
+  "exit_code": 0,
+  "child_returncode": 0,
+  "reason": "exited",
+  "detail": null,
+  "timeout_seconds": 240.0,
+  "log_bytes": 3603
+}

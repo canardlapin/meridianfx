@@ -1,6 +1,6 @@
 package meridian.theme.metrics;
 
-/** Generated from tokens/meridian.json; source SHA-256 1c14eaf53bc0801d37c190a16a1abf3a91820502ee58a238028a2f8a20d81d25. Logical pixels, never hard ceilings. */
+/** Generated from tokens/meridian.json; source SHA-256 294a4a9a4e589f4ab03db82f6d6a3a588c6f83dbfa9eddd850afdbcd83b8e942. Logical pixels, never hard ceilings. */
 public final class MeridianMetrics {
     private MeridianMetrics() {}
     public enum DensityMode { COMFORTABLE, COMPACT }

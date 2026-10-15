@@ -168,7 +168,7 @@ public final class MeridianAppearance implements AutoCloseable {
         return ".root { -fx-font-size: " + text.general() + "px; }\n"
                 + ".meridian-title { -fx-font-size: " + text.title() + "px; }\n"
                 + ".meridian-section { -fx-font-size: " + text.section() + "px; }\n"
-                + ".meridian-metadata { -fx-font-size: " + text.metadata() + "px; }\n"
+                + ".meridian-metadata, .meridian-status { -fx-font-size: " + text.metadata() + "px; }\n"
                 + ".button, .toggle-button, .text-field, .password-field, .menu-button, .combo-box-base"
                 + " { -fx-min-height: " + density.controlMinHeight() + "px; }\n"
                 // .small is one 4px step below the density floor (28 comfortable / 24 compact), still >= WCAG 2.5.8's 24px.
@@ -177,6 +177,7 @@ public final class MeridianAppearance implements AutoCloseable {
                 + ".table-view { -fx-font-size: " + text.table() + "px; }\n"
                 + ".table-view > .column-header-background .column-header { -fx-size: " + density.headerMinHeight()
                 + "px; -fx-min-height: " + density.headerMinHeight() + "px; -fx-pref-height: " + density.headerMinHeight() + "px; }\n"
+                + ".table-view > .column-header-background .column-header { -fx-font-size: " + text.metadata() + "px; }\n"
                 + ".table-view .table-row-cell, .table-view .table-row-cell > .table-cell"
                 + " { -fx-min-height: " + density.tableRowMinHeight() + "px; }\n"
                 + ".button, .text-input { transition-duration: " + hover + "ms; }\n";

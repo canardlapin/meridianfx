@@ -76,7 +76,7 @@
   -fx-font-size: math.div(m.$table, m.$general) * 1em;
   -fx-border-color: -meridian-border-decorative;
 }
-.table-view > .column-header-background .column-header { -fx-size: math.div(m.$header, m.$table) * 1em; -fx-min-height: math.div(m.$header, m.$table) * 1em; -fx-pref-height: math.div(m.$header, m.$table) * 1em; }
+.table-view > .column-header-background .column-header { -fx-size: m.$header; -fx-min-height: m.$header; -fx-pref-height: m.$header; }
 .table-view .table-row-cell { -fx-cell-size: -1; -fx-min-height: math.div(m.$row, m.$table) * 1em; }
 .table-view .table-row-cell > .table-cell {
   -fx-min-height: math.div(m.$row, m.$table) * 1em;
@@ -267,7 +267,6 @@
 // Data: muted header, no vertical rules, left selection marker shared by table, tree and list.
 .table-view { -color-header-bg: -meridian-surface-canvas; -color-header-fg: -meridian-text-secondary; }
 .table-view > .column-header-background .column-header {
-  -fx-font-weight: bold;
   -fx-border-width: 0 0 1px 0;
 }
 .table-view > .column-header-background .column-header .arrow {
@@ -614,7 +613,7 @@
 // Table header: regular weight, muted, metadata size; sort glyph gets its own gutter in the cell.
 .table-view > .column-header-background .column-header {
   -fx-font-weight: normal;
-  -fx-font-size: math.div(m.$metadata, m.$table) * 1em;
+  -fx-font-size: m.$metadata;
   -fx-padding: 0 12px 0 0;
 }
 
@@ -706,4 +705,22 @@
 // Opt-in numeric columns: add "numeric" to a TableColumn's style class. Header and cells right-align, which
 // also places JavaFX's sort glyph (laid out in code at the header's trailing edge) next to the label.
 .table-view .column-header.numeric > .label, .table-view .table-cell.numeric { -fx-alignment: CENTER_RIGHT; }
+
+// Generic dot+label status; caller text carries meaning, never color alone.
+// Semantic roles are independent of selection and focus colors.
+.meridian-status {
+  -fx-font-size: m.$metadata;
+  -fx-font-weight: normal;
+  -fx-graphic-text-gap: 0.5em;
+  -fx-padding: 0;
+}
+.meridian-status > .status-dot {
+  -fx-min-width: 0.5em; -fx-pref-width: 0.5em; -fx-max-width: 0.5em;
+  -fx-min-height: 0.5em; -fx-pref-height: 0.5em; -fx-max-height: 0.5em;
+  -fx-background-radius: 99px;
+}
+@each $status in neutral, progress, success, warning, danger {
+  .meridian-status.status-#{$status} { -fx-text-fill: -meridian-status-#{$status}; }
+  .meridian-status.status-#{$status} > .status-dot { -fx-background-color: -meridian-status-#{$status}; }
+}
 /*! @module:meridian:end */

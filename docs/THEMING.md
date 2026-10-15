@@ -115,6 +115,86 @@ upstream semantic names are retained. Invalid fields support `:invalid` and the
 AtlantaFX `:danger` convention; focused invalid controls keep the invalid boundary
 and a separate visible focus ring. Disabled data remains readable in tables.
 
+## Native typography and direct installation
+
+The qualified macOS JavaFX 27 `System` profile has two upright weights:
+**400 / System Regular** and **700 / System Bold**. Meridian authors normal and bold;
+the inherited AtlantaFX `lighter` and `bolder` helpers resolve to Regular and Bold
+from the default regular parent. Relative weights still depend on the parent;
+they do not promise an intermediate face. The native consumer probe extracts every
+emitted weight keyword from each compiled sheet and rejects unknown keywords or
+unexpected face names. It also checks actual title/header/status faces and sizes.
+
+| Historical browser weight | Native authoring choice | Effect |
+|---|---|---|
+| 400 | normal / 400 | Regular |
+| 500 | normal / 400 | Medium emphasis is lost; use spacing/size where needed |
+| 600 | bold / 700 | Deliberately stronger than browser Semibold |
+| 700 | bold / 700 | Bold |
+
+This mapping is a design translation, **not JavaFX's automatic weight resolution**:
+requesting 500 or 600 directly on the tested macOS System family yields Regular.
+The original [design study](../design-study/index.html) is a hash-locked historical
+browser reference. Its 500/600 values are not a native font contract, and its PNGs
+do not establish native text fidelity. Generated browser tokens expose
+`--meridian-weight-normal: 400` and `--meridian-weight-strong: 700` for current
+consumer authoring; the historical page does not import those tokens.
+
+Only macOS has a qualified native face profile here. Font availability and resolved
+faces on Linux/Windows remain unqualified: run/adapt the native probe and record an
+explicit face profile before claiming support. Bundling a font or assuming a
+variable font is supported is outside this fix. Text scale enlarges size, not weight.
+
+The compiled `MeridianTheme` sheets also support direct installation at their
+authored density and text scale 1:
+
+```java
+Application.setUserAgentStylesheet(
+    MeridianTheme.of(false, DensityMode.COMPACT).getUserAgentStylesheet());
+```
+
+Standalone table cells/root/header text are 13/14/12 logical px; headers are Regular.
+Use `MeridianAppearance.install(...)` and register scenes for live appearance,
+density, text scale, motion and native scene preferences. Direct installation
+does not provide those lifecycle services. Both installation paths are covered
+in all four variants; registered 150% text scale also checks 19.5/21/18 px.
+
+## Status indicators
+
+`meridian-workbench` includes a noninteractive dot-plus-label composition:
+
+```java
+import meridian.workbench.StatusIndicator;
+import meridian.workbench.StatusIndicator.Status;
+
+var status = new StatusIndicator("Stale", Status.NEUTRAL);
+status.setStatus(Status.PROGRESS);
+status.setText("Running");
+// Inherited textProperty() supports localized/bound labels.
+```
+
+The five generic roles are `NEUTRAL`, `PROGRESS`, `SUCCESS`, `WARNING` and `DANGER`.
+Applications choose their domain mapping: stale/detached may use neutral, running
+may use progress. Progress is a static state indicator, not an animated spinner
+or numeric completion control. Neutral is meaningful information, not a disabled
+control. Applications own announcements and update cadence; no live-region or
+screen-reader qualification is implied.
+
+The style API is `meridian-status` plus exactly one `status-neutral`,
+`status-progress`, `status-success`, `status-warning` or `status-danger` class.
+The owned graphic uses `status-dot`. Public `-meridian-status-neutral` and
+`-meridian-status-progress` colors are independent of selection/focus roles.
+The visible text is also the accessible text, so meaning never depends on color
+alone. The dot is decorative and is not a separate focus target. Prefer meaningful
+nonempty labels; the inherited Label API keeps normal host wrapping/text behavior.
+
+Both schemes check label contrast >=4.5:1 and dot contrast >=3:1 on canvas, shell
+and raised surfaces. New roles also check selected/inactive-selected/hover/pressed
+contexts. This does not guarantee contrast on arbitrary host backgrounds: keep
+author color overrides and custom surfaces within their own checked contracts.
+The fixture checks computed paints, semantic/text changes, foreign style classes,
+wrapping and registered text enlargement; assistive technology remains a separate gate.
+
 ## Reproducible theme build
 
 Ordinary sbt builds use checked-in compiled CSS and verify its input/output hashes

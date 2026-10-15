@@ -1,5 +1,7 @@
-/* Generated from tokens/meridian.json; SHA-256 1c14eaf53bc0801d37c190a16a1abf3a91820502ee58a238028a2f8a20d81d25. Do not edit. */
+/* Generated from tokens/meridian.json; SHA-256 294a4a9a4e589f4ab03db82f6d6a3a588c6f83dbfa9eddd850afdbcd83b8e942. Do not edit. */
 :root {
+  --meridian-weight-normal: 400;
+  --meridian-weight-strong: 700;
   --meridian-font-general: 14px;
   --meridian-font-metadata: 12px;
   --meridian-font-section: 16px;
@@ -39,6 +41,8 @@
   --meridian-status-danger-emphasis: #B8323C;
   --meridian-status-danger-muted: #5E2E33;
   --meridian-status-danger-subtle: #261618;
+  --meridian-status-neutral: #C1B9AE;
+  --meridian-status-progress: #79C8DB;
   --meridian-status-success: #87C9AB;
   --meridian-status-success-emphasis: #1F7A4D;
   --meridian-status-success-muted: #2A5440;
@@ -66,8 +70,10 @@
   --danger: var(--meridian-status-danger);
   --hover: var(--meridian-state-hover);
   --muted: var(--meridian-text-secondary);
+  --neutral: var(--meridian-status-neutral);
   --on-accent: var(--meridian-text-on-action);
   --page: var(--meridian-surface-page);
+  --progress: var(--meridian-status-progress);
   --raised: var(--meridian-surface-raised);
   --selection: var(--meridian-selection-active);
   --shell: var(--meridian-surface-shell);
@@ -100,6 +106,8 @@
   --meridian-status-danger-emphasis: #B8323C;
   --meridian-status-danger-muted: #F0C3C6;
   --meridian-status-danger-subtle: #FDF1F1;
+  --meridian-status-neutral: #665A48;
+  --meridian-status-progress: #096B81;
   --meridian-status-success: #286C51;
   --meridian-status-success-emphasis: #1F7A4D;
   --meridian-status-success-muted: #B9DFCB;
@@ -127,8 +135,10 @@
   --danger: var(--meridian-status-danger);
   --hover: var(--meridian-state-hover);
   --muted: var(--meridian-text-secondary);
+  --neutral: var(--meridian-status-neutral);
   --on-accent: var(--meridian-text-on-action);
   --page: var(--meridian-surface-page);
+  --progress: var(--meridian-status-progress);
   --raised: var(--meridian-surface-raised);
   --selection: var(--meridian-selection-active);
   --shell: var(--meridian-surface-shell);
