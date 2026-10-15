@@ -1,0 +1,709 @@
+// SPDX-License-Identifier: MIT
+// Meridian's initial control recipes. Upstream sources are never edited.
+@use "sass:math";
+@use "settings/config" as cfg;
+@use "metrics" as m;
+
+/*! @module:meridian:start */
+.root { -fx-font-family: "System"; -fx-font-size: m.$general; }
+.meridian-shell { -fx-background-color: -meridian-surface-shell; }
+.meridian-raised { -fx-background-color: -meridian-surface-raised; }
+.meridian-title { -fx-font-size: math.div(m.$title, m.$general) * 1em; -fx-font-weight: bold; }
+.meridian-section { -fx-font-size: math.div(m.$section, m.$general) * 1em; -fx-font-weight: bold; }
+.meridian-metadata { -fx-font-size: math.div(m.$metadata, m.$general) * 1em; }
+.meridian-secondary { -fx-text-fill: -meridian-text-secondary; }
+
+// One control height for every single-line control; padding lives on leaf controls only so
+// compound controls (combo, menu, spinner, date picker) do not stack insets.
+.button, .toggle-button, .text-field, .password-field, .menu-button, .split-menu-button,
+.combo-box-base, .choice-box, .spinner {
+  -fx-min-height: math.div(m.$control, m.$general) * 1em;
+  -fx-pref-height: math.div(m.$control, m.$general) * 1em;
+}
+.button, .toggle-button, .text-field, .password-field { -fx-padding: m.$padding-y m.$padding-x; }
+.choice-box { -fx-padding: 0 m.$padding-x 0 m.$padding-x; }
+.button, .text-input {
+  transition-property: -fx-background-color;
+  transition-duration: m.$hover-ms;
+  transition-timing-function: ease-out;
+}
+.button:hover { -fx-opacity: 1; }
+.button.accent:pressed, .button.accent:armed, .button:default:armed, .button:default:pressed {
+  -fx-background-color: -meridian-action-pressed, -meridian-action-pressed;
+  -fx-text-fill: -meridian-text-on-action;
+}
+.button:focus-visible, .button:focus-visible:armed, .button:focus-visible:pressed {
+  -fx-border-color: -meridian-focus-ring;
+  -fx-border-width: 2px;
+  -fx-border-insets: -3px;
+  -fx-border-radius: cfg.$border-radius + 2px;
+}
+.button:disabled, .button.accent:disabled, .button:default:disabled {
+  -fx-opacity: 1;
+  -fx-text-fill: -meridian-disabled-foreground;
+  -fx-background-color: -meridian-border-decorative, -meridian-surface-shell;
+  -fx-effect: none;
+}
+.text-input:hover { -fx-background-color: -meridian-border-control, -meridian-state-hover; }
+.text-input:pressed { -fx-background-color: -meridian-border-control, -meridian-state-pressed; }
+.text-input:focused {
+  -fx-background-color: -meridian-focus-ring, -meridian-surface-canvas;
+  -fx-prompt-text-fill: -meridian-text-placeholder;
+}
+.text-input:readonly, .text-input:readonly:focused {
+  -fx-background-color: -meridian-border-control, -meridian-surface-shell;
+}
+.text-input:invalid, .text-input:danger {
+  -fx-background-color: -meridian-border-invalid, -meridian-surface-canvas;
+  -fx-text-fill: -meridian-text-primary;
+  -fx-prompt-text-fill: -meridian-text-placeholder;
+}
+.text-input:focus-visible, .text-input:invalid:focused, .text-input:danger:focused {
+  -fx-border-color: -meridian-focus-ring;
+  -fx-border-width: 2px;
+  -fx-border-insets: -3px;
+  -fx-border-radius: cfg.$border-radius + 2px;
+}
+.text-input:disabled {
+  -fx-opacity: 1;
+  -fx-text-fill: -meridian-disabled-foreground;
+  -fx-prompt-text-fill: -meridian-disabled-foreground;
+  -fx-background-color: -meridian-border-decorative, -meridian-surface-shell;
+}
+.label:disabled { -fx-opacity: 1; -fx-text-fill: -meridian-disabled-foreground; }
+
+.table-view {
+  -fx-font-size: math.div(m.$table, m.$general) * 1em;
+  -fx-border-color: -meridian-border-decorative;
+}
+.table-view > .column-header-background .column-header { -fx-size: math.div(m.$header, m.$table) * 1em; -fx-min-height: math.div(m.$header, m.$table) * 1em; -fx-pref-height: math.div(m.$header, m.$table) * 1em; }
+.table-view .table-row-cell { -fx-cell-size: -1; -fx-min-height: math.div(m.$row, m.$table) * 1em; }
+.table-view .table-row-cell > .table-cell {
+  -fx-min-height: math.div(m.$row, m.$table) * 1em;
+  -fx-alignment: CENTER_LEFT;
+}
+.table-view .table-row-cell:filled:hover { -fx-background-color: -meridian-border-decorative, -meridian-state-hover; }
+.table-view .table-row-cell:filled:selected, .table-view .table-row-cell:filled:selected:hover {
+  -fx-background-color: -meridian-border-decorative, -meridian-selection-inactive;
+}
+.table-view:focused .table-row-cell:filled:selected, .table-view:focused .table-row-cell:filled:selected:hover {
+  -fx-background-color: -meridian-border-decorative, -meridian-selection-active;
+}
+.table-view:focus-visible { -fx-border-color: -meridian-focus-ring; -fx-border-width: 2px; }
+.table-view > .virtual-flow:disabled { -fx-opacity: 1; }
+
+.context-menu {
+  -fx-background-color: -meridian-surface-raised;
+  -fx-background-insets: 0;
+  -fx-background-radius: m.$popup-radius;
+  -fx-effect: dropshadow(gaussian, -meridian-overlay-shadow, 10, 0.10, 0, 3);
+}
+.menu-item { -fx-background-color: -meridian-surface-raised; -fx-border-color: transparent; -fx-border-width: 1px; }
+.menu-item:hover, .menu-item:focused { -fx-background-color: -meridian-state-hover; }
+.menu-item:pressed { -fx-background-color: -meridian-state-pressed; }
+.menu-item:disabled { -fx-opacity: 1; }
+.menu-item:disabled > .label { -fx-text-fill: -meridian-disabled-foreground; }
+.dialog-pane { -fx-background-color: -meridian-surface-canvas; -fx-background-radius: m.$dialog-radius; }
+.dialog-pane > .header-panel { -fx-background-color: -meridian-surface-shell; -fx-background-insets: 0; }
+.dialog-pane > .header-panel > .label { -fx-font-size: math.div(m.$section, m.$general) * 1em; }
+
+// ---- v1: chrome, compound controls, popups, selection, data, messages, dialog ----
+
+// Mouse focus never paints the focus colour; only :focus-visible draws the ring.
+.button { -color-button-border-focused: -color-button-border; -color-button-bg-focused: -color-button-bg; }
+.button.flat { -color-button-border-focused: transparent; }
+
+// Compound controls: inner editors are borderless; the outer control owns border and focus.
+.combo-box-base > .text-field, .combo-box-base > .text-field:focused, .combo-box-base > .text-field:hover,
+.combo-box-base > .text-field:readonly, .combo-box-base > .text-field:readonly:focused,
+.spinner > .text-field, .spinner > .text-field:focused, .spinner > .text-field:hover,
+.spinner > .text-field:readonly, .spinner > .text-field:readonly:focused {
+  -fx-background-color: transparent;
+  -fx-background-insets: 0;
+  -fx-border-color: transparent;
+  -fx-border-width: 0;
+  -fx-padding: 0 m.$padding-x 0 m.$padding-x;
+}
+.combo-box-base, .choice-box {
+  -fx-background-color: -meridian-border-control, -meridian-surface-canvas;
+  -fx-background-insets: 0, 1px;
+}
+.combo-box-base:hover, .choice-box:hover { -fx-background-color: -meridian-border-control, -meridian-state-hover; }
+.combo-box-base:focused, .choice-box:focused, .spinner:focused {
+  -fx-background-color: -meridian-focus-ring, -meridian-surface-canvas;
+}
+.combo-box-base:focus-visible, .choice-box:focus-visible, .spinner:focus-visible,
+.check-box:focus-visible > .box, .radio-button:focus-visible > .radio, .slider:focus-visible > .thumb,
+.toggle-button:focus-visible, .hyperlink:focus-visible {
+  -fx-border-color: -meridian-focus-ring;
+  -fx-border-width: 2px;
+  -fx-border-insets: -3px;
+  -fx-border-radius: cfg.$border-radius + 2px;
+}
+.combo-box > .list-cell { -fx-padding: 0 m.$padding-x 0 m.$padding-x; }
+.spinner { -fx-background-color: -meridian-surface-canvas; -fx-border-color: -meridian-border-control; }
+.spinner > .increment-arrow-button, .spinner > .decrement-arrow-button { -fx-background-color: transparent; }
+
+// Split menu button: a full-height hairline divider instead of a text-coloured caret.
+.split-menu-button > .arrow-button {
+  -fx-border-color: -meridian-border-decorative;
+  -fx-border-width: 0 0 0 1px;
+  -fx-border-insets: 1px 0 1px 0;
+  -fx-padding: 0 8px 0 8px;
+}
+.split-menu-button > .label, .menu-button > .label { -fx-padding: 0 m.$padding-x 0 m.$padding-x; }
+.menu-button > .arrow-button { -fx-padding: 0 m.$padding-x 0 0; }
+
+// One chevron for every disclosure arrow.
+.combo-box-base > .arrow-button > .arrow, .choice-box > .open-button > .arrow,
+.menu-button > .arrow-button > .arrow, .split-menu-button > .arrow-button > .arrow {
+  -fx-shape: "M0 0 L4 4 L8 0 L7 -1 L4 2 L1 -1 Z";
+  -fx-scale-shape: false;
+  -fx-background-color: -meridian-text-secondary;
+  -fx-padding: 3px 4px 3px 4px;
+}
+
+// Toolbar: quiet chrome, ghost buttons, accent buttons keep their fill.
+.tool-bar {
+  -fx-background-color: -meridian-border-decorative, -meridian-surface-shell;
+  -fx-background-insets: 0, 0 0 1px 0;
+  -fx-padding: 6px 12px 6px 12px;
+  -fx-spacing: 6px;
+}
+.tool-bar > .container > .button.accent, .tool-bar > .container > .button:default {
+  -color-button-bg: -meridian-action-default;
+  -color-button-border: -meridian-action-default;
+  -color-button-bg-hover: -meridian-action-hover;
+  -color-button-border-hover: -meridian-action-hover;
+  -color-button-bg-focused: -meridian-action-default;
+  -color-button-border-focused: -meridian-action-default;
+  -color-button-bg-pressed: -meridian-action-pressed;
+  -color-button-border-pressed: -meridian-action-pressed;
+  -fx-background-color: -color-button-border, -color-button-bg;
+  -fx-background-insets: 0, 1px;
+  -fx-text-fill: -meridian-text-on-action;
+}
+.menu-bar {
+  -fx-background-color: -meridian-surface-shell;
+  -fx-padding: 2px 8px 2px 8px;
+}
+
+// Tabs: hairline baseline.
+.tab-pane > .tab-header-area > .tab-header-background {
+  -fx-background-color: -meridian-border-decorative, -meridian-surface-canvas;
+  -fx-background-insets: 0, 0 0 1px 0;
+}
+
+// Toggle groups select with a neutral fill (shadcn ToggleGroup), not a solid accent block.
+.toggle-button {
+  -color-button-bg-selected: -meridian-selection-inactive;
+  -color-button-fg-selected: -meridian-text-primary;
+}
+.toggle-button:selected, .toggle-button:selected:focused {
+  -fx-background-color: -meridian-border-control, -color-button-bg-selected;
+  -fx-background-insets: 0, 1px;
+}
+
+// Popups share one chrome: hairline border, 8px radius, 4px inset, soft shadow, 4px item radius.
+.context-menu {
+  -fx-background-color: -meridian-border-decorative, -meridian-surface-raised;
+  -fx-background-insets: 0, 1px;
+  -fx-background-radius: m.$popup-radius, m.$popup-radius - 1px;
+  -fx-padding: 4px;
+  -fx-effect: dropshadow(gaussian, -meridian-overlay-shadow, 16, 0, 0, 4);
+}
+.menu-item {
+  -fx-background-color: transparent;
+  -fx-background-radius: 4px;
+  -fx-border-width: 0;
+  -fx-padding: 6px 10px 6px 10px;
+}
+.menu-item:hover, .menu-item:focused { -fx-background-color: -meridian-state-hover; }
+.menu-item.danger > .label { -fx-text-fill: -meridian-status-danger; }
+.combo-box-popup > .list-view {
+  -fx-background-color: -meridian-border-decorative, -meridian-surface-raised;
+  -fx-background-insets: 0, 1px;
+  -fx-background-radius: m.$popup-radius, m.$popup-radius - 1px;
+  -fx-border-radius: m.$popup-radius;
+  -fx-padding: 4px;
+  -fx-effect: dropshadow(gaussian, -meridian-overlay-shadow, 16, 0, 0, 4);
+}
+.combo-box-popup > .list-view > .virtual-flow > .clipped-container > .sheet > .list-cell {
+  -fx-background-color: transparent;
+  -fx-background-radius: 4px;
+}
+.combo-box-popup > .list-view > .virtual-flow > .clipped-container > .sheet > .list-cell:filled:hover {
+  -fx-background-color: -meridian-state-hover;
+}
+.combo-box-popup > .list-view > .virtual-flow > .clipped-container > .sheet > .list-cell:filled:selected,
+.combo-box-popup > .list-view > .virtual-flow > .clipped-container > .sheet > .list-cell:filled:selected:hover {
+  -fx-background-color: -meridian-selection-active;
+  -fx-text-fill: -meridian-text-primary;
+}
+.date-picker-popup {
+  -color-date-bg: -meridian-surface-raised;
+  -color-date-border: -meridian-border-decorative;
+  -color-date-month-year-bg: -meridian-surface-raised;
+  -color-date-day-bg: -meridian-surface-raised;
+  -color-date-day-bg-hover: -meridian-state-hover;
+  -fx-background-radius: m.$popup-radius, m.$popup-radius - 1px;
+}
+.combo-box-popup > .date-picker-popup {
+  -fx-background-radius: m.$popup-radius, m.$popup-radius - 1px;
+  -fx-effect: dropshadow(gaussian, -meridian-overlay-shadow, 16, 0, 0, 4);
+}
+.date-picker-popup > .calendar-grid > .day-cell { -fx-background-radius: 6px; -fx-background-insets: 1px; }
+.tooltip {
+  -fx-background-color: -meridian-text-primary;
+  -fx-background-insets: 0;
+  -fx-background-radius: 6px;
+  -fx-text-fill: -meridian-surface-canvas;
+  -fx-font-size: m.$metadata;
+  -fx-padding: 5px 8px 5px 8px;
+  -fx-opacity: 1;
+  -fx-effect: dropshadow(gaussian, -meridian-overlay-shadow, 8, 0, 0, 2);
+}
+
+// Data: muted header, no vertical rules, left selection marker shared by table, tree and list.
+.table-view { -color-header-bg: -meridian-surface-canvas; -color-header-fg: -meridian-text-secondary; }
+.table-view > .column-header-background .column-header {
+  -fx-font-weight: bold;
+  -fx-border-width: 0 0 1px 0;
+}
+.table-view > .column-header-background .column-header .arrow {
+  -fx-background-color: -meridian-text-secondary;
+  -fx-shape: "M0 0 L4 4 L8 0 L7 -1 L4 2 L1 -1 Z";
+}
+.list-view > .virtual-flow > .clipped-container > .sheet > .list-cell:filled:hover,
+.tree-view > .virtual-flow > .clipped-container > .sheet > .tree-cell:filled:hover {
+  -fx-background-color: -meridian-state-hover;
+}
+// Selection marker is a 2px background layer (not a border) so cell content never shifts.
+.list-view > .virtual-flow > .clipped-container > .sheet > .list-cell:filled:selected,
+.tree-view > .virtual-flow > .clipped-container > .sheet > .tree-cell:filled:selected {
+  -fx-background-color: -meridian-selection-inactive-marker, -meridian-selection-inactive;
+  -fx-background-insets: 0, 0 0 0 2px;
+}
+.list-view:focused > .virtual-flow > .clipped-container > .sheet > .list-cell:filled:selected,
+.tree-view:focused > .virtual-flow > .clipped-container > .sheet > .tree-cell:filled:selected {
+  -fx-background-color: -meridian-selection-marker, -meridian-selection-active;
+}
+.table-view > .virtual-flow > .clipped-container > .sheet > .table-row-cell:filled:selected, .table-view > .virtual-flow > .clipped-container > .sheet > .table-row-cell:filled:selected:hover {
+  -fx-background-color: -meridian-border-decorative, -meridian-selection-inactive-marker, -meridian-selection-inactive;
+  -fx-background-insets: 0, 0 0 1px 0, 0 0 1px 2px;
+  -fx-border-width: 0;
+}
+.table-view:focused > .virtual-flow > .clipped-container > .sheet > .table-row-cell:filled:selected, .table-view:focused > .virtual-flow > .clipped-container > .sheet > .table-row-cell:filled:selected:hover {
+  -fx-background-color: -meridian-border-decorative, -meridian-selection-marker, -meridian-selection-active;
+}
+
+// Scrollbars: thin rounded thumb on a transparent track.
+.scroll-bar { -fx-background-color: transparent; -fx-opacity: 1; }
+.scroll-bar > .thumb {
+  -fx-background-color: -meridian-border-control;
+  -fx-background-insets: 2px;
+  -fx-background-radius: 4px;
+  -fx-opacity: 0.55;
+}
+.scroll-bar:hover > .thumb, .scroll-bar:pressed > .thumb { -fx-opacity: 0.85; }
+
+// Messages: tinted surface, hairline border, tinted bold title.
+.message.accent { -color-message-border: -meridian-border-decorative; }
+.message.tile-base > .container > .header > .title {
+  -fx-text-fill: -color-message-fg-primary;
+  -fx-font-weight: bold;
+}
+
+// Dialog: no header band; bordered surface; wrapped secondary body.
+.dialog-pane {
+  -fx-background-color: -meridian-border-decorative, -meridian-surface-canvas;
+  -fx-background-insets: 0, 1px;
+  -fx-background-radius: m.$dialog-radius, m.$dialog-radius - 1px;
+}
+.dialog-pane > .header-panel {
+  -fx-background-color: transparent;
+  -fx-padding: 20px 24px 4px 24px;
+}
+.dialog-pane > .header-panel > .label { -fx-font-weight: bold; }
+.dialog-pane > .content.label {
+  -fx-wrap-text: true;
+  -fx-text-fill: -meridian-text-secondary;
+  -fx-padding: 4px 24px 8px 24px;
+}
+.dialog-pane > .button-bar > .container { -fx-padding: 12px 24px 20px 24px; }
+
+// ---- v2: one glyph family, density, neutral states, notification, segmented, sizes ----
+// Chevron family: 10x6 down, 6x10 right; filled-triangle upstream shapes are replaced everywhere.
+.combo-box-base > .arrow-button > .arrow, .choice-box > .open-button > .arrow,
+.menu-button > .arrow-button > .arrow, .split-menu-button > .arrow-button > .arrow,
+.menu-button:openvertically > .arrow-button > .arrow, .split-menu-button:openvertically > .arrow-button > .arrow,
+.spinner > .decrement-arrow-button > .decrement-arrow,
+.table-view > .column-header-background .column-header .arrow {
+  -fx-shape: "M0 0 L5 5 L10 0 L8.8 -1.2 L5 2.6 L1.2 -1.2 Z";
+  -fx-scale-shape: false;
+  -fx-background-color: -meridian-text-secondary;
+  -fx-padding: 3px 5px 3px 5px;
+}
+.spinner > .increment-arrow-button > .increment-arrow {
+  -fx-shape: "M0 5 L5 0 L10 5 L8.8 6.2 L5 2.4 L1.2 6.2 Z";
+  -fx-scale-shape: false;
+  -fx-background-color: -meridian-text-secondary;
+  -fx-padding: 3px 5px 3px 5px;
+}
+.tree-cell > .tree-disclosure-node > .arrow, .tree-table-row-cell > .tree-disclosure-node > .arrow {
+  -fx-shape: "M0 0 L5 5 L0 10 L-1.2 8.8 L2.6 5 L-1.2 1.2 Z";
+  -fx-scale-shape: false;
+  -fx-background-color: -meridian-text-secondary;
+  -fx-padding: 5px 3px 5px 3px;
+}
+.tree-cell:expanded > .tree-disclosure-node > .arrow, .tree-table-row-cell:expanded > .tree-disclosure-node > .arrow,
+.titled-pane > .title > .arrow-button > .arrow {
+  // The TitledPane skin rotates its own arrow (-90 when collapsed), so it takes the down chevron.
+  -fx-shape: "M0 0 L5 5 L10 0 L8.8 -1.2 L5 2.6 L1.2 -1.2 Z";
+  -fx-scale-shape: false;
+  -fx-background-color: -meridian-text-secondary;
+  -fx-padding: 3px 5px 3px 5px;
+}
+.spinner > .increment-arrow-button, .spinner > .decrement-arrow-button,
+.spinner > .increment-arrow-button:hover, .spinner > .decrement-arrow-button:hover {
+  -fx-background-color: transparent;
+  -fx-padding: 0 8px 0 8px;
+}
+
+// Tree and list rows follow density (control height), not a fixed 32px.
+// Tree cells: TreeCellSkin anchors the disclosure node to the top inset, so height comes from
+// symmetric padding around an 18px line rather than a min-height.
+.tree-view > .virtual-flow > .clipped-container > .sheet > .tree-cell {
+  -fx-padding: math.div(m.$control - 18px, 2) m.$padding-x math.div(m.$control - 18px, 2) m.$padding-x;
+}
+.list-view > .virtual-flow > .clipped-container > .sheet > .list-cell {
+  -fx-cell-size: -1;
+  -fx-min-height: math.div(m.$control, m.$general) * 1em;
+  -fx-pref-height: math.div(m.$control, m.$general) * 1em;
+  -fx-padding: 0 m.$padding-x 0 m.$padding-x;
+  -fx-alignment: CENTER_LEFT;
+}
+
+// Tabs: hover is a text change only, never a box.
+.tab-pane > .tab-header-area > .headers-region > .tab:hover {
+  -fx-background-color: transparent, transparent;
+}
+.tab-pane > .tab-header-area > .headers-region > .tab > .tab-container > .tab-label { -fx-text-fill: -meridian-text-secondary; }
+.tab-pane > .tab-header-area > .headers-region > .tab:hover > .tab-container > .tab-label { -fx-text-fill: -meridian-text-primary; }
+
+// Button sizes.
+.button.small, .toggle-button.small, .menu-button.small, .split-menu-button.small { -fx-padding: 2px 8px 2px 8px; }
+.button.large, .toggle-button.large, .menu-button.large, .split-menu-button.large {
+  -fx-min-height: 2.857143em; -fx-pref-height: 2.857143em; -fx-padding: 8px 16px 8px 16px;
+}
+
+// Selected toggles inside pill groups use the group's own border, not an extra control-coloured ring.
+.toggle-button:selected, .toggle-button:selected:focused {
+  -fx-background-color: -color-button-border, -color-button-bg-selected;
+}
+
+// Segmented control: shadcn tabs-list style track with a raised selected segment, control height.
+.segmented-control {
+  -color-segment-bg: -meridian-state-hover;
+  -color-segment-fg: -meridian-text-secondary;
+  -color-segment-border: transparent;
+  -color-segment-fg-hover: -meridian-text-primary;
+  -color-segment-bg-selected: -meridian-surface-raised;
+  -color-segment-fg-selected: -meridian-text-primary;
+  -color-segment-border-selected: -meridian-border-decorative;
+}
+.segmented-control > .root-container > .labels { -fx-padding: 2px; -fx-spacing: 2px; }
+.segmented-control > .root-container > .labels > .toggle-label { -fx-padding: 3px 10px 3px 10px; }
+.segmented-control > .root-container > .background > .indicator {
+  -fx-effect: dropshadow(gaussian, -meridian-overlay-shadow, 3, 0, 0, 1);
+}
+
+// Disabled checkbox/radio: neutral, opaque, like disabled fields (no tinted lavender).
+.check-box:disabled, .check-box:disabled > .box, .radio-button:disabled, .radio-button:disabled > .radio { -fx-opacity: 1; }
+.check-box:disabled { -fx-text-fill: -meridian-disabled-foreground; }
+.radio-button:disabled { -fx-text-fill: -meridian-disabled-foreground; }
+.check-box:disabled > .box, .check-box:disabled:selected > .box, .radio-button:disabled > .radio, .radio-button:disabled:selected > .radio {
+  -fx-background-color: -meridian-border-decorative, -meridian-surface-shell;
+}
+.check-box:disabled > .box > .mark, .radio-button:disabled > .radio > .dot { -fx-background-color: -meridian-disabled-foreground; }
+
+// Notification: a raised popover surface, not a shell-filled input.
+.notification {
+  -color-notify-bg: -meridian-surface-raised;
+  -color-notify-border: -meridian-border-decorative;
+}
+.notification > .container {
+  -fx-background-radius: m.$popup-radius, m.$popup-radius - 1px;
+  -fx-effect: dropshadow(gaussian, -meridian-overlay-shadow, 16, 0, 0, 4);
+}
+
+// Progress: visible track on any surface; slim bar.
+.progress-bar { -color-progress-bar-track: -meridian-border-decorative; }
+.progress-bar > .bar { -fx-padding: 0.25em; }
+
+// Menu accelerators are secondary text.
+.menu-item > .accelerator-text { -fx-text-fill: -meridian-text-secondary; }
+
+// Dialog body needs a definite width to wrap reliably (embedded or shown).
+.dialog-pane > .content.label { -fx-pref-width: 372px; }
+
+// Menu bar sits on the shell, where neutral hover is too faint; use the selection step.
+.menu-bar > .container > .menu-button:hover, .menu-bar > .container > .menu-button:showing,
+.menu-bar > .container > .menu-button:focused {
+  -fx-background-color: -meridian-selection-inactive;
+  -fx-background-radius: 4px;
+}
+
+// Selected toggles: accent tint + accent bold text so selection is not carried by a 1.2:1 fill alone.
+.toggle-button:selected, .toggle-button:selected:focused,
+.toggle-button:selected.left-pill:focused, .toggle-button:selected.center-pill:focused, .toggle-button:selected.right-pill:focused {
+  -fx-background-color: -color-button-border, -meridian-selection-active;
+  -fx-text-fill: -meridian-text-accent;
+  -fx-font-weight: bold;
+}
+
+// Spinner: boundary drawn as background layers so focus can recolour it; opaque disabled.
+.spinner {
+  -fx-background-color: -meridian-border-control, -meridian-surface-canvas;
+  -fx-background-insets: 0, 1px;
+  -fx-background-radius: cfg.$border-radius, cfg.$border-radius - 1px;
+  -fx-border-color: transparent;
+  -fx-border-width: 0;
+}
+.spinner:focused, .spinner:contains-focus, .spinner:focused:focused, .spinner:contains-focus:focused {
+  -fx-background-color: -meridian-focus-ring, -meridian-surface-canvas;
+  -fx-border-color: transparent;
+}
+.spinner:disabled { -fx-opacity: 1; -fx-background-color: -meridian-border-decorative, -meridian-surface-shell; }
+
+// Accordion: one flat stack with hairlines; no rounded content under square titles.
+.accordion > .titled-pane > .title {
+  -fx-background-color: -meridian-border-decorative, -meridian-surface-canvas;
+  -fx-background-insets: 0, 1px;
+  -fx-background-radius: 0;
+}
+.accordion > .titled-pane > .content {
+  -fx-border-color: -meridian-border-decorative;
+  -fx-border-width: 0 1px 1px 1px;
+  -fx-border-radius: 0;
+  -fx-background-radius: 0;
+}
+
+// Tree disclosure glyphs share a 10x10 box so expanded and collapsed labels align.
+.tree-cell > .tree-disclosure-node > .arrow, .tree-cell:expanded > .tree-disclosure-node > .arrow,
+.tree-table-row-cell > .tree-disclosure-node > .arrow, .tree-table-row-cell:expanded > .tree-disclosure-node > .arrow {
+  -fx-padding: 5px;
+}
+
+// Popups sit on surface.raised, where state.hover is ~1.1:1; item hover/keyboard focus use the
+// stronger selection.inactive step (same as the menu bar) so arrowing through a menu stays visible.
+.menu-item:hover, .menu-item:focused { -fx-background-color: -meridian-selection-inactive; }
+.combo-box-popup > .list-view > .virtual-flow > .clipped-container > .sheet > .list-cell:filled:hover {
+  -fx-background-color: -meridian-selection-inactive;
+}
+
+// ---- v3 ----
+// Switch: opaque thumb (upstream 0.8 opacity drops the boundary below 3:1); off thumb is the canvas
+// colour, never a light grey disc in dark.
+.toggle-switch > .thumb {
+  -fx-background-color: -meridian-border-control, -meridian-surface-canvas;
+  -fx-background-insets: 0, 1px;
+  -fx-opacity: 1;
+}
+.toggle-switch > .thumb-area { -fx-background-color: -meridian-border-control, -meridian-state-hover; }
+.toggle-switch:selected > .thumb { -fx-background-color: -meridian-action-default, -meridian-text-on-action; -fx-background-insets: 0, 2px; }
+.toggle-switch:selected > .thumb-area { -fx-background-color: -meridian-action-default, -meridian-action-default; }
+
+// Segmented control matches the pill toggle group: control border, canvas track, accent-tinted chip.
+.segmented-control {
+  -color-segment-bg: -meridian-surface-canvas;
+  -color-segment-border: -meridian-border-control;
+  -color-segment-bg-selected: -meridian-selection-active;
+  -color-segment-fg-selected: -meridian-text-accent;
+  -color-segment-border-selected: transparent;
+}
+.segmented-control > .root-container > .background > .indicator { -fx-effect: none; }
+.segmented-control > .root-container > .labels > .toggle-label:selected { -fx-font-weight: bold; }
+
+// Accordion: single hairlines between panes (no stacked double rules).
+.accordion { -fx-border-color: -meridian-border-decorative; -fx-border-width: 0 0 1px 0; }
+.accordion > .titled-pane > .title {
+  -fx-background-color: -meridian-border-decorative, -meridian-surface-canvas;
+  -fx-background-insets: 0, 1px 1px 0 1px;
+}
+.accordion > .titled-pane > .content { -fx-border-width: 0 1px 0 1px; }
+
+// Tree breathing room: a 21px disclosure slot (3 + 10 + 8px before the label); indent is set by density below.
+.tree-cell > .tree-disclosure-node { -fx-padding: 4px 8px 0 3px; }
+
+// Button sizes: em resolves against each variant's own (upstream-scaled) font.
+// .small height (28/24) is set in MeridianAppearance's runtime stylesheet, which outranks the theme.
+.button.large, .toggle-button.large, .menu-button.large, .split-menu-button.large {
+  -fx-min-height: 2.285714em; -fx-pref-height: 2.285714em; -fx-max-height: 2.285714em;
+  -fx-padding: 0 16px 0 16px;
+}
+
+// Segmented control at control height.
+.segmented-control > .root-container > .labels { -fx-padding: 3px; }
+.segmented-control > .root-container > .labels > .toggle-label { -fx-padding: 4px 10px 4px 10px; }
+
+// One slider thumb in both themes: accent disc with an on-action ring.
+.slider { -color-slider-thumb: -meridian-action-default; -color-slider-thumb-border: -meridian-action-default; }
+
+// Table inside tab content: the tab hairline already closes the top edge.
+.tab-pane > .tab-content-area .table-view { -fx-border-width: 0 1px 1px 1px; }
+
+// Sort chevron keeps clear of the next column's label.
+
+// Disabled check/radio only show a mark when actually selected.
+.check-box:disabled > .box > .mark, .radio-button:disabled > .radio > .dot { -fx-background-color: transparent; }
+.check-box:disabled:selected > .box > .mark, .check-box:disabled:indeterminate > .box > .mark,
+.radio-button:disabled:selected > .radio > .dot { -fx-background-color: -meridian-disabled-foreground; }
+
+// Tab labels: upstream fills the label's Text child, so colour must be set with -fx-fill there.
+.tab-pane { -color-tab-fg-selected: -meridian-text-primary; }
+.tab-pane > .tab-header-area > .headers-region > .tab > .tab-container > .tab-label > * { -fx-fill: -meridian-text-secondary; }
+.tab-pane > .tab-header-area > .headers-region > .tab:hover > .tab-container > .tab-label > * { -fx-fill: -meridian-text-primary; }
+
+// Spinner keyboard ring must come after the :focused boundary rule that clears the border.
+.spinner:focused:focus-visible, .spinner:focus-within:focus-visible, .spinner:contains-focus:focus-visible {
+  -fx-border-color: -meridian-focus-ring;
+  -fx-border-width: 2px;
+  -fx-border-insets: -3px;
+  -fx-border-radius: cfg.$border-radius + 2px;
+}
+
+// ---- v4 ----
+// Secondary button hover uses the visible selection step (state.hover is ~1.03:1 on dark raised);
+// pressed additionally darkens the boundary.
+.button { -color-button-bg-hover: -meridian-selection-inactive; -color-button-border-pressed: -meridian-text-secondary; }
+
+// Disabled controls sit on a faint hover step with a decorative ring, never below the canvas.
+.button:disabled, .button.accent:disabled, .button:default:disabled, .text-input:disabled {
+  -fx-background-color: -meridian-border-decorative, -meridian-state-hover;
+}
+
+// Tree/list: inset rounded selection (Linear-style pill) carrying the 2px left marker;
+// indent follows density (18 comfortable / 16 compact).
+.tree-view > .virtual-flow > .clipped-container > .sheet > .tree-cell { -fx-indent: m.$padding-x + 8px; }
+.list-view > .virtual-flow > .clipped-container > .sheet > .list-cell:filled:selected,
+.tree-view > .virtual-flow > .clipped-container > .sheet > .tree-cell:filled:selected {
+  -fx-background-color: -meridian-selection-inactive-marker, -meridian-selection-inactive;
+  -fx-background-insets: 1px 4px 1px 4px, 1px 4px 1px 6px;
+  -fx-background-radius: 6px, 0 6px 6px 0;
+}
+.list-view:focused > .virtual-flow > .clipped-container > .sheet > .list-cell:filled:selected,
+.tree-view:focused > .virtual-flow > .clipped-container > .sheet > .tree-cell:filled:selected {
+  -fx-background-color: -meridian-selection-marker, -meridian-selection-active;
+}
+.list-view > .virtual-flow > .clipped-container > .sheet > .list-cell:filled:hover,
+.tree-view > .virtual-flow > .clipped-container > .sheet > .tree-cell:filled:hover {
+  -fx-background-insets: 1px 4px 1px 4px;
+  -fx-background-radius: 6px;
+}
+
+// Accordion: bare horizontal dividers, square, owned bottom rule.
+.accordion > .titled-pane > .title {
+  -fx-background-color: -meridian-border-decorative, -meridian-surface-canvas;
+  -fx-background-insets: 0, 1px 0 0 0;
+  -fx-background-radius: 0;
+  -fx-border-width: 0;
+}
+.accordion > .titled-pane > .content { -fx-border-width: 0; -fx-background-color: transparent; }
+
+// Table header: regular weight, muted, metadata size; sort glyph gets its own gutter in the cell.
+.table-view > .column-header-background .column-header {
+  -fx-font-weight: normal;
+  -fx-font-size: math.div(m.$metadata, m.$table) * 1em;
+  -fx-padding: 0 12px 0 0;
+}
+
+// Date picker: muted weekday names. Split panes: invisible grip bars.
+.date-picker-popup > .calendar-grid .day-name-cell { -fx-text-fill: -meridian-text-secondary; }
+.split-pane > .split-pane-divider > .vertical-grabber, .split-pane > .split-pane-divider > .horizontal-grabber {
+  -fx-background-color: transparent;
+}
+
+// Context menus get a minimum width so accelerators sit in their own column.
+.context-menu { -fx-min-width: 14em; }
+
+.accordion > .titled-pane:expanded > .title, .accordion > .titled-pane:focused > .title,
+.accordion > .titled-pane > .title:hover {
+  -fx-background-color: -meridian-border-decorative, -meridian-surface-canvas;
+  -fx-background-insets: 0, 1px 0 0 0;
+  -fx-border-width: 0;
+}
+.dialog-pane > .content.label { -fx-min-width: 372px; }
+.scroll-bar > .thumb { -fx-opacity: 0.75; }
+.scroll-bar:hover > .thumb, .scroll-bar:pressed > .thumb { -fx-opacity: 1; }
+// Pill-group selected segment is an inset chip, like the segmented control.
+.toggle-button:selected.left-pill, .toggle-button:selected.center-pill, .toggle-button:selected.right-pill,
+.toggle-button:selected.left-pill:focused, .toggle-button:selected.center-pill:focused, .toggle-button:selected.right-pill:focused {
+  -fx-background-color: -color-button-border, -color-button-bg, -meridian-selection-active;
+  -fx-background-insets: 0, 1px, 3px;
+}
+.toggle-button:selected.left-pill, .toggle-button:selected.left-pill:focused { -fx-background-radius: 6px 0 0 6px, 5px 0 0 5px, 4px; }
+.toggle-button:selected.center-pill, .toggle-button:selected.center-pill:focused { -fx-background-radius: 0, 0, 4px; }
+.toggle-button:selected.right-pill, .toggle-button:selected.right-pill:focused { -fx-background-radius: 0 6px 6px 0, 0 5px 5px 0, 4px; }
+
+// Upstream rounds and rings the first pane's title (.first-titled-pane, 0-4-0); out-specify it.
+.accordion > .titled-pane.first-titled-pane > .title, .accordion > .titled-pane.first-titled-pane:expanded > .title,
+.accordion > .titled-pane.first-titled-pane:collapsed > .title {
+  -fx-background-color: -meridian-border-decorative, -meridian-surface-canvas;
+  -fx-background-insets: 0, 1px 0 0 0;
+  -fx-background-radius: 0;
+}
+
+// ---- v5 ----
+// Tree/list selection: one rounded pill, no marker (the marker's square end notched the pill). Focus is
+// carried by the accent-tinted fill; tables keep the marker. A cell-colour base layer under the pill
+// prevents the view background showing as a halo.
+.list-view > .virtual-flow > .clipped-container > .sheet > .list-cell:filled:selected,
+.tree-view > .virtual-flow > .clipped-container > .sheet > .tree-cell:filled:selected {
+  -fx-background-color: -color-cell-bg, -meridian-selection-inactive;
+  -fx-background-insets: 0, 1px 4px 1px 4px;
+  -fx-background-radius: 0, 6px;
+}
+.list-view:focused > .virtual-flow > .clipped-container > .sheet > .list-cell:filled:selected,
+.tree-view:focused > .virtual-flow > .clipped-container > .sheet > .tree-cell:filled:selected {
+  -fx-background-color: -color-cell-bg, -meridian-selection-active;
+}
+.list-view > .virtual-flow > .clipped-container > .sheet > .list-cell:filled:hover,
+.tree-view > .virtual-flow > .clipped-container > .sheet > .tree-cell:filled:hover {
+  -fx-background-color: -color-cell-bg, -meridian-state-hover;
+  -fx-background-insets: 0, 1px 4px 1px 4px;
+  -fx-background-radius: 0, 6px;
+}
+// Owner found the tree cramped: comfortable keeps the full 20px indent, compact 16px.
+.tree-view > .virtual-flow > .clipped-container > .sheet > .tree-cell { -fx-indent: m.$padding-x * 2; }
+
+// Pressed is a distinct step below hover; the boundary darkens to text.secondary (contrast-tested).
+.text-input:pressed { -fx-background-color: -meridian-text-secondary, -meridian-state-pressed; }
+
+// Pill groups: unselected labels are secondary (like the segmented control); selected stays accent.
+.toggle-button.left-pill, .toggle-button.center-pill, .toggle-button.right-pill { -fx-text-fill: -meridian-text-secondary; }
+.toggle-button:selected.left-pill, .toggle-button:selected.center-pill, .toggle-button:selected.right-pill { -fx-text-fill: -meridian-text-accent; }
+
+// Accordion content starts in the label column, tight under its title.
+.accordion > .titled-pane > .content { -fx-padding: 4px 20px 12px 40px; }
+
+// Dialog body: one definite width so wrapping cannot depend on an earlier layout pass.
+.dialog-pane > .content.label { -fx-min-width: 372px; -fx-pref-width: 372px; -fx-max-width: 372px; }
+
+// Revert v4 context-menu min-width (added empty space; accelerators did not form a column).
+.context-menu { -fx-min-width: -1; }
+
+// Hovering a selected tree/list row keeps the selection pill (hover must not replace it).
+.list-view > .virtual-flow > .clipped-container > .sheet > .list-cell:filled:selected:hover,
+.tree-view > .virtual-flow > .clipped-container > .sheet > .tree-cell:filled:selected:hover {
+  -fx-background-color: -color-cell-bg, -meridian-selection-inactive;
+}
+.list-view:focused > .virtual-flow > .clipped-container > .sheet > .list-cell:filled:selected:hover,
+.tree-view:focused > .virtual-flow > .clipped-container > .sheet > .tree-cell:filled:selected:hover {
+  -fx-background-color: -color-cell-bg, -meridian-selection-active;
+}
+
+// Opt-in numeric columns: add "numeric" to a TableColumn's style class. Header and cells right-align, which
+// also places JavaFX's sort glyph (laid out in code at the header's trailing edge) next to the label.
+.table-view .column-header.numeric > .label, .table-view .table-cell.numeric { -fx-alignment: CENTER_RIGHT; }
+/*! @module:meridian:end */

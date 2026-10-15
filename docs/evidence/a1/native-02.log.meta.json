@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "started_utc": "2026-10-14T21:11:26.477363+00:00",
+  "finished_utc": "2026-10-14T21:11:34.589797+00:00",
+  "duration_seconds": 8.112323,
+  "command": [
+    "tools/sbt",
+    "scalafmtSbt",
+    "scalafmtSbtCheck",
+    "scalafmtCheckAll",
+    "sampler/runMain meridian.sampler.FoundationSmoke docs/evidence/a1/native-02"
+  ],
+  "cwd": "/Users/bbuchsbaum/code/scala/meridianfx",
+  "log": "/Users/bbuchsbaum/code/scala/meridianfx/docs/evidence/a1/native-02.log",
+  "exit_code": 0,
+  "child_returncode": 0,
+  "reason": "exited",
+  "detail": null,
+  "timeout_seconds": 120.0,
+  "log_bytes": 2681
+}

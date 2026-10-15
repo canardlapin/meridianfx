@@ -1,0 +1,11 @@
+{
+  "command": [
+    "tools/sbt",
+    "compile"
+  ],
+  "explicit_jdk_major": 22,
+  "exit_code": 1,
+  "stdout": "",
+  "stderr": "JDK 25 is required. Set MERIDIAN_JAVA_HOME to an installed JDK 25.\n",
+  "expected": "Reject before sbt starts; no silent fallback."
+}

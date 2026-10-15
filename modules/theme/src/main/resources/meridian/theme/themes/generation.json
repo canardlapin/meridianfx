@@ -1,0 +1,27 @@
+{
+  "compiler": {
+    "name": "dart-sass",
+    "version": "1.93.2"
+  },
+  "inputs": {
+    "theme-build/_recipes.scss": "9bc418ecc272ac152de9d8589b7658a1e9257aa5c3a46a60e156957b8d846838",
+    "theme-build/package-lock.json": "6155d5f249d327d636f3a1355457a3e022aacce93023f275537e83517fbba234",
+    "theme-build/package.json": "e54bc641c54480867b8aa163b6cfcb20f7e1fbd7a750a2310312f11f98684e34",
+    "tokens/meridian.json": "1c14eaf53bc0801d37c190a16a1abf3a91820502ee58a238028a2f8a20d81d25",
+    "tools/build_themes.py": "d20d2856984dce7ba28518cb3463d2b5245c145682daf8ab3ef4f8db3a2372c9",
+    "upstream/lock.json": "a2ae941442cc99da40faf2d46f6ca960a8e48809db2f53ea374c2b70b198ccfd"
+  },
+  "outputs": {
+    "modules/theme/src/main/resources/meridian/theme/themes/meridian-dark-comfortable.css": "6bfb0926f17f70456d3c89f0e87ed740eeb30abbeb0cb6ff899363404663d47e",
+    "modules/theme/src/main/resources/meridian/theme/themes/meridian-dark-comfortable.css.manifest": "2ab7cb2cd65d82aa785e6be3f774825293bb8c220e88f82a6ff551c41c0e990d",
+    "modules/theme/src/main/resources/meridian/theme/themes/meridian-dark-compact.css": "0b2095d912118c2f9f8d41fb25c3e56b065761366c131ededcfffc38a26f1702",
+    "modules/theme/src/main/resources/meridian/theme/themes/meridian-dark-compact.css.manifest": "c0553f4363fb672be0af562b392d19153442cce79c6d5857185305bc257dc297",
+    "modules/theme/src/main/resources/meridian/theme/themes/meridian-light-comfortable.css": "64c223b3e7d69981545b673b4ce9cd89388d91f71bdb1fc8f67bc72093e42a8f",
+    "modules/theme/src/main/resources/meridian/theme/themes/meridian-light-comfortable.css.manifest": "868ff75001f6e11618b3d6f5e2ff1c774ae7a3b547e6c180ab7e25bca82e1ade",
+    "modules/theme/src/main/resources/meridian/theme/themes/meridian-light-compact.css": "b7785f58d30922e71f5d4382d82b752aa5eff6697a8414bb29e931e150a5a893",
+    "modules/theme/src/main/resources/meridian/theme/themes/meridian-light-compact.css.manifest": "8f3da4d38023869b1c019b6821ff43ea4c6546db7a6e9f031e3f6bbead1c4bee"
+  },
+  "schema": "meridian.themes.v1",
+  "scientific_colors": "upstream generic chart defaults preserved identically; no UI-token scientific palette",
+  "upstream_commit": "61a48371c2873613a6a654e625fda156e3cbdf3f"
+}

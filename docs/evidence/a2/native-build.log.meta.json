@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "started_utc": "2026-10-14T23:54:13.088191+00:00",
+  "finished_utc": "2026-10-14T23:54:20.136156+00:00",
+  "duration_seconds": 7.047818,
+  "command": [
+    "tools/sbt",
+    "scalafmtSbtCheck",
+    "scalafmtCheckAll",
+    "compile",
+    "foundationReport",
+    "sampler/runMain meridian.sampler.TokenProbe tokens/generated/native-expected.tsv docs/evidence/a2/native-colors.tsv"
+  ],
+  "cwd": "/Users/bbuchsbaum/code/scala/meridianfx",
+  "log": "/Users/bbuchsbaum/code/scala/meridianfx/docs/evidence/a2/native-build.log",
+  "exit_code": 0,
+  "child_returncode": 0,
+  "reason": "exited",
+  "detail": null,
+  "timeout_seconds": 300.0,
+  "log_bytes": 2728
+}

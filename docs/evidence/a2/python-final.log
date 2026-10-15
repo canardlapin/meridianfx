@@ -1,0 +1,27 @@
+test_duplicate_json_keys_rejected (test_tokens.TokenTests.test_duplicate_json_keys_rejected) ... ok
+test_focus_cannot_be_decorative (test_tokens.TokenTests.test_focus_cannot_be_decorative) ... ok
+test_fractional_metrics_are_not_rounded_in_java (test_tokens.TokenTests.test_fractional_metrics_are_not_rounded_in_java) ... ok
+test_independent_decimal_reference (test_tokens.TokenTests.test_independent_decimal_reference) ... ok
+test_invalid_color_does_not_generate (test_tokens.TokenTests.test_invalid_color_does_not_generate) ... ok
+test_lower_contrast_policy_rejected (test_tokens.TokenTests.test_lower_contrast_policy_rejected) ... ok
+test_manual_edit_missing_and_stale_source_detected (test_tokens.TokenTests.test_manual_edit_missing_and_stale_source_detected) ... ok
+test_meaningful_data_cannot_use_disabled_exemption (test_tokens.TokenTests.test_meaningful_data_cannot_use_disabled_exemption) ... ok
+test_missing_alpha_backdrop_rejected (test_tokens.TokenTests.test_missing_alpha_backdrop_rejected) ... ok
+test_nonfinite_and_boolean_contrast_policy_rejected (test_tokens.TokenTests.test_nonfinite_and_boolean_contrast_policy_rejected) ... ok
+test_nonfinite_and_boolean_metrics_rejected (test_tokens.TokenTests.test_nonfinite_and_boolean_metrics_rejected) ... ok
+test_required_state_cannot_be_removed (test_tokens.TokenTests.test_required_state_cannot_be_removed) ... ok
+test_scientific_mapping_rejected (test_tokens.TokenTests.test_scientific_mapping_rejected) ... ok
+test_source_over_8bit_alpha (test_tokens.TokenTests.test_source_over_8bit_alpha) ... ok
+test_threshold_is_not_rounded (test_tokens.TokenTests.test_threshold_is_not_rounded) ... ok
+test_two_layer_alpha_order (test_tokens.TokenTests.test_two_layer_alpha_order) ... ok
+test_two_materialized_generations_identical (test_tokens.TokenTests.test_two_materialized_generations_identical) ... ok
+test_typography_floors_and_density_defaults (test_tokens.TokenTests.test_typography_floors_and_density_defaults) ... ok
+test_unexpected_generated_output_detected (test_tokens.TokenTests.test_unexpected_generated_output_detected) ... ok
+test_unknown_color_and_role_rejected (test_tokens.TokenTests.test_unknown_color_and_role_rejected) ... ok
+test_unreferenced_scientific_raw_color_rejected (test_tokens.TokenTests.test_unreferenced_scientific_raw_color_rejected) ... ok
+test_white_black_reference (test_tokens.TokenTests.test_white_black_reference) ... ok
+
+----------------------------------------------------------------------
+Ran 22 tests in 0.089s
+
+OK

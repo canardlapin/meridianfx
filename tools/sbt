@@ -1,0 +1,35 @@
+#!/usr/bin/env python3
+"""Select JDK 25 for this process and run the installed sbt; leave host defaults intact."""
+import os
+from pathlib import Path
+import re
+import subprocess
+import sys
+
+def java_major(home):
+    java = Path(home) / "bin/java"
+    if not java.is_file():
+        return None
+    result = subprocess.run([str(java), "-version"], capture_output=True, text=True)
+    match = re.search(r'version "(\d+)', result.stderr + result.stdout)
+    return int(match.group(1)) if match else None
+
+def main():
+    explicit = os.environ.get("MERIDIAN_JAVA_HOME")
+    candidates = [explicit] if explicit else [
+        os.environ.get("JAVA_HOME"),
+        "/opt/homebrew/opt/openjdk@25",
+        "/usr/lib/jvm/temurin-25-jdk",
+        "/usr/lib/jvm/java-25-openjdk",
+    ]
+    selected = next((Path(p).resolve() for p in candidates if p and java_major(p) == 25), None)
+    if selected is None:
+        sys.exit("JDK 25 is required. Set MERIDIAN_JAVA_HOME to an installed JDK 25.")
+    env = os.environ.copy()
+    env["JAVA_HOME"] = str(selected)
+    env["PATH"] = str(selected / "bin") + os.pathsep + env.get("PATH", "")
+    print("Meridian JDK: " + str(selected), flush=True)
+    os.execvpe("sbt", ["sbt", "-batch", "-no-colors", *sys.argv[1:]], env)
+
+if __name__ == "__main__":
+    main()

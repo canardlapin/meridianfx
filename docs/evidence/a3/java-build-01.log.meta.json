@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "started_utc": "2026-10-15T00:25:15.652365+00:00",
+  "finished_utc": "2026-10-15T00:25:20.343862+00:00",
+  "duration_seconds": 4.69133,
+  "command": [
+    "tools/sbt",
+    "compile"
+  ],
+  "cwd": "/Users/bbuchsbaum/code/scala/meridianfx",
+  "log": "/Users/bbuchsbaum/code/scala/meridianfx/docs/evidence/a3/java-build-01.log",
+  "exit_code": 0,
+  "child_returncode": 0,
+  "reason": "exited",
+  "detail": null,
+  "timeout_seconds": 180.0,
+  "log_bytes": 929
+}

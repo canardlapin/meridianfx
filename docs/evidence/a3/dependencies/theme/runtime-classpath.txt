@@ -1,0 +1,8 @@
+/Users/bbuchsbaum/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/github/mkpaz/atlantafx-base/3.0.0/atlantafx-base-3.0.0.jar
+/Users/bbuchsbaum/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/openjfx/javafx-base/27/javafx-base-27-mac-aarch64.jar
+/Users/bbuchsbaum/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/openjfx/javafx-base/27/javafx-base-27.jar
+/Users/bbuchsbaum/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/openjfx/javafx-controls/27/javafx-controls-27-mac-aarch64.jar
+/Users/bbuchsbaum/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/openjfx/javafx-controls/27/javafx-controls-27.jar
+/Users/bbuchsbaum/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/openjfx/javafx-graphics/27/javafx-graphics-27-mac-aarch64.jar
+/Users/bbuchsbaum/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/openjfx/javafx-graphics/27/javafx-graphics-27.jar
+/Users/bbuchsbaum/code/scala/meridianfx/modules/theme/target/classes

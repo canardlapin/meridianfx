@@ -1,0 +1,22 @@
+/Users/bbuchsbaum/code/scala/meridianfx/docs/evidence/a3/JavaCaller.java:25: warning: [try] auto-closeable resource registration is never referenced in body of corresponding try statement
+                try (var registration = appearance.register(scene)) {
+                         ^
+1 warning
+Exception in thread "main" java.lang.IllegalStateException: Java caller failed
+	at JavaCaller.main(JavaCaller.java:44)
+Caused by: java.lang.AssertionError: Enlarged metrics
+	at JavaCaller.lambda$main$0(JavaCaller.java:30)
+	at javafx.graphics@27/com.sun.javafx.application.PlatformImpl.lambda$startup$0(PlatformImpl.java:283)
+	at javafx.graphics@27/com.sun.glass.ui.Application.invokeAndWait(Application.java:465)
+	at javafx.graphics@27/com.sun.javafx.tk.quantum.QuantumToolkit.runToolkit(QuantumToolkit.java:382)
+	at javafx.graphics@27/com.sun.javafx.tk.quantum.QuantumToolkit.lambda$startup$0(QuantumToolkit.java:289)
+	at javafx.graphics@27/com.sun.glass.ui.Application.lambda$run$0(Application.java:152)
+	at javafx.graphics@27/com.sun.glass.ui.mac.MacApplication.lambda$runLoop$0(MacApplication.java:127)
+Traceback (most recent call last):
+  File "/Users/bbuchsbaum/code/scala/meridianfx/docs/evidence/a3/run_java_caller.py", line 21, in <module>
+    subprocess.run(run_cmd,check=True)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/subprocess.py", line 578, in run
+    raise CalledProcessError(retcode, process.args,
+                             output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '['/opt/homebrew/opt/openjdk@25/bin/java', '--module-path', '/Users/bbuchsbaum/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/openjfx/javafx-base/27/javafx-base-27-mac-aarch64.jar:/Users/bbuchsbaum/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/openjfx/javafx-controls/27/javafx-controls-27-mac-aarch64.jar:/Users/bbuchsbaum/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/openjfx/javafx-graphics/27/javafx-graphics-27-mac-aarch64.jar', '--add-modules', 'javafx.controls', '--enable-native-access=javafx.graphics', '-cp', '/Users/bbuchsbaum/code/scala/meridianfx/docs/evidence/a3/java-caller:/Users/bbuchsbaum/code/scala/meridianfx/docs/evidence/a3/artifacts/meridian-theme-0.1.0-dev.1.jar:/Users/bbuchsbaum/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/github/mkpaz/atlantafx-base/3.0.0/atlantafx-base-3.0.0.jar', 'JavaCaller']' returned non-zero exit status 1.

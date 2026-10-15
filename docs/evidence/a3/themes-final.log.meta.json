@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "started_utc": "2026-10-15T00:38:52.083486+00:00",
+  "finished_utc": "2026-10-15T00:38:55.037471+00:00",
+  "duration_seconds": 2.95153,
+  "command": [
+    "python3",
+    "tools/build_themes.py",
+    "--check"
+  ],
+  "cwd": "/Users/bbuchsbaum/code/scala/meridianfx",
+  "log": "/Users/bbuchsbaum/code/scala/meridianfx/docs/evidence/a3/themes-final.log",
+  "exit_code": 0,
+  "child_returncode": 0,
+  "reason": "exited",
+  "detail": null,
+  "timeout_seconds": 120.0,
+  "log_bytes": 130
+}

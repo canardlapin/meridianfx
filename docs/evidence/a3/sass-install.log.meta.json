@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "started_utc": "2026-10-15T00:21:55.627532+00:00",
+  "finished_utc": "2026-10-15T00:21:56.766751+00:00",
+  "duration_seconds": 1.139088,
+  "command": [
+    "npm",
+    "install",
+    "--prefix",
+    "theme-build",
+    "--ignore-scripts",
+    "--no-audit",
+    "--no-fund"
+  ],
+  "cwd": "/Users/bbuchsbaum/code/scala/meridianfx",
+  "log": "/Users/bbuchsbaum/code/scala/meridianfx/docs/evidence/a3/sass-install.log",
+  "exit_code": 0,
+  "child_returncode": 0,
+  "reason": "exited",
+  "detail": null,
+  "timeout_seconds": 180.0,
+  "log_bytes": 28
+}

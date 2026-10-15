@@ -1,0 +1,17 @@
+Meridian JDK: /opt/homebrew/Cellar/openjdk/25.0.1
+[info] welcome to sbt 1.12.14 (Homebrew Java 25.0.1)
+[info] loading settings for project meridianfx-build from plugins.sbt...
+[info] loading project definition from /Users/bbuchsbaum/code/scala/meridianfx/project
+[info] loading settings for project root from build.sbt...
+[info] loading settings for project scaladock-build from plugins.sbt...
+[info] loading project definition from /Users/bbuchsbaum/.sbt/1.0/staging/e5369b89f9d6f9ffec6b/scaladock/project
+[info] loading settings for project root from build.sbt...
+[info] set current project to meridianfx (in build file:/Users/bbuchsbaum/code/scala/meridianfx/)
+[info] compiling 1 Java source to /Users/bbuchsbaum/code/scala/meridianfx/modules/sampler/target/scala-3.7.4/classes ...
+[error] /Users/bbuchsbaum/code/scala/meridianfx/modules/sampler/src/main/java/meridian/sampler/ThemeSmoke.java:175:31: cannot find symbol
+[error]   symbol:   method getFont()
+[error]   location: variable table of type javafx.scene.control.TableView<java.lang.String>
+[error] fixture.table.getFont
+[error]                      ^
+[error] (sampler / Compile / compileIncremental) javac returned non-zero exit code
+[error] Total time: 1 s, completed Oct 14, 2026, 8:27:31 p.m.

@@ -1,0 +1,30 @@
+{
+  "source_files": 65,
+  "design_references": 3,
+  "runtime_reports": {
+    "theme": {
+      "classpath_entries": 8,
+      "javafx_versions": [
+        "27"
+      ]
+    },
+    "workbench": {
+      "classpath_entries": 9,
+      "javafx_versions": [
+        "27"
+      ]
+    },
+    "scaladock": {
+      "classpath_entries": 19,
+      "javafx_versions": [
+        "27"
+      ]
+    },
+    "sampler": {
+      "classpath_entries": 21,
+      "javafx_versions": [
+        "27"
+      ]
+    }
+  }
+}

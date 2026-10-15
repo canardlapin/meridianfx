@@ -1,0 +1,35 @@
+{
+  "contrast_passed": 224,
+  "contrast_required": 224,
+  "determinism": "two materialized passes identical",
+  "explicit_exceptions": 12,
+  "generated_hashes": {
+    "design-study/generated/tokens.css": "df55b0d4ad17d609a467617974910c4a77e57c0e6c54e1a90b9603535cd3d824",
+    "modules/scaladock/src/main/resources/meridian/scaladock/tokens-dark.css": "352dced5ad539696f94516bfda02d73863e7fd6b50dcd068cb4365711047efa5",
+    "modules/scaladock/src/main/resources/meridian/scaladock/tokens-light.css": "d315260be9467b885de595f97662dbca977fe1ffdfdcc4a57cc1ee2cd360f45d",
+    "modules/theme/src/main/java/meridian/theme/metrics/MeridianMetrics.java": "8b66f370af89dfb41386d7e890e9c8fe39a5b192593973b1ad69ab2960d539ed",
+    "modules/theme/src/main/resources/meridian/theme/tokens-dark.css": "154e55c905aecbc3ed5967d5a292a877fe697c42328d96662c40d7244ae532e7",
+    "modules/theme/src/main/resources/meridian/theme/tokens-light.css": "caa8fed272762a2500afd06e9f55ecb9c86dd36e970991429b60c45fb5d9d4a0",
+    "modules/theme/src/main/resources/meridian/theme/tokens.json": "eea0d68b4c45c846bb0683308f3f39949270c4ca2be6b23cfc8e0472d7c4f9fc",
+    "tokens/generated/_palette-dark.scss": "513be3ee7daf59ecd5b681bec52635614e90ef289a97c437ed9a32de168f6687",
+    "tokens/generated/_palette-light.scss": "c9fa35b077bad6b4defa015911214c9c8898de401d3285dc2105e930ff4643d9",
+    "tokens/generated/contrast.json": "b3aeb2f20a1afb757e4442b4e90023c5df331e061c476ca2bf2770075f60d5f8",
+    "tokens/generated/manifest.json": "5d46eb0a8b61c7fba2d2b2586932380d7eb872ec720e1e91afb63cbc7ecc97c2",
+    "tokens/generated/native-expected.tsv": "dd63bfe38c9e6079ae0c704d94c0ade9ad4299f7637eb968880f0e7141f5b469"
+  },
+  "generated_outputs": 12,
+  "manual_edit_detection": "passed",
+  "missing_output_detection": "passed",
+  "native_colors": {
+    "appearances": [
+      "dark",
+      "light"
+    ],
+    "observations": 130,
+    "semantic_and_upstream_aliases": "matched",
+    "tolerance": 1e-07
+  },
+  "schema": "meridian.a2-acceptance.v1",
+  "scientific_colors": "excluded",
+  "source_sha256": "3c33e875f6c093d6c8444b2d1d58741ff620cc58ea9ce3e542d835d77fa2a410"
+}

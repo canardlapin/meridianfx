@@ -1,0 +1,48 @@
+Meridian JDK: /opt/homebrew/Cellar/openjdk/25.0.1
+[info] welcome to sbt 1.12.14 (Homebrew Java 25.0.1)
+[info] loading settings for project meridianfx-build from plugins.sbt...
+[info] loading project definition from /Users/bbuchsbaum/code/scala/meridianfx/project
+[info] loading settings for project root from build.sbt...
+[info] loading settings for project scaladock-build from plugins.sbt...
+[info] loading project definition from /Users/bbuchsbaum/.sbt/1.0/staging/e5369b89f9d6f9ffec6b/scaladock/project
+[info] loading settings for project root from build.sbt...
+[info] set current project to meridianfx (in build file:/Users/bbuchsbaum/code/scala/meridianfx/)
+Meridian theme resource hashes verified (no Sass runtime needed)
+[info] running (fork) meridian.sampler.ThemeSmoke docs/evidence/a3/native-08
+[info] Prism pipeline init order: mtl es2 sw 
+[info] Using Double Precision Marlin Rasterizer
+[info] Using dirty region optimizations
+[info] Not using texture mask for primitives
+[info] Not forcing power of 2 sizes for textures
+[info] Using hardware CLAMP_TO_ZERO mode
+[info] Opting in for HiDPI pixel scaling
+[info] Not forcing UploadingPainter
+[info] Prism pipeline name = com.sun.prism.mtl.MTLPipeline
+[error] Loading native metal library, named: prism_mtl
+[error] Succeeded: Loading native metal library.
+[info] (X) Got class = class com.sun.prism.mtl.MTLPipeline
+[info] Initialized prism pipeline: com.sun.prism.mtl.MTLPipeline
+[error]  vsync: true vpipe: true
+[error] MTLResourceFactory: Prism - createStockShader: FillPgram_Color
+[error] MTLResourceFactory: Prism - createStockShader: Texture_Color
+[error] MTLResourceFactory: Prism - createStockShader: FillRoundRect_Color
+[error] MTLResourceFactory: Prism - createStockShader: DrawRoundRect_Color
+[error] MTLResourceFactory: Prism - createStockShader: DrawPgram_Color
+[error] MTLResourceFactory: Prism - createStockShader: Solid_Color
+[error] MTLResourceFactory: Prism - createStockShader: Mask_TextureSuper
+[info] PPSRenderer: scenario.effect - createShader: LinearConvolveShadow_64
+[error] MTLResourceFactory: Prism - createStockShader: Solid_TextureRGB
+[info] PPSRenderer: scenario.effect - createShader: LinearConvolveShadow_24
+[info] QuantumRenderer: shutdown
+[error] Exception in thread "main" java.lang.IllegalStateException: Meridian theme acceptance failed
+[error] 	at meridian.sampler.ThemeSmoke.main(ThemeSmoke.java:56)
+[error] Caused by: java.lang.AssertionError: lifecycle: disposal restores inherited scheme
+[error] 	at meridian.sampler.ThemeSmoke$Window.require(ThemeSmoke.java:323)
+[error] 	at meridian.sampler.ThemeSmoke$Window.lifecycle(ThemeSmoke.java:303)
+[error] 	at meridian.sampler.ThemeSmoke$Window.lambda$nextVariant$0(ThemeSmoke.java:101)
+[error] 	at meridian.sampler.ThemeSmoke$Window.lambda$later$1(ThemeSmoke.java:340)
+[error] 	at javafx.graphics@27/com.sun.javafx.application.PlatformImpl.lambda$runLater$0(PlatformImpl.java:424)
+[error] 	at javafx.graphics@27/com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:95)
+[error] nonzero exit code returned from runner: 1
+[error] (sampler / Compile / runMain) nonzero exit code returned from runner: 1
+[error] Total time: 3 s, completed Oct 14, 2026, 8:35:47 p.m.

@@ -1,0 +1,12 @@
+{
+  "schema": "meridian.a2-acceptance.v1",
+  "source_sha256": "3c33e875f6c093d6c8444b2d1d58741ff620cc58ea9ce3e542d835d77fa2a410",
+  "generated_outputs": 12,
+  "determinism": "two materialized passes identical",
+  "manual_edit_detection": "passed",
+  "missing_output_detection": "passed",
+  "contrast_required": 224,
+  "contrast_passed": 224,
+  "explicit_exceptions": 12,
+  "scientific_colors": "excluded"
+}

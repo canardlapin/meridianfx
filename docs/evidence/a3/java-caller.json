@@ -1,0 +1,32 @@
+{
+  "schema": "meridian.java-consumer.v1",
+  "jar_sha256": "8975ca80efa03b2a3e7c70f5c76a6010dcb8e664e50ad4f9ae1235581d924f3d",
+  "source_sha256": "15109931ce2307a89d27dd3477b5681a7705f8b13543e8c820ea1b73e39d1eaa",
+  "javac_argv": [
+    "/opt/homebrew/opt/openjdk@25/bin/javac",
+    "--release",
+    "25",
+    "-Xlint:all",
+    "-cp",
+    "/Users/bbuchsbaum/code/scala/meridianfx/docs/evidence/a3/artifacts/meridian-theme-0.1.0-dev.1.jar:/Users/bbuchsbaum/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/github/mkpaz/atlantafx-base/3.0.0/atlantafx-base-3.0.0.jar:/Users/bbuchsbaum/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/openjfx/javafx-base/27/javafx-base-27-mac-aarch64.jar:/Users/bbuchsbaum/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/openjfx/javafx-controls/27/javafx-controls-27-mac-aarch64.jar:/Users/bbuchsbaum/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/openjfx/javafx-graphics/27/javafx-graphics-27-mac-aarch64.jar",
+    "-d",
+    "/Users/bbuchsbaum/code/scala/meridianfx/docs/evidence/a3/java-caller-final",
+    "/Users/bbuchsbaum/code/scala/meridianfx/docs/evidence/a3/JavaCaller.java"
+  ],
+  "java_argv": [
+    "/opt/homebrew/opt/openjdk@25/bin/java",
+    "--module-path",
+    "/Users/bbuchsbaum/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/openjfx/javafx-base/27/javafx-base-27-mac-aarch64.jar:/Users/bbuchsbaum/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/openjfx/javafx-controls/27/javafx-controls-27-mac-aarch64.jar:/Users/bbuchsbaum/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/openjfx/javafx-graphics/27/javafx-graphics-27-mac-aarch64.jar",
+    "--add-modules",
+    "javafx.controls",
+    "--enable-native-access=javafx.graphics",
+    "-cp",
+    "/Users/bbuchsbaum/code/scala/meridianfx/docs/evidence/a3/java-caller-final:/Users/bbuchsbaum/code/scala/meridianfx/docs/evidence/a3/artifacts/meridian-theme-0.1.0-dev.1.jar:/Users/bbuchsbaum/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/github/mkpaz/atlantafx-base/3.0.0/atlantafx-base-3.0.0.jar",
+    "JavaCaller"
+  ],
+  "exit_codes": [
+    0,
+    0
+  ],
+  "scala_or_dock_on_classpath": false
+}

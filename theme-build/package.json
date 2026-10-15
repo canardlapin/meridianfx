@@ -1,0 +1,9 @@
+{
+  "name": "meridian-theme-build",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Pinned development-only compiler for locked AtlantaFX styles",
+  "devDependencies": {
+    "sass": "1.93.2"
+  }
+}

@@ -1,0 +1,245 @@
+light-comfortable	root.surface actual=0xffffffff expected=0xffffffff	passed
+light-comfortable	label.default actual=0x20242dff expected=0x20242dff	passed
+light-comfortable	title.font actual=25.0 expected=25.0	passed
+light-comfortable	button.default.text actual=0x20242dff expected=0x20242dff	passed
+light-comfortable	button.default.background actual=0xffffffff expected=0xffffffff	passed
+light-comfortable	button.height actual=32.0 expected=32.0	passed
+light-comfortable	button.font actual=14.0 expected=14.0	passed
+light-comfortable	button.primary actual=0x6258d5ff expected=0x6258d5ff	passed
+light-comfortable	button.primary.text actual=0xffffffff expected=0xffffffff	passed
+light-comfortable	button.hover actual=0xeaedf3ff expected=0xeaedf3ff	passed
+light-comfortable	button.hover.opacity actual=1.0 expected=1.0	passed
+light-comfortable	button.pressed actual=0xe4e8efff expected=0xe4e8efff	passed
+light-comfortable	button.focus-visible actual=0x584dc2ff expected=0x584dc2ff	passed
+light-comfortable	button.disabled.text actual=0x20242d73 expected=0x20242d73	passed
+light-comfortable	button.disabled.opacity actual=1.0 expected=1.0	passed
+light-comfortable	field.default.text actual=0x20242dff expected=0x20242dff	passed
+light-comfortable	field.placeholder actual=0x596272ff expected=0x596272ff	passed
+light-comfortable	field.invalid.boundary actual=0xad3f48ff expected=0xad3f48ff	passed
+light-comfortable	field.invalid.text actual=0x20242dff expected=0x20242dff	passed
+light-comfortable	field.height actual=32.0 expected=32.0	passed
+light-comfortable	field.invalid-focused.boundary actual=0xad3f48ff expected=0xad3f48ff	passed
+light-comfortable	field.invalid-focused.focus actual=0x584dc2ff expected=0x584dc2ff	passed
+light-comfortable	field.focused.placeholder actual=0x596272ff expected=0x596272ff	passed
+light-comfortable	field.readonly actual=0xf3f4f7ff expected=0xf3f4f7ff	passed
+light-comfortable	field.disabled actual=0x20242d73 expected=0x20242d73	passed
+light-comfortable	table.font actual=13.0 expected=13.0	passed
+light-comfortable	table.selected actual=0xeeebffff expected=0xeeebffff	passed
+light-comfortable	table.row.height actual=40.0 expected=40.0	passed
+light-comfortable	visible table column headers present	passed
+light-comfortable	table.header.computed-size actual=32.0 expected=32.0	passed
+light-comfortable	table.header.height pref=32.0 actual=32.0 expected=32.0	passed
+light-comfortable	table.header.computed-size actual=32.0 expected=32.0	passed
+light-comfortable	table.header.height pref=32.0 actual=32.0 expected=32.0	passed
+light-comfortable	table.selection.marker actual=0x584dc2ff expected=0x584dc2ff	passed
+light-comfortable	table actually loses focus	passed
+light-comfortable	table.inactive-selection actual=0xeaedf3ff expected=0xeaedf3ff	passed
+light-comfortable	table.inactive-marker actual=0x7b8595ff expected=0x7b8595ff	passed
+light-comfortable	one dynamic stylesheet on fixture	passed
+light-comfortable	no production overlay stylesheet	passed
+light-comfortable	correct Theme instance	passed
+light-comfortable	AtlantaFX manifest parses	passed
+light-comfortable	scene color scheme matches explicit appearance	passed
+light-comfortable	context menu actually shown	passed
+light-comfortable	menu.surface actual=0xffffffff expected=0xffffffff	passed
+light-comfortable	menu.focused actual=0xeaedf3ff expected=0xeaedf3ff	passed
+light-comfortable	menu.focused.text actual=0x20242dff expected=0x20242dff	passed
+light-comfortable	menu.disabled.text actual=0x20242d73 expected=0x20242d73	passed
+light-comfortable	menu inherits reduced motion	passed
+light-comfortable	dialog actually shown	passed
+light-comfortable	dialog.surface actual=0xffffffff expected=0xffffffff	passed
+light-comfortable	dialog.header.text actual=0x20242dff expected=0x20242dff	passed
+light-compact	root.surface actual=0xffffffff expected=0xffffffff	passed
+light-compact	label.default actual=0x20242dff expected=0x20242dff	passed
+light-compact	title.font actual=25.0 expected=25.0	passed
+light-compact	button.default.text actual=0x20242dff expected=0x20242dff	passed
+light-compact	button.default.background actual=0xffffffff expected=0xffffffff	passed
+light-compact	button.height actual=28.0 expected=28.0	passed
+light-compact	button.font actual=14.0 expected=14.0	passed
+light-compact	button.primary actual=0x6258d5ff expected=0x6258d5ff	passed
+light-compact	button.primary.text actual=0xffffffff expected=0xffffffff	passed
+light-compact	button.hover actual=0xeaedf3ff expected=0xeaedf3ff	passed
+light-compact	button.hover.opacity actual=1.0 expected=1.0	passed
+light-compact	button.pressed actual=0xe4e8efff expected=0xe4e8efff	passed
+light-compact	button.focus-visible actual=0x584dc2ff expected=0x584dc2ff	passed
+light-compact	button.disabled.text actual=0x20242d73 expected=0x20242d73	passed
+light-compact	button.disabled.opacity actual=1.0 expected=1.0	passed
+light-compact	field.default.text actual=0x20242dff expected=0x20242dff	passed
+light-compact	field.placeholder actual=0x596272ff expected=0x596272ff	passed
+light-compact	field.invalid.boundary actual=0xad3f48ff expected=0xad3f48ff	passed
+light-compact	field.invalid.text actual=0x20242dff expected=0x20242dff	passed
+light-compact	field.height actual=28.0 expected=28.0	passed
+light-compact	field.invalid-focused.boundary actual=0xad3f48ff expected=0xad3f48ff	passed
+light-compact	field.invalid-focused.focus actual=0x584dc2ff expected=0x584dc2ff	passed
+light-compact	field.focused.placeholder actual=0x596272ff expected=0x596272ff	passed
+light-compact	field.readonly actual=0xf3f4f7ff expected=0xf3f4f7ff	passed
+light-compact	field.disabled actual=0x20242d73 expected=0x20242d73	passed
+light-compact	table.font actual=13.0 expected=13.0	passed
+light-compact	table.selected actual=0xeeebffff expected=0xeeebffff	passed
+light-compact	table.row.height actual=32.0 expected=32.0	passed
+light-compact	visible table column headers present	passed
+light-compact	table.header.computed-size actual=28.0 expected=28.0	passed
+light-compact	table.header.height pref=28.0 actual=28.0 expected=28.0	passed
+light-compact	table.header.computed-size actual=28.0 expected=28.0	passed
+light-compact	table.header.height pref=28.0 actual=28.0 expected=28.0	passed
+light-compact	table.selection.marker actual=0x584dc2ff expected=0x584dc2ff	passed
+light-compact	table actually loses focus	passed
+light-compact	table.inactive-selection actual=0xeaedf3ff expected=0xeaedf3ff	passed
+light-compact	table.inactive-marker actual=0x7b8595ff expected=0x7b8595ff	passed
+light-compact	one dynamic stylesheet on fixture	passed
+light-compact	no production overlay stylesheet	passed
+light-compact	correct Theme instance	passed
+light-compact	AtlantaFX manifest parses	passed
+light-compact	scene color scheme matches explicit appearance	passed
+light-compact	context menu actually shown	passed
+light-compact	menu.surface actual=0xffffffff expected=0xffffffff	passed
+light-compact	menu.focused actual=0xeaedf3ff expected=0xeaedf3ff	passed
+light-compact	menu.focused.text actual=0x20242dff expected=0x20242dff	passed
+light-compact	menu.disabled.text actual=0x20242d73 expected=0x20242d73	passed
+light-compact	menu inherits reduced motion	passed
+light-compact	dialog actually shown	passed
+light-compact	dialog.surface actual=0xffffffff expected=0xffffffff	passed
+light-compact	dialog.header.text actual=0x20242dff expected=0x20242dff	passed
+dark-comfortable	root.surface actual=0x17191fff expected=0x17191fff	passed
+dark-comfortable	label.default actual=0xeef0f4ff expected=0xeef0f4ff	passed
+dark-comfortable	title.font actual=25.0 expected=25.0	passed
+dark-comfortable	button.default.text actual=0xeef0f4ff expected=0xeef0f4ff	passed
+dark-comfortable	button.default.background actual=0x20232bff expected=0x20232bff	passed
+dark-comfortable	button.height actual=32.0 expected=32.0	passed
+dark-comfortable	button.font actual=14.0 expected=14.0	passed
+dark-comfortable	button.primary actual=0x6258d5ff expected=0x6258d5ff	passed
+dark-comfortable	button.primary.text actual=0xffffffff expected=0xffffffff	passed
+dark-comfortable	button.hover actual=0x272b35ff expected=0x272b35ff	passed
+dark-comfortable	button.hover.opacity actual=1.0 expected=1.0	passed
+dark-comfortable	button.pressed actual=0x2b2f39ff expected=0x2b2f39ff	passed
+dark-comfortable	button.focus-visible actual=0xbcb7ffff expected=0xbcb7ffff	passed
+dark-comfortable	button.disabled.text actual=0xeef0f473 expected=0xeef0f473	passed
+dark-comfortable	button.disabled.opacity actual=1.0 expected=1.0	passed
+dark-comfortable	field.default.text actual=0xeef0f4ff expected=0xeef0f4ff	passed
+dark-comfortable	field.placeholder actual=0xa7afbeff expected=0xa7afbeff	passed
+dark-comfortable	field.invalid.boundary actual=0xf0a3a6ff expected=0xf0a3a6ff	passed
+dark-comfortable	field.invalid.text actual=0xeef0f4ff expected=0xeef0f4ff	passed
+dark-comfortable	field.height actual=32.0 expected=32.0	passed
+dark-comfortable	field.invalid-focused.boundary actual=0xf0a3a6ff expected=0xf0a3a6ff	passed
+dark-comfortable	field.invalid-focused.focus actual=0xbcb7ffff expected=0xbcb7ffff	passed
+dark-comfortable	field.focused.placeholder actual=0xa7afbeff expected=0xa7afbeff	passed
+dark-comfortable	field.readonly actual=0x111318ff expected=0x111318ff	passed
+dark-comfortable	field.disabled actual=0xeef0f473 expected=0xeef0f473	passed
+dark-comfortable	table.font actual=13.0 expected=13.0	passed
+dark-comfortable	table.selected actual=0x2a2745ff expected=0x2a2745ff	passed
+dark-comfortable	table.row.height actual=40.0 expected=40.0	passed
+dark-comfortable	visible table column headers present	passed
+dark-comfortable	table.header.computed-size actual=32.0 expected=32.0	passed
+dark-comfortable	table.header.height pref=32.0 actual=32.0 expected=32.0	passed
+dark-comfortable	table.header.computed-size actual=32.0 expected=32.0	passed
+dark-comfortable	table.header.height pref=32.0 actual=32.0 expected=32.0	passed
+dark-comfortable	table.selection.marker actual=0xbcb7ffff expected=0xbcb7ffff	passed
+dark-comfortable	table actually loses focus	passed
+dark-comfortable	table.inactive-selection actual=0x272b35ff expected=0x272b35ff	passed
+dark-comfortable	table.inactive-marker actual=0x6d798dff expected=0x6d798dff	passed
+dark-comfortable	one dynamic stylesheet on fixture	passed
+dark-comfortable	no production overlay stylesheet	passed
+dark-comfortable	correct Theme instance	passed
+dark-comfortable	AtlantaFX manifest parses	passed
+dark-comfortable	scene color scheme matches explicit appearance	passed
+dark-comfortable	context menu actually shown	passed
+dark-comfortable	menu.surface actual=0x20232bff expected=0x20232bff	passed
+dark-comfortable	menu.focused actual=0x272b35ff expected=0x272b35ff	passed
+dark-comfortable	menu.focused.text actual=0xeef0f4ff expected=0xeef0f4ff	passed
+dark-comfortable	menu.disabled.text actual=0xeef0f473 expected=0xeef0f473	passed
+dark-comfortable	menu inherits reduced motion	passed
+dark-comfortable	dialog actually shown	passed
+dark-comfortable	dialog.surface actual=0x17191fff expected=0x17191fff	passed
+dark-comfortable	dialog.header.text actual=0xeef0f4ff expected=0xeef0f4ff	passed
+dark-compact	root.surface actual=0x17191fff expected=0x17191fff	passed
+dark-compact	label.default actual=0xeef0f4ff expected=0xeef0f4ff	passed
+dark-compact	title.font actual=25.0 expected=25.0	passed
+dark-compact	button.default.text actual=0xeef0f4ff expected=0xeef0f4ff	passed
+dark-compact	button.default.background actual=0x20232bff expected=0x20232bff	passed
+dark-compact	button.height actual=28.0 expected=28.0	passed
+dark-compact	button.font actual=14.0 expected=14.0	passed
+dark-compact	button.primary actual=0x6258d5ff expected=0x6258d5ff	passed
+dark-compact	button.primary.text actual=0xffffffff expected=0xffffffff	passed
+dark-compact	button.hover actual=0x272b35ff expected=0x272b35ff	passed
+dark-compact	button.hover.opacity actual=1.0 expected=1.0	passed
+dark-compact	button.pressed actual=0x2b2f39ff expected=0x2b2f39ff	passed
+dark-compact	button.focus-visible actual=0xbcb7ffff expected=0xbcb7ffff	passed
+dark-compact	button.disabled.text actual=0xeef0f473 expected=0xeef0f473	passed
+dark-compact	button.disabled.opacity actual=1.0 expected=1.0	passed
+dark-compact	field.default.text actual=0xeef0f4ff expected=0xeef0f4ff	passed
+dark-compact	field.placeholder actual=0xa7afbeff expected=0xa7afbeff	passed
+dark-compact	field.invalid.boundary actual=0xf0a3a6ff expected=0xf0a3a6ff	passed
+dark-compact	field.invalid.text actual=0xeef0f4ff expected=0xeef0f4ff	passed
+dark-compact	field.height actual=28.0 expected=28.0	passed
+dark-compact	field.invalid-focused.boundary actual=0xf0a3a6ff expected=0xf0a3a6ff	passed
+dark-compact	field.invalid-focused.focus actual=0xbcb7ffff expected=0xbcb7ffff	passed
+dark-compact	field.focused.placeholder actual=0xa7afbeff expected=0xa7afbeff	passed
+dark-compact	field.readonly actual=0x111318ff expected=0x111318ff	passed
+dark-compact	field.disabled actual=0xeef0f473 expected=0xeef0f473	passed
+dark-compact	table.font actual=13.0 expected=13.0	passed
+dark-compact	table.selected actual=0x2a2745ff expected=0x2a2745ff	passed
+dark-compact	table.row.height actual=32.0 expected=32.0	passed
+dark-compact	visible table column headers present	passed
+dark-compact	table.header.computed-size actual=28.0 expected=28.0	passed
+dark-compact	table.header.height pref=28.0 actual=28.0 expected=28.0	passed
+dark-compact	table.header.computed-size actual=28.0 expected=28.0	passed
+dark-compact	table.header.height pref=28.0 actual=28.0 expected=28.0	passed
+dark-compact	table.selection.marker actual=0xbcb7ffff expected=0xbcb7ffff	passed
+dark-compact	table actually loses focus	passed
+dark-compact	table.inactive-selection actual=0x272b35ff expected=0x272b35ff	passed
+dark-compact	table.inactive-marker actual=0x6d798dff expected=0x6d798dff	passed
+dark-compact	one dynamic stylesheet on fixture	passed
+dark-compact	no production overlay stylesheet	passed
+dark-compact	correct Theme instance	passed
+dark-compact	AtlantaFX manifest parses	passed
+dark-compact	scene color scheme matches explicit appearance	passed
+dark-compact	context menu actually shown	passed
+dark-compact	menu.surface actual=0x20232bff expected=0x20232bff	passed
+dark-compact	menu.focused actual=0x272b35ff expected=0x272b35ff	passed
+dark-compact	menu.focused.text actual=0xeef0f4ff expected=0xeef0f4ff	passed
+dark-compact	menu.disabled.text actual=0xeef0f473 expected=0xeef0f473	passed
+dark-compact	menu inherits reduced motion	passed
+dark-compact	dialog actually shown	passed
+dark-compact	dialog.surface actual=0x17191fff expected=0x17191fff	passed
+dark-compact	dialog.header.text actual=0xeef0f4ff expected=0xeef0f4ff	passed
+lifecycle	duplicate registration returns same handle	passed
+lifecycle	repeated switching does not duplicate sheets	passed
+lifecycle	repeated switching does not duplicate registrations	passed
+lifecycle	hidden scene updated	passed
+lifecycle	old root treatment removed and host CSS retained	passed
+lifecycle	replacement root treated once	passed
+lifecycle	unregister restores scene	passed
+lifecycle	unregistered root listener detached	passed
+lifecycle	existing-scene.enlarged.font actual=28.0 expected=28.0	passed
+lifecycle	existing-scene.enlarged.target	passed
+lifecycle	existing-scene.enlarged.minimum actual=56.0 expected=56.0	passed
+lifecycle	existing-scene.enlarged.title actual=50.0 expected=50.0	passed
+lifecycle	existing-scene.enlarged.table-font actual=26.0 expected=26.0	passed
+lifecycle	full-motion native CSS transition created	passed
+lifecycle	reduced-motion hover creates no CSS transition	passed
+lifecycle	enlarged.font actual=28.0 expected=28.0	passed
+lifecycle	enlarged.control.minimum actual=56.0 expected=56.0	passed
+lifecycle	enlarged effective control target grows	passed
+lifecycle	new scene inherits current motion	passed
+lifecycle	new scene inherits current theme	passed
+lifecycle	local host override replaced while bound	passed
+lifecycle	explicit host overrides restored	passed
+lifecycle	foreign scene preference binding rejected	passed
+lifecycle	foreign binding preserved	passed
+lifecycle	null preference rejected	passed
+lifecycle	invalid scale rejected	passed
+lifecycle	overflow scale rejected	passed
+lifecycle	second binding rejected	passed
+lifecycle	off-thread mutation rejected	passed
+lifecycle	disposal restores prior host theme and module selection	passed
+lifecycle	disposal removes dynamic fixture treatment	passed
+lifecycle	disposal restores previous scene UA	passed
+lifecycle	disposal restores platform-coalesced scheme	passed
+lifecycle	disposal restores platform-coalesced motion	passed
+lifecycle	disposed mutation rejected	passed
+lifecycle	optional preference defaults	passed
+lifecycle	SYSTEM appearance follows typed platform value	passed
+lifecycle	SYSTEM motion follows typed platform value	passed
+lifecycle	reinstallation has one stylesheet	passed
+lifecycle	shared manager usable after disposal	passed
+lifecycle	lifecycle fixture began with authored theme	passed

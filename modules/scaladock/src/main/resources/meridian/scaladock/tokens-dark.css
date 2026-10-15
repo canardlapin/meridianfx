@@ -1,0 +1,18 @@
+/* Generated from tokens/meridian.json; SHA-256 1c14eaf53bc0801d37c190a16a1abf3a91820502ee58a238028a2f8a20d81d25. Do not edit. */
+.dock {
+  -dock-accent: #BCB7FF;
+  -dock-accent-soft: #6258D533;
+  -dock-base: #17191F;
+  -dock-drop-scrim: #00000024;
+  -dock-hover: #22252E;
+  -dock-outline: #2D323D;
+  -dock-pressed: #343946;
+  -dock-selected-bar: #6D798D;
+  -dock-shadow: #00000080;
+  -dock-slot-fill: #6258D51A;
+  -dock-surface: #111318;
+  -dock-surface-raised: #20232B;
+  -dock-surface-veil: #111318;
+  -dock-text: #A7AFBE;
+  -dock-text-strong: #EEF0F4;
+}

@@ -1,0 +1,15 @@
+target/
+project/target/
+project/project/
+.bsp/
+.metals/
+.idea/
+upstream/cache/
+.mote/local/
+.mote/tmp/
+.DS_Store
+__pycache__/
+*.pyc
+theme-build/node_modules/
+.hillclimb/
+.ruff_cache/

@@ -1,0 +1,94 @@
+{
+  "capture_hashes": {
+    "acceptance-final/dark-comfortable-dialog.png": "bdfd4cff1957c044cd5a84ab676e1689fe1753b91f8f78b1107ba318bb2d38a0",
+    "acceptance-final/dark-comfortable-menu.png": "757c70a02377796645902ca4244e154b987ce5ce4ba8d715714b790dd2167791",
+    "acceptance-final/dark-comfortable.png": "f0e898fba319b8e7dc5e6ce89c1ce39582b66d0960ac5efca487957caf81288f",
+    "acceptance-final/dark-compact-dialog.png": "c40cd5a7ff20742f08f2d20d9f387f84b6e32c88760c14af6e7fb7e0e82f04d5",
+    "acceptance-final/dark-compact-menu.png": "8448e796d7aa69a5527c3fd907ee8a9a0c1ce613ed08d94eb304d85676a3ffaf",
+    "acceptance-final/dark-compact.png": "b45791711d5eac955fc21fb6c87a5cc8cad012046963f051e649ed179c4a0a9b",
+    "acceptance-final/light-comfortable-dialog.png": "f87a884ad59c2865d572f32a30d91c93ce34020062f2df9c1a336286dc5594de",
+    "acceptance-final/light-comfortable-menu.png": "477d8019f684f3ee84bc7b8c4efa9cb2c54a225b85c17a5894ce86a47ee35eed",
+    "acceptance-final/light-comfortable.png": "8a6459b550fd23b7473d958477c433e80be3c895b830db984fe6d49c5895e597",
+    "acceptance-final/light-compact-dialog.png": "f10233df7b081c0d10a9c0eefc93902e538fc78a5c413ca3b6efe7d4682cefcb",
+    "acceptance-final/light-compact-menu.png": "bbc26bc18417044f11fcba295a9869eb8bd01d48b153645e281af3ea5d4ca777",
+    "acceptance-final/light-compact.png": "c1b3098147d6b79acb9dc2b1ad0bd92d805e18edadddec90808ca9b5d700a200"
+  },
+  "commands": {
+    "acceptance-final": {
+      "argv": [
+        "tools/sbt",
+        "scalafmtSbtCheck",
+        "scalafmtCheckAll",
+        "clean",
+        "compile",
+        "foundationReport",
+        "theme/packageBin",
+        "sampler/runMain meridian.sampler.ThemeSmoke docs/evidence/a3/acceptance-final"
+      ],
+      "exit_code": 0,
+      "reason": "exited"
+    },
+    "foundation-integrity": {
+      "argv": [
+        "python3",
+        "tools/verify_foundation.py",
+        "--classpath"
+      ],
+      "exit_code": 0,
+      "reason": "exited"
+    },
+    "java-caller-final": {
+      "argv": [
+        "python3",
+        "docs/evidence/a3/run_java_caller.py"
+      ],
+      "exit_code": 0,
+      "reason": "exited"
+    },
+    "python-final-02": {
+      "argv": [
+        "python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tools/tests",
+        "-v"
+      ],
+      "exit_code": 0,
+      "reason": "exited"
+    },
+    "themes-final": {
+      "argv": [
+        "python3",
+        "tools/build_themes.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "reason": "exited"
+    },
+    "tokens-integrity": {
+      "argv": [
+        "python3",
+        "tools/check_tokens.py"
+      ],
+      "exit_code": 0,
+      "reason": "exited"
+    }
+  },
+  "compiled_resources": 9,
+  "compiled_themes": 4,
+  "consumer_source_sha256": "15109931ce2307a89d27dd3477b5681a7705f8b13543e8c820ea1b73e39d1eaa",
+  "explicit_contrast_exceptions": 12,
+  "hosted_ci": "configured, unrun",
+  "independent_java_jar_sha256": "8975ca80efa03b2a3e7c70f5c76a6010dcb8e664e50ad4f9ae1235581d924f3d",
+  "native_assertions": 245,
+  "python_tests": 28,
+  "qualification": "local macOS native fixture and isolated Java consumer only",
+  "required_contrast_pairs_unchanged": 224,
+  "schema": "meridian.a3-acceptance.v1",
+  "source_candidate_sha256": "b0fa075adaf1d3704de887df93345f3ce59d7e641be157275abd2a46d7a6da35",
+  "source_files": 123,
+  "variants": 4,
+  "visual_review": "two batches; final captures byte-identical to inspected native-final set"
+}

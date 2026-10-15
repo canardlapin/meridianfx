@@ -1,0 +1,25 @@
+name: Token contracts
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  tokens:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
+        with:
+          persist-credentials: false
+      - name: Generated outputs match authored source
+        run: python3 tools/generate_tokens.py --check
+      - name: Determinism and stale-output rejection
+        run: python3 tools/check_tokens.py
+      - name: Install pinned development-only theme compiler
+        run: npm ci --prefix theme-build --ignore-scripts --no-audit --no-fund
+      - name: Compiled themes match locked sources
+        run: python3 tools/build_themes.py --check
+      - name: Independent contrast references and contract regressions
+        run: python3 -m unittest discover -s tools/tests -v

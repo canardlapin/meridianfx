@@ -1,0 +1,61 @@
+Meridian JDK: /opt/homebrew/Cellar/openjdk/25.0.1
+[info] welcome to sbt 1.12.14 (Homebrew Java 25.0.1)
+[info] loading settings for project meridianfx-build from plugins.sbt...
+[info] loading project definition from /Users/bbuchsbaum/code/scala/meridianfx/project
+[info] loading settings for project root from build.sbt...
+[info] loading settings for project scaladock-build from plugins.sbt...
+[info] loading project definition from /Users/bbuchsbaum/.sbt/1.0/staging/e5369b89f9d6f9ffec6b/scaladock/project
+[info] loading settings for project root from build.sbt...
+[info] set current project to meridianfx (in build file:/Users/bbuchsbaum/code/scala/meridianfx/)
+[info] Executing in batch mode. For better performance use sbt's shell
+[info] scalafmt: Checking 2 Scala sources (/Users/bbuchsbaum/code/scala/meridianfx)...
+[success] Total time: 2 s, completed Oct 14, 2026, 8:38:51 p.m.
+[success] Total time: 0 s, completed Oct 14, 2026, 8:38:52 p.m.
+[success] Total time: 0 s, completed Oct 14, 2026, 8:38:52 p.m.
+[info] compiling 5 Java sources to /Users/bbuchsbaum/code/scala/meridianfx/modules/theme/target/classes ...
+Meridian theme resource hashes verified (no Sass runtime needed)
+[info] done compiling
+[info] compiling 1 Scala source to /Users/bbuchsbaum/code/scala/meridianfx/modules/scaladock/target/scala-3.7.4/classes ...
+[info] compiling 2 Java sources to /Users/bbuchsbaum/code/scala/meridianfx/modules/workbench/target/classes ...
+[info] done compiling
+[info] done compiling
+[info] compiling 3 Java sources to /Users/bbuchsbaum/code/scala/meridianfx/modules/sampler/target/scala-3.7.4/classes ...
+[info] done compiling
+[success] Total time: 5 s, completed Oct 14, 2026, 8:38:56 p.m.
+Meridian theme resource hashes verified (no Sass runtime needed)
+[info] Wrote foundation report: /Users/bbuchsbaum/code/scala/meridianfx/modules/theme/target/foundation
+[info] Wrote foundation report: /Users/bbuchsbaum/code/scala/meridianfx/modules/workbench/target/foundation
+[info] Wrote foundation report: /Users/bbuchsbaum/code/scala/meridianfx/modules/scaladock/target/foundation
+[info] Wrote foundation report: /Users/bbuchsbaum/code/scala/meridianfx/modules/sampler/target/foundation
+[success] Total time: 0 s, completed Oct 14, 2026, 8:38:56 p.m.
+Meridian theme resource hashes verified (no Sass runtime needed)
+[success] Total time: 0 s, completed Oct 14, 2026, 8:38:56 p.m.
+Meridian theme resource hashes verified (no Sass runtime needed)
+[info] running (fork) meridian.sampler.ThemeSmoke docs/evidence/a3/native-final
+[info] Prism pipeline init order: mtl es2 sw 
+[info] Using Double Precision Marlin Rasterizer
+[info] Using dirty region optimizations
+[info] Not using texture mask for primitives
+[info] Not forcing power of 2 sizes for textures
+[info] Using hardware CLAMP_TO_ZERO mode
+[info] Opting in for HiDPI pixel scaling
+[info] Not forcing UploadingPainter
+[info] Prism pipeline name = com.sun.prism.mtl.MTLPipeline
+[error] Loading native metal library, named: prism_mtl
+[error] Succeeded: Loading native metal library.
+[info] (X) Got class = class com.sun.prism.mtl.MTLPipeline
+[info] Initialized prism pipeline: com.sun.prism.mtl.MTLPipeline
+[error]  vsync: true vpipe: true
+[error] MTLResourceFactory: Prism - createStockShader: FillPgram_Color
+[error] MTLResourceFactory: Prism - createStockShader: Texture_Color
+[error] MTLResourceFactory: Prism - createStockShader: FillRoundRect_Color
+[error] MTLResourceFactory: Prism - createStockShader: DrawRoundRect_Color
+[error] MTLResourceFactory: Prism - createStockShader: DrawPgram_Color
+[error] MTLResourceFactory: Prism - createStockShader: Solid_Color
+[error] MTLResourceFactory: Prism - createStockShader: Mask_TextureSuper
+[info] PPSRenderer: scenario.effect - createShader: LinearConvolveShadow_64
+[error] MTLResourceFactory: Prism - createStockShader: Solid_TextureRGB
+[info] PPSRenderer: scenario.effect - createShader: LinearConvolveShadow_24
+[info] MERIDIAN_THEME_SMOKE_OK variants=4 captures=12 assertions=242
+[info] QuantumRenderer: shutdown
+[success] Total time: 3 s, completed Oct 14, 2026, 8:39:00 p.m.

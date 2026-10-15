@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "started_utc": "2026-10-15T00:40:54.984288+00:00",
+  "finished_utc": "2026-10-15T00:40:56.624654+00:00",
+  "duration_seconds": 1.640241,
+  "command": [
+    "python3",
+    "docs/evidence/a3/run_java_caller.py"
+  ],
+  "cwd": "/Users/bbuchsbaum/code/scala/meridianfx",
+  "log": "/Users/bbuchsbaum/code/scala/meridianfx/docs/evidence/a3/java-caller-02.log",
+  "exit_code": 1,
+  "child_returncode": 1,
+  "reason": "exited",
+  "detail": null,
+  "timeout_seconds": 120.0,
+  "log_bytes": 1874
+}

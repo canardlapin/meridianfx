@@ -1,0 +1,5 @@
+2026-10-14 20:44:20.069 java[45906:7146589] CVDisplayLinkCreateWithActiveCGDisplays error: -6661
+2026-10-14 20:44:20.069 java[45906:7146589] CVDisplayLinkSetCurrentCGDisplay error: -6661
+2026-10-14 20:44:20.069 java[45906:7146589] CVDisplayLinkSetOutputCallback error: -6661
+2026-10-14 20:44:20.069 java[45906:7146589] CVDisplayLinkStart error: -6661
+MERIDIAN_JAVA_CALLER_OK packagedTheme=true scala=false scaladock=false windows=0

@@ -1,0 +1,41 @@
+Meridian JDK: /opt/homebrew/Cellar/openjdk/25.0.1
+[info] welcome to sbt 1.12.14 (Homebrew Java 25.0.1)
+[info] loading settings for project meridianfx-build from plugins.sbt...
+[info] loading project definition from /Users/bbuchsbaum/code/scala/meridianfx/project
+[info] loading settings for project root from build.sbt...
+[info] loading settings for project scaladock-build from plugins.sbt...
+[info] loading project definition from /Users/bbuchsbaum/.sbt/1.0/staging/e5369b89f9d6f9ffec6b/scaladock/project
+[info] loading settings for project root from build.sbt...
+[info] set current project to meridianfx (in build file:/Users/bbuchsbaum/code/scala/meridianfx/)
+[info] Executing in batch mode. For better performance use sbt's shell
+[info] scalafmt: Checking 2 Scala sources (/Users/bbuchsbaum/code/scala/meridianfx)...
+[success] Total time: 1 s, completed Oct 14, 2026, 7:54:17 p.m.
+[success] Total time: 0 s, completed Oct 14, 2026, 7:54:17 p.m.
+[info] compiling 1 Java source to /Users/bbuchsbaum/code/scala/meridianfx/modules/theme/target/classes ...
+[info] done compiling
+[info] compiling 1 Java source to /Users/bbuchsbaum/code/scala/meridianfx/modules/sampler/target/scala-3.7.4/classes ...
+[info] done compiling
+[success] Total time: 1 s, completed Oct 14, 2026, 7:54:18 p.m.
+[info] Wrote foundation report: /Users/bbuchsbaum/code/scala/meridianfx/modules/theme/target/foundation
+[info] Wrote foundation report: /Users/bbuchsbaum/code/scala/meridianfx/modules/workbench/target/foundation
+[info] Wrote foundation report: /Users/bbuchsbaum/code/scala/meridianfx/modules/scaladock/target/foundation
+[info] Wrote foundation report: /Users/bbuchsbaum/code/scala/meridianfx/modules/sampler/target/foundation
+[success] Total time: 0 s, completed Oct 14, 2026, 7:54:19 p.m.
+[info] running (fork) meridian.sampler.TokenProbe tokens/generated/native-expected.tsv docs/evidence/a2/native-colors.tsv
+[info] Prism pipeline init order: mtl es2 sw 
+[info] Using Double Precision Marlin Rasterizer
+[info] Using dirty region optimizations
+[info] Not using texture mask for primitives
+[info] Not forcing power of 2 sizes for textures
+[info] Using hardware CLAMP_TO_ZERO mode
+[info] Opting in for HiDPI pixel scaling
+[info] Not forcing UploadingPainter
+[info] Prism pipeline name = com.sun.prism.mtl.MTLPipeline
+[error] Loading native metal library, named: prism_mtl
+[error] Succeeded: Loading native metal library.
+[info] (X) Got class = class com.sun.prism.mtl.MTLPipeline
+[info] Initialized prism pipeline: com.sun.prism.mtl.MTLPipeline
+[info] MERIDIAN_TOKEN_PROBE_OK colors=130 metrics=passed windows=0
+[error]  vsync: true vpipe: true
+[info] QuantumRenderer: shutdown
+[success] Total time: 1 s, completed Oct 14, 2026, 7:54:20 p.m.

@@ -1,0 +1,28 @@
+MeridianFX foundation — third-party provenance
+
+AtlantaFX 3.0.0:
+  upstream: https://github.com/mkpaz/atlantafx
+  release: v3.0.0
+  source commit: 61a48371c2873613a6a654e625fda156e3cbdf3f
+  license: MIT; exact upstream notice is preserved in upstream/atlantafx/LICENSE.
+  The original modular style inputs are preserved under upstream/atlantafx/styles.
+  The foundation probe uses the published PrimerLight theme, not an authored
+  Meridian stylesheet. Downstream styling begins in A2/A3.
+
+ScalaDock:
+  upstream: https://github.com/canardlapin/scaladock
+  source commit: 628c46fce92c4d31b0b08459ac0f18777b5ba527
+  license: Apache-2.0, supplied by the pinned source dependency.
+  Only meridian-scaladock and the development sampler depend on ScalaDock.
+
+JavaFX/OpenJDK:
+  runtime dependencies retain their upstream licenses and legal notices.
+  No JDK or JavaFX binary is redistributed in this source tree.
+
+Fonts and icons:
+  The foundation probe uses the runtime's system-font baseline and no bundled
+  font or icon asset. No third-party font/icon is copied into runtime resources.
+  The three supplied browser design-study assets are preserved unchanged as
+  reference material; their illustrative SVG marks are not a runtime icon set.
+  Any later bundled family/library must add its original license and exact
+  source/version to this notice before redistribution.

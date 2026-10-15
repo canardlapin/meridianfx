@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "started_utc": "2026-10-14T23:54:15.509046+00:00",
+  "finished_utc": "2026-10-14T23:54:15.640401+00:00",
+  "duration_seconds": 0.13116,
+  "command": [
+    "python3",
+    "tools/check_tokens.py"
+  ],
+  "cwd": "/Users/bbuchsbaum/code/scala/meridianfx",
+  "log": "/Users/bbuchsbaum/code/scala/meridianfx/docs/evidence/a2/generation-checks.log",
+  "exit_code": 0,
+  "child_returncode": 0,
+  "reason": "exited",
+  "detail": null,
+  "timeout_seconds": 120.0,
+  "log_bytes": 407
+}

@@ -1,0 +1,30 @@
+[
+  {
+    "name": "atlantafx",
+    "url": "https://repo.maven.apache.org/maven2/io/github/mkpaz/atlantafx-base/3.0.0/atlantafx-base-3.0.0.pom",
+    "http_status": 200,
+    "sha256": "f545989c3d16f75d84469ebdf83d48c90b49d6b7679e47d74166848abf5b77f5",
+    "bytes": 4580
+  },
+  {
+    "name": "javafx",
+    "url": "https://repo.maven.apache.org/maven2/org/openjfx/javafx-controls/27/javafx-controls-27.pom",
+    "http_status": 200,
+    "sha256": "d6bb93118d15f11391ad054f1ad140cf2c9fd2eb48c818f8178f9204ec8e88e6",
+    "bytes": 1032
+  },
+  {
+    "name": "sbt",
+    "url": "https://repo.maven.apache.org/maven2/org/scala-sbt/sbt/1.12.14/sbt-1.12.14.pom",
+    "http_status": 200,
+    "sha256": "42af2522d19068d50d910788dfc0795ac362840f256462fc5d401eb0c21b1057",
+    "bytes": 4137
+  },
+  {
+    "name": "scala",
+    "url": "https://repo.maven.apache.org/maven2/org/scala-lang/scala3-compiler_3/3.7.4/scala3-compiler_3-3.7.4.pom",
+    "http_status": 200,
+    "sha256": "56ff45ac766b8af576b7f4a197f912353501d9f3c8d05dee130b15a69b2920dc",
+    "bytes": 5727
+  }
+]
