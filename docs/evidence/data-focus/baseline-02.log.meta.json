@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "started_utc": "2026-10-16T01:27:26.018402+00:00",
+  "finished_utc": "2026-10-16T01:27:46.465126+00:00",
+  "duration_seconds": 20.446308,
+  "command": [
+    "tools/sbt",
+    "sampler/runMain meridian.sampler.DataFocusProbe docs/evidence/data-focus/baseline-02 baseline"
+  ],
+  "cwd": "/Users/bbuchsbaum/code/scala/meridianfx",
+  "log": "/Users/bbuchsbaum/code/scala/meridianfx/docs/evidence/data-focus/baseline-02.log",
+  "exit_code": 0,
+  "child_returncode": 0,
+  "reason": "exited",
+  "detail": null,
+  "timeout_seconds": 240.0,
+  "log_bytes": 2284
+}

@@ -1,0 +1,2 @@
+java=25.0.1 javafx=27+30 os=Mac OS X/aarch64
+Input scope: real scene focusOwner; controlled focused/focus-visible pseudo-classes; OS activation is recorded, not assumed; no OS input injection

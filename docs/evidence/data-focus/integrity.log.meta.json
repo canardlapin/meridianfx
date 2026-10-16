@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "started_utc": "2026-10-16T01:28:49.664952+00:00",
+  "finished_utc": "2026-10-16T01:28:51.946901+00:00",
+  "duration_seconds": 2.281763,
+  "command": [
+    "python3",
+    "-c",
+    "\nimport subprocess\ncommands=[['python3','tools/build_themes.py','--check'],['python3','tools/build_themes.py','--verify'],['python3','tools/generate_tokens.py','--check'],['python3','tools/verify_foundation.py','--classpath'],['git','diff','--check']]\nfor command in commands:\n print('COMMAND '+repr(command),flush=True)\n subprocess.run(command,check=True)\n"
+  ],
+  "cwd": "/Users/bbuchsbaum/code/scala/meridianfx",
+  "log": "/Users/bbuchsbaum/code/scala/meridianfx/docs/evidence/data-focus/integrity.log",
+  "exit_code": 0,
+  "child_returncode": 0,
+  "reason": "exited",
+  "detail": null,
+  "timeout_seconds": 180.0,
+  "log_bytes": 1152
+}

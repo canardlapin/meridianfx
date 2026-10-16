@@ -5731,7 +5731,7 @@ Text {
   -fx-background-color: -meridian-border-decorative, -meridian-selection-active;
 }
 
-.table-view:focus-visible {
+.table-view:focus-visible, .list-view:focus-visible, .tree-view:focus-visible {
   -fx-border-color: -meridian-focus-ring;
   -fx-border-width: 2px;
 }

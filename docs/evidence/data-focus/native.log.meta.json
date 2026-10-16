@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "started_utc": "2026-10-16T01:28:26.309782+00:00",
+  "finished_utc": "2026-10-16T01:28:34.097894+00:00",
+  "duration_seconds": 7.78784,
+  "command": [
+    "tools/sbt",
+    "scalafmtSbtCheck",
+    "scalafmtCheckAll",
+    "compile",
+    "theme/packageBin",
+    "sampler/runMain meridian.sampler.DataFocusProbe docs/evidence/data-focus/native",
+    "sampler/runMain meridian.sampler.ThemeSmoke docs/evidence/data-focus/theme-smoke"
+  ],
+  "cwd": "/Users/bbuchsbaum/code/scala/meridianfx",
+  "log": "/Users/bbuchsbaum/code/scala/meridianfx/docs/evidence/data-focus/native.log",
+  "exit_code": 1,
+  "child_returncode": 1,
+  "reason": "exited",
+  "detail": null,
+  "timeout_seconds": 240.0,
+  "log_bytes": 6094
+}

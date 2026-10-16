@@ -1,0 +1,220 @@
+{
+  "issue": "https://github.com/canardlapin/meridianfx/issues/5",
+  "mote": "bd-01M5151J7F8843FY5H8X4E21FH",
+  "base_git_head": "cf5bbff69203556ee8b31ea566502d502e766386",
+  "source_digest": "7dadefce0ae0b9d4b4fc6510a1486ad5101429e03597257c243dff718d71dd30",
+  "runs": {
+    "baseline-02.log.meta.json": {
+      "schema_version": 1,
+      "started_utc": "2026-10-16T01:27:26.018402+00:00",
+      "finished_utc": "2026-10-16T01:27:46.465126+00:00",
+      "duration_seconds": 20.446308,
+      "command": [
+        "tools/sbt",
+        "sampler/runMain meridian.sampler.DataFocusProbe docs/evidence/data-focus/baseline-02 baseline"
+      ],
+      "cwd": "/Users/bbuchsbaum/code/scala/meridianfx",
+      "log": "/Users/bbuchsbaum/code/scala/meridianfx/docs/evidence/data-focus/baseline-02.log",
+      "exit_code": 0,
+      "child_returncode": 0,
+      "reason": "exited",
+      "detail": null,
+      "timeout_seconds": 240.0,
+      "log_bytes": 2284
+    },
+    "baseline.log.meta.json": {
+      "schema_version": 1,
+      "started_utc": "2026-10-16T01:26:47.197915+00:00",
+      "finished_utc": "2026-10-16T01:26:53.540347+00:00",
+      "duration_seconds": 6.342171,
+      "command": [
+        "tools/sbt",
+        "sampler/runMain meridian.sampler.DataFocusProbe docs/evidence/data-focus/baseline baseline"
+      ],
+      "cwd": "/Users/bbuchsbaum/code/scala/meridianfx",
+      "log": "/Users/bbuchsbaum/code/scala/meridianfx/docs/evidence/data-focus/baseline.log",
+      "exit_code": 1,
+      "child_returncode": 1,
+      "reason": "exited",
+      "detail": null,
+      "timeout_seconds": 240.0,
+      "log_bytes": 5706
+    },
+    "generate.log.meta.json": {
+      "schema_version": 1,
+      "started_utc": "2026-10-16T01:28:13.514201+00:00",
+      "finished_utc": "2026-10-16T01:28:15.480586+00:00",
+      "duration_seconds": 1.966224,
+      "command": [
+        "python3",
+        "tools/build_themes.py"
+      ],
+      "cwd": "/Users/bbuchsbaum/code/scala/meridianfx",
+      "log": "/Users/bbuchsbaum/code/scala/meridianfx/docs/evidence/data-focus/generate.log",
+      "exit_code": 0,
+      "child_returncode": 0,
+      "reason": "exited",
+      "detail": null,
+      "timeout_seconds": 120.0,
+      "log_bytes": 133
+    },
+    "integrity.log.meta.json": {
+      "schema_version": 1,
+      "started_utc": "2026-10-16T01:28:49.664952+00:00",
+      "finished_utc": "2026-10-16T01:28:51.946901+00:00",
+      "duration_seconds": 2.281763,
+      "command": [
+        "python3",
+        "-c",
+        "\nimport subprocess\ncommands=[['python3','tools/build_themes.py','--check'],['python3','tools/build_themes.py','--verify'],['python3','tools/generate_tokens.py','--check'],['python3','tools/verify_foundation.py','--classpath'],['git','diff','--check']]\nfor command in commands:\n print('COMMAND '+repr(command),flush=True)\n subprocess.run(command,check=True)\n"
+      ],
+      "cwd": "/Users/bbuchsbaum/code/scala/meridianfx",
+      "log": "/Users/bbuchsbaum/code/scala/meridianfx/docs/evidence/data-focus/integrity.log",
+      "exit_code": 0,
+      "child_returncode": 0,
+      "reason": "exited",
+      "detail": null,
+      "timeout_seconds": 180.0,
+      "log_bytes": 1152
+    },
+    "native-02.log.meta.json": {
+      "schema_version": 1,
+      "started_utc": "2026-10-16T01:29:26.973875+00:00",
+      "finished_utc": "2026-10-16T01:29:44.871728+00:00",
+      "duration_seconds": 17.89751,
+      "command": [
+        "tools/sbt",
+        "compile",
+        "sampler/runMain meridian.sampler.DataFocusProbe docs/evidence/data-focus/native-02",
+        "sampler/runMain meridian.sampler.ThemeSmoke docs/evidence/data-focus/theme-smoke"
+      ],
+      "cwd": "/Users/bbuchsbaum/code/scala/meridianfx",
+      "log": "/Users/bbuchsbaum/code/scala/meridianfx/docs/evidence/data-focus/native-02.log",
+      "exit_code": 0,
+      "child_returncode": 0,
+      "reason": "exited",
+      "detail": null,
+      "timeout_seconds": 240.0,
+      "log_bytes": 4221
+    },
+    "native.log.meta.json": {
+      "schema_version": 1,
+      "started_utc": "2026-10-16T01:28:26.309782+00:00",
+      "finished_utc": "2026-10-16T01:28:34.097894+00:00",
+      "duration_seconds": 7.78784,
+      "command": [
+        "tools/sbt",
+        "scalafmtSbtCheck",
+        "scalafmtCheckAll",
+        "compile",
+        "theme/packageBin",
+        "sampler/runMain meridian.sampler.DataFocusProbe docs/evidence/data-focus/native",
+        "sampler/runMain meridian.sampler.ThemeSmoke docs/evidence/data-focus/theme-smoke"
+      ],
+      "cwd": "/Users/bbuchsbaum/code/scala/meridianfx",
+      "log": "/Users/bbuchsbaum/code/scala/meridianfx/docs/evidence/data-focus/native.log",
+      "exit_code": 1,
+      "child_returncode": 1,
+      "reason": "exited",
+      "detail": null,
+      "timeout_seconds": 240.0,
+      "log_bytes": 6094
+    },
+    "python.log.meta.json": {
+      "schema_version": 1,
+      "started_utc": "2026-10-16T01:28:26.515717+00:00",
+      "finished_utc": "2026-10-16T01:28:30.633945+00:00",
+      "duration_seconds": 4.118032,
+      "command": [
+        "python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tools/tests",
+        "-v"
+      ],
+      "cwd": "/Users/bbuchsbaum/code/scala/meridianfx",
+      "log": "/Users/bbuchsbaum/code/scala/meridianfx/docs/evidence/data-focus/python.log",
+      "exit_code": 0,
+      "child_returncode": 0,
+      "reason": "exited",
+      "detail": null,
+      "timeout_seconds": 240.0,
+      "log_bytes": 3603
+    }
+  },
+  "counts": {
+    "native_focus_states": 48,
+    "ring_states": 12,
+    "ordinary_unfocused_or_cleared_states": 36,
+    "focus_captures": 12,
+    "python_tests": 30,
+    "theme_smoke_assertions": 249
+  },
+  "artifacts": {
+    "meridian-theme-0.1.0-dev.1.jar": "d7816ace747306e835f42667089c5276de4cfcdcb39eff686391fc33253440fd"
+  },
+  "outputs": {
+    "baseline/partial-observed.txt": "d3d5864aaa52f8575df25e14337a58f86b592ee2e7494f0b8ac3db7a2fa3d69d",
+    "baseline-02/observed.txt": "f90c7c6033ed4bfaafa20d3a45f7974b7bd0b89f15009217f8bcf41832183339",
+    "baseline-02/variant-0-ListView.png": "76d109309f8461310bda2e9b6b67874ed93e58b44b1f69af4ce47f92ba2e55ff",
+    "baseline-02/variant-0-TableView.png": "77b8de2356a1ec82f2f063e3917babca9f74156cc715feaf0cf42b22461e59f7",
+    "baseline-02/variant-0-TreeView.png": "63f3f322249c40b197f3d7aed41c4bb5ed9f0367b1d5239f55db9a85af172865",
+    "baseline-02/variant-1-ListView.png": "4336c2d983a0254171124ad97568e541485443eae8e33a050593879498eee641",
+    "baseline-02/variant-1-TableView.png": "9253e26d7152f6dbc7e79a24196d238dcae4f15071969880c4e5e1bc4cc12085",
+    "baseline-02/variant-1-TreeView.png": "ebe264c94224ab08364ed7d5045d54e1bb33453df5a583a34c2f42bfc72d2562",
+    "baseline-02/variant-2-ListView.png": "2c0e52b8885404c8521eb93d49e28ab45cb8663e7a9421ac8d897a919abc8b61",
+    "baseline-02/variant-2-TableView.png": "a639e175ab9ddf2a4c327182df149efa0e1405f1f2771becacd9d2235a3da5a6",
+    "baseline-02/variant-2-TreeView.png": "426fecaf4106a462b57c04d300e561d7cb9c3c8263f0ca4288c87528d48e58a8",
+    "baseline-02/variant-3-ListView.png": "8bad0a878aecf9ff2cc2e350d21f964b5b75fcf8cfb71d67c6c53685040a5b7e",
+    "baseline-02/variant-3-TableView.png": "b70cd5e68c7f6d01cef1aa686357f2ec40e58c1fcb9cf535f72d25567d03af4e",
+    "baseline-02/variant-3-TreeView.png": "611c4fdb218ec384e9fa3499b385062003d40e8ed54e2d00f0ba31d4ea7a3b3a",
+    "native/partial-observed.txt": "fbb2dda0a070eff1c4b9238c748faf1cd0aa10928b220d9a6d69d49694780c3c",
+    "native-02/observed.txt": "20e4ed2bbb6e640358374ad5b626b11a637c6c9e3ffe5b61f993633ee9ec468e",
+    "native-02/variant-0-ListView.png": "e0433d75d8eeca2c2997cb8fbe9ef456bbfc0eaa43946b68e060f8ac459fbe6c",
+    "native-02/variant-0-TableView.png": "77b8de2356a1ec82f2f063e3917babca9f74156cc715feaf0cf42b22461e59f7",
+    "native-02/variant-0-TreeView.png": "2b35482e19615218c035c2ac3564ef078372086d639d714a069cffa5da170851",
+    "native-02/variant-1-ListView.png": "88458515b05774d883c15dc9f99e5a1f522906ced4b3303ff7ae4f18d494f21c",
+    "native-02/variant-1-TableView.png": "9253e26d7152f6dbc7e79a24196d238dcae4f15071969880c4e5e1bc4cc12085",
+    "native-02/variant-1-TreeView.png": "82d09a02deb8ea79859f50c3bb014c14b8711de46853badcff4f046983bcaec4",
+    "native-02/variant-2-ListView.png": "0efe4c2310794cf2a68e25940a7891b462caa3103ef076fa0bc076671c55e843",
+    "native-02/variant-2-TableView.png": "a639e175ab9ddf2a4c327182df149efa0e1405f1f2771becacd9d2235a3da5a6",
+    "native-02/variant-2-TreeView.png": "8b4c637c2c4494d1c9a30b2e06243908fe55241486b35f8514db1c6c94e944e3",
+    "native-02/variant-3-ListView.png": "aacb846d1c52806a6523c48b0050240f1cc58011e5bdea8c00d8e003e11adb80",
+    "native-02/variant-3-TableView.png": "b70cd5e68c7f6d01cef1aa686357f2ec40e58c1fcb9cf535f72d25567d03af4e",
+    "native-02/variant-3-TreeView.png": "f08e1f296b586edfb7ec8aceee9f619ac939c15a04bc0156e98cb6d440ef9798",
+    "theme-smoke/assertions.tsv": "e7b5f0d1b64a82dfbac74561c28cc97847d8fbc84b9f777b41855062ef9ca817",
+    "theme-smoke/dark-comfortable-dialog.png": "0880ee5761b2c20415d749a8e26f6b435ecc981566b4876607b5bf9d003af84e",
+    "theme-smoke/dark-comfortable-menu.png": "84a0c30183896b6aee339c00ab8a5d4df07f05488c93939600bc869f9ca5b715",
+    "theme-smoke/dark-comfortable.png": "5db8297474797b717e441ca97d48deb87867cc8264e17b934454ff2ad22a7377",
+    "theme-smoke/dark-compact-dialog.png": "91fccb50bc7f9444aeb69459de19beb83ea27e4b43f37cf0c87a797bf574f04c",
+    "theme-smoke/dark-compact-menu.png": "84a0c30183896b6aee339c00ab8a5d4df07f05488c93939600bc869f9ca5b715",
+    "theme-smoke/dark-compact.png": "5ee039f5f7f524b16bd7ece148e6519513e196ea058b440f47c48d0203de551f",
+    "theme-smoke/light-comfortable-dialog.png": "21a4c8ee77a1c1c711fbc30f0187039bf19cee0ae516d0d23dcafda7e53ba4db",
+    "theme-smoke/light-comfortable-menu.png": "c962caeb244b8b0d75919422abb415921ec593976d913d46998036827729d89a",
+    "theme-smoke/light-comfortable.png": "ab0767a81985939dae4d845db17d810c52554a53630c3e8396b9c2632817f050",
+    "theme-smoke/light-compact-dialog.png": "8a94647018c65a0baef9460c8b16646df4f291fbf62b983d846bb5502cb1f27c",
+    "theme-smoke/light-compact-menu.png": "c962caeb244b8b0d75919422abb415921ec593976d913d46998036827729d89a",
+    "theme-smoke/light-compact.png": "4ad53e00314d64e4cd807b1048de5c5e8580dfbecba1b4e18344a8a4ca762eec",
+    "theme-smoke/runtime.properties": "9bcdf08155e468292a83fa1fc21a5cd3c8656f08fcd87c85b12ad08c11fd3d20"
+  },
+  "platform": {
+    "os": "macOS",
+    "version": "14.3",
+    "arch": "aarch64",
+    "jdk": "25.0.1",
+    "javafx": "27+30",
+    "pipeline": "Metal"
+  },
+  "adverse_evidence": {
+    "baseline.log": "Initial harness assumed OS window activation; failed isFocused assertion atphase1. Retained.",
+    "native.log": "Initial show/activation could select a default scene owner after requestFocus; failed phase0. Added CSS/layout settling and explicit focus request at observation boundary; ownership assertion retained."
+  },
+  "limits": [
+    "Uncommitted source snapshot at verification; subsequent delivery is recorded in Git history. No upstream issue closure is implied.",
+    "Real scene focus owner checked; focused/focus-visible CSS states explicitly controlled; no OS key/pointer or screen-reader qualification",
+    "Scene captures only; macOS arm64 only; no Linux/Windows claim",
+    "Selection palette/#4, scientific colors, dependency pins and ScalaDock unchanged"
+  ]
+}

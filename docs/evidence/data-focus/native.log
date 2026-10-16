@@ -1,0 +1,77 @@
+Meridian JDK: /opt/homebrew/Cellar/openjdk/25.0.1
+[info] welcome to sbt 1.12.14 (Homebrew Java 25.0.1)
+[info] loading settings for project meridianfx-build from plugins.sbt...
+[info] loading project definition from /Users/bbuchsbaum/code/scala/meridianfx/project
+[info] loading settings for project root from build.sbt...
+[info] loading settings for project scaladock-build from plugins.sbt...
+[info] loading project definition from /Users/bbuchsbaum/.sbt/1.0/staging/e5369b89f9d6f9ffec6b/scaladock/project
+[info] loading settings for project root from build.sbt...
+[info] set current project to meridianfx (in build file:/Users/bbuchsbaum/code/scala/meridianfx/)
+[info] Executing in batch mode. For better performance use sbt's shell
+[info] scalafmt: Checking 2 Scala sources (/Users/bbuchsbaum/code/scala/meridianfx)...
+[success] Total time: 1 s, completed Oct 15, 2026, 9:28:30 p.m.
+[success] Total time: 0 s, completed Oct 15, 2026, 9:28:31 p.m.
+Meridian theme resource hashes verified (no Sass runtime needed)
+[success] Total time: 0 s, completed Oct 15, 2026, 9:28:31 p.m.
+Meridian theme resource hashes verified (no Sass runtime needed)
+[success] Total time: 0 s, completed Oct 15, 2026, 9:28:31 p.m.
+Meridian theme resource hashes verified (no Sass runtime needed)
+[info] running (fork) meridian.sampler.DataFocusProbe docs/evidence/data-focus/native
+[info] Prism pipeline init order: mtl es2 sw 
+[info] Using Double Precision Marlin Rasterizer
+[info] Using dirty region optimizations
+[info] Not using texture mask for primitives
+[info] Not forcing power of 2 sizes for textures
+[info] Using hardware CLAMP_TO_ZERO mode
+[info] Opting in for HiDPI pixel scaling
+[info] Not forcing UploadingPainter
+[info] Prism pipeline name = com.sun.prism.mtl.MTLPipeline
+[error] Loading native metal library, named: prism_mtl
+[error] Succeeded: Loading native metal library.
+[info] (X) Got class = class com.sun.prism.mtl.MTLPipeline
+[info] Initialized prism pipeline: com.sun.prism.mtl.MTLPipeline
+[error]  vsync: true vpipe: true
+[error] MTLResourceFactory: Prism - createStockShader: FillPgram_Color
+[error] MTLResourceFactory: Prism - createStockShader: Texture_Color
+[error] MTLResourceFactory: Prism - createStockShader: DrawPgram_Color
+[error] MTLResourceFactory: Prism - createStockShader: FillRoundRect_Color
+[info] new alphas with length = 4096
+[error] MTLResourceFactory: Prism - createStockShader: Solid_Color
+[error] java.lang.AssertionError: Scene focus ownership at phase 0
+[error] 	at meridian.sampler.DataFocusProbe$Window.require(DataFocusProbe.java:176)
+[error] 	at meridian.sampler.DataFocusProbe$Window.lambda$next$0(DataFocusProbe.java:129)
+[error] 	at javafx.graphics@27/javafx.animation.Animation.runHandler(Animation.java:1147)
+[error] 	at javafx.graphics@27/javafx.animation.Animation.finished(Animation.java:1141)
+[error] 	at javafx.graphics@27/javafx.animation.AnimationAccessorImpl.finished(AnimationAccessorImpl.java:49)
+[error] 	at javafx.graphics@27/com.sun.scenario.animation.shared.SingleLoopClipEnvelope.timePulse(SingleLoopClipEnvelope.java:107)
+[error] 	at javafx.graphics@27/javafx.animation.Animation.doTimePulse(Animation.java:1234)
+[error] 	at javafx.graphics@27/javafx.animation.Animation$1.timePulse(Animation.java:190)
+[error] 	at javafx.graphics@27/com.sun.scenario.animation.AbstractPrimaryTimer.timePulseImpl(AbstractPrimaryTimer.java:326)
+[error] 	at javafx.graphics@27/com.sun.scenario.animation.AbstractPrimaryTimer$MainLoop.run(AbstractPrimaryTimer.java:247)
+[error] 	at javafx.graphics@27/com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:593)
+[error] 	at javafx.graphics@27/com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:577)
+[error] 	at javafx.graphics@27/com.sun.javafx.tk.quantum.QuantumToolkit.pulseFromQueue(QuantumToolkit.java:570)
+[error] 	at javafx.graphics@27/com.sun.javafx.tk.quantum.QuantumToolkit.lambda$runToolkit$0(QuantumToolkit.java:351)
+[error] 	at javafx.graphics@27/com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:95)
+[info] QuantumRenderer: shutdown
+[error] Exception in thread "main" java.lang.IllegalStateException: Data view focus contract failed
+[error] 	at meridian.sampler.DataFocusProbe.main(DataFocusProbe.java:43)
+[error] Caused by: java.lang.AssertionError: Scene focus ownership at phase 0
+[error] 	at meridian.sampler.DataFocusProbe$Window.require(DataFocusProbe.java:176)
+[error] 	at meridian.sampler.DataFocusProbe$Window.lambda$next$0(DataFocusProbe.java:129)
+[error] 	at javafx.graphics@27/javafx.animation.Animation.runHandler(Animation.java:1147)
+[error] 	at javafx.graphics@27/javafx.animation.Animation.finished(Animation.java:1141)
+[error] 	at javafx.graphics@27/javafx.animation.AnimationAccessorImpl.finished(AnimationAccessorImpl.java:49)
+[error] 	at javafx.graphics@27/com.sun.scenario.animation.shared.SingleLoopClipEnvelope.timePulse(SingleLoopClipEnvelope.java:107)
+[error] 	at javafx.graphics@27/javafx.animation.Animation.doTimePulse(Animation.java:1234)
+[error] 	at javafx.graphics@27/javafx.animation.Animation$1.timePulse(Animation.java:190)
+[error] 	at javafx.graphics@27/com.sun.scenario.animation.AbstractPrimaryTimer.timePulseImpl(AbstractPrimaryTimer.java:326)
+[error] 	at javafx.graphics@27/com.sun.scenario.animation.AbstractPrimaryTimer$MainLoop.run(AbstractPrimaryTimer.java:247)
+[error] 	at javafx.graphics@27/com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:593)
+[error] 	at javafx.graphics@27/com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:577)
+[error] 	at javafx.graphics@27/com.sun.javafx.tk.quantum.QuantumToolkit.pulseFromQueue(QuantumToolkit.java:570)
+[error] 	at javafx.graphics@27/com.sun.javafx.tk.quantum.QuantumToolkit.lambda$runToolkit$0(QuantumToolkit.java:351)
+[error] 	at javafx.graphics@27/com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:95)
+[error] nonzero exit code returned from runner: 1
+[error] (sampler / Compile / runMain) nonzero exit code returned from runner: 1
+[error] Total time: 2 s, completed Oct 15, 2026, 9:28:33 p.m.

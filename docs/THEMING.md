@@ -106,6 +106,13 @@ to change; preferred and minimum header geometry are explicit to avoid retaining
 the old density. They are preferred/minimum values, not maximum heights.
 Measured application layouts and wrapped/custom cells need their later fixtures.
 
+TableView, ListView and TreeView share a 2 px semantic focus-ring border in
+`:focus-visible` state. Ordinary focus retains the decorative 1 px border.
+The [data-view focus regression](evidence/data-focus/README.md) checks all four
+themes, focus-state removal and scene focus ownership. Its CSS states are
+controlled explicitly; OS keyboard/pointer and screen-reader qualification remain
+separate gates. This change does not change the selection palette (issue #4).
+
 Use `appearance.metrics()` to read the current text-scaled logical minima.
 Radii/padding stay deliberate density choices. Native hover transitions use
 JavaFX27 CSS and the token duration; REDUCED sets duration to zero. SYSTEM observes

@@ -1,0 +1,15 @@
+{
+  "base_git_head": "cf5bbff69203556ee8b31ea566502d502e766386",
+  "source_digest": "7dadefce0ae0b9d4b4fc6510a1486ad5101429e03597257c243dff718d71dd30",
+  "files": {
+    "docs/THEMING.md": "f8e35f45d55c4aca0490e268be5d1e0736ec29aaccb397a07d517d0d1ce826a6",
+    "modules/sampler/src/main/java/meridian/sampler/DataFocusProbe.java": "72bee698ac7d969ac3d4275558e47d60a047d887366f6acd3de0d43c12f4d448",
+    "modules/theme/src/main/resources/meridian/theme/themes/generation.json": "660e4513244cc46b26829249c9221d9718fe38b97e92a0cd3436c73607b94f0b",
+    "modules/theme/src/main/resources/meridian/theme/themes/meridian-dark-comfortable.css": "fa076306637b5ce3858ac4dc94027be03aa4821a4c33fff385ff24eb488fa1ef",
+    "modules/theme/src/main/resources/meridian/theme/themes/meridian-dark-compact.css": "00c8e82fc16211749735b9151890ec757fa7e40593eb56a020d80b7a01006fa7",
+    "modules/theme/src/main/resources/meridian/theme/themes/meridian-light-comfortable.css": "97626e2d71108dfe2711d4196b45d4c53d047414f397621443a132111c821d89",
+    "modules/theme/src/main/resources/meridian/theme/themes/meridian-light-compact.css": "c34504d85e54112d4a70b48193753674344e930e74acdae347229a69cd7f3c31",
+    "theme-build/_recipes.scss": "1b4fe87a7bdd5353757e84d54b8fc13f7600cf9a85d5abec2f32c61d2f2e01ed"
+  },
+  "state": "Uncommitted source snapshot at verification; subsequent delivery is recorded in Git history. Upstream issue closure is separate."
+}

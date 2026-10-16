@@ -1,0 +1,38 @@
+COMMAND ['python3', 'tools/build_themes.py', '--check']
+{"themes": 4, "outputs": 9, "mode": "check", "source_sha256": "294a4a9a4e589f4ab03db82f6d6a3a588c6f83dbfa9eddd850afdbcd83b8e942"}
+COMMAND ['python3', 'tools/build_themes.py', '--verify']
+Meridian theme resource hashes verified (no Sass runtime needed)
+COMMAND ['python3', 'tools/generate_tokens.py', '--check']
+{"outputs": 12, "source_sha256": "294a4a9a4e589f4ab03db82f6d6a3a588c6f83dbfa9eddd850afdbcd83b8e942", "contrast_required": 284, "contrast_passed": 284, "explicit_exceptions": 12, "mode": "check"}
+COMMAND ['python3', 'tools/verify_foundation.py', '--classpath']
+{
+  "source_files": 65,
+  "design_references": 3,
+  "runtime_reports": {
+    "theme": {
+      "classpath_entries": 8,
+      "javafx_versions": [
+        "27"
+      ]
+    },
+    "workbench": {
+      "classpath_entries": 9,
+      "javafx_versions": [
+        "27"
+      ]
+    },
+    "scaladock": {
+      "classpath_entries": 19,
+      "javafx_versions": [
+        "27"
+      ]
+    },
+    "sampler": {
+      "classpath_entries": 21,
+      "javafx_versions": [
+        "27"
+      ]
+    }
+  }
+}
+COMMAND ['git', 'diff', '--check']
