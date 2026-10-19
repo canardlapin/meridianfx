@@ -1,0 +1,2 @@
+java=25.0.1 javafx=27+30 os=Mac OS X/aarch64
+Real scene focusOwner; controlled CSS focused/hover; no OS input injection.

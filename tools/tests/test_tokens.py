@@ -28,6 +28,29 @@ class TokenTests(unittest.TestCase):
         self.data = (ROOT / tokens.SOURCE).read_bytes()
         self.model = json.loads(self.data)
 
+    def test_list_tree_cue_contrast_and_required_coverage(self):
+        for control in ("list", "tree"):
+            for state in ("active", "inactive"):
+                for adjacent in ("cell", "fill"):
+                    name = f"{control}.selection-cue.{state}.{adjacent}"
+                    case = self.model["recipes"][name]
+                    self.assertEqual(case["kind"], "essential")
+                    for mode in tokens.MODES:
+                        palette = tokens.colors(self.model, mode)
+                        self.assertGreaterEqual(decimal_contrast(palette[case["foreground"]], palette[case["background"]]), 3)
+                    altered = copy.deepcopy(self.model)
+                    altered["recipes"].pop(name)
+                    with self.subTest(missing=name), self.assertRaises(tokens.TokenError):
+                        tokens.validate(altered)
+
+    def test_pale_list_tree_fill_cannot_replace_essential_cue(self):
+        for control in ("list", "tree"):
+            for state in ("active", "inactive"):
+                altered = copy.deepcopy(self.model)
+                altered["recipes"][f"{control}.selection-cue.{state}.cell"]["foreground"] = "selection." + state
+                with self.subTest(control=control, state=state), self.assertRaisesRegex(tokens.TokenError, "Contrast failed"):
+                    tokens.rendered_outputs(json.dumps(altered).encode())
+
     def test_status_roles_do_not_alias_selection_or_focus(self):
         for mode in tokens.MODES:
             altered = copy.deepcopy(self.model)

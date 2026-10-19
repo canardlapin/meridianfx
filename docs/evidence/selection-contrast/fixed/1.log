@@ -1,0 +1,22 @@
+Prism pipeline init order: mtl es2 sw 
+Using Double Precision Marlin Rasterizer
+Using dirty region optimizations
+Not using texture mask for primitives
+Not forcing power of 2 sizes for textures
+Using hardware CLAMP_TO_ZERO mode
+Opting in for HiDPI pixel scaling
+Not forcing UploadingPainter
+Prism pipeline name = com.sun.prism.mtl.MTLPipeline
+Loading native metal library, named: prism_mtl
+Succeeded: Loading native metal library.
+(X) Got class = class com.sun.prism.mtl.MTLPipeline
+Initialized prism pipeline: com.sun.prism.mtl.MTLPipeline
+ vsync: true vpipe: true
+MTLResourceFactory: Prism - createStockShader: FillPgram_Color
+MTLResourceFactory: Prism - createStockShader: DrawPgram_Color
+MTLResourceFactory: Prism - createStockShader: FillRoundRect_Color
+new alphas with length = 32768
+MTLResourceFactory: Prism - createStockShader: Texture_Color
+MTLResourceFactory: Prism - createStockShader: Mask_TextureSuper
+MERIDIAN_SELECTION_OK states=32 windowsClosed=true
+QuantumRenderer: shutdown

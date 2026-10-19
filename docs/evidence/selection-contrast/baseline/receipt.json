@@ -1,0 +1,56 @@
+{
+  "base_head": "9a676597b891d6d9f6b3105d3f0e67b50fb0e46f",
+  "sources": {
+    "modules/theme/src/main/java/meridian/theme/FoundationTheme.java": "401333f54eae0fd74e9d369e5a42a790a62d81757636e75e08ba2151506a11ac",
+    "modules/theme/src/main/java/meridian/theme/MeridianAppearance.java": "8526edc7413053dd58f70dd4a47ac2463f7c9c885f75e659e6f1a00afffdec63",
+    "modules/theme/src/main/java/meridian/theme/MeridianPreferences.java": "310b1cfb91c2cc55ddceb1cfac6c28592be5dac124b44494517c065cb691f3af",
+    "modules/theme/src/main/java/meridian/theme/MeridianTheme.java": "73e54175c1a4b4ebd322af7d90512bea934eea1be6a7c6b0a2dc7ea25887de9a",
+    "modules/theme/src/main/java/meridian/theme/metrics/MeridianMetrics.java": "b6934f58a6289b6e3ea92af290a8aa2346e2a489029a3e66b64aa29ff0d7e653",
+    "modules/sampler/src/main/java/meridian/sampler/SelectionContrastProbe.java": "1b1f538ba0e2bab0c39ffdd09843b9b50647bff4a1ee878e13152d2f32681473"
+  },
+  "resources": {
+    "meridian/theme/themes/generation.json": "660e4513244cc46b26829249c9221d9718fe38b97e92a0cd3436c73607b94f0b",
+    "meridian/theme/themes/meridian-dark-comfortable.css": "fa076306637b5ce3858ac4dc94027be03aa4821a4c33fff385ff24eb488fa1ef",
+    "meridian/theme/themes/meridian-dark-comfortable.css.manifest": "4c9a1419222567a470176542a6148b47f98982a1f1b98fef7e4a2f646940f519",
+    "meridian/theme/themes/meridian-dark-compact.css": "00c8e82fc16211749735b9151890ec757fa7e40593eb56a020d80b7a01006fa7",
+    "meridian/theme/themes/meridian-dark-compact.css.manifest": "717a8b9e2f4e232b5fb5d5f94d2caf5bdb668517fd96f88a649548771a388aec",
+    "meridian/theme/themes/meridian-light-comfortable.css": "97626e2d71108dfe2711d4196b45d4c53d047414f397621443a132111c821d89",
+    "meridian/theme/themes/meridian-light-comfortable.css.manifest": "3fe7d19c7738a75a0c8745c218e5b0c7c6f04d7b57a87b12fe5fc74220c85d40",
+    "meridian/theme/themes/meridian-light-compact.css": "c34504d85e54112d4a70b48193753674344e930e74acdae347229a69cd7f3c31",
+    "meridian/theme/themes/meridian-light-compact.css.manifest": "c309cac6676162cf1159a046e5599d2a8847adeaef9234b3409e8d3b7e237a9b",
+    "meridian/theme/tokens-dark.css": "39e791964e006faea5bac6b1e030322b6fa30422daf4782f4503bdd10be974e6",
+    "meridian/theme/tokens-light.css": "f54e0237557392cff6c85bf560c92bf499f1787f2a6cae7224ac02d86b9759ac",
+    "meridian/theme/tokens.json": "3f1dedbbf08aab5bb11f3d37f8a3f21dc89cf060f71f99529948f8769f2e35cf"
+  },
+  "dependencies": {
+    "/Users/bbuchsbaum/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/openjfx/javafx-base/27/javafx-base-27-mac-aarch64.jar": "3fe8c6c3798ca48b02e15031c5394ae038aaaeedd04df950badefcc291a6fb6e",
+    "/Users/bbuchsbaum/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/openjfx/javafx-controls/27/javafx-controls-27-mac-aarch64.jar": "0d05e5b1190985e0fb5532f300590d5c9fe02fb8d5549292332d087c2ca02444",
+    "/Users/bbuchsbaum/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/openjfx/javafx-graphics/27/javafx-graphics-27-mac-aarch64.jar": "f01749fcdb476dfdf9afc996443fe7871498158fcd6a27477332fbeebdd60e5e",
+    "/Users/bbuchsbaum/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/github/mkpaz/atlantafx-base/3.0.0/atlantafx-base-3.0.0.jar": "6e14976a7ff86627c5ce8fc398443cceb0cf1683642ff59a0c8b77f7f56f904d"
+  },
+  "runs": [
+    {
+      "command": [
+        "/opt/homebrew/opt/openjdk@25/bin/javac",
+        "--release",
+        "25",
+        "-Xlint:all",
+        "--module-path",
+        "/Users/bbuchsbaum/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/openjfx/javafx-base/27/javafx-base-27-mac-aarch64.jar:/Users/bbuchsbaum/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/openjfx/javafx-controls/27/javafx-controls-27-mac-aarch64.jar:/Users/bbuchsbaum/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/openjfx/javafx-graphics/27/javafx-graphics-27-mac-aarch64.jar",
+        "--add-modules",
+        "javafx.controls",
+        "-cp",
+        "/Users/bbuchsbaum/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/github/mkpaz/atlantafx-base/3.0.0/atlantafx-base-3.0.0.jar",
+        "-d",
+        "/var/folders/9h/nkjq6vss7mqdl4ck7q1hd8ph0000gp/T/meridian-selection-n_h_1wim",
+        "/Users/bbuchsbaum/code/scala/meridianfx/modules/theme/src/main/java/meridian/theme/FoundationTheme.java",
+        "/Users/bbuchsbaum/code/scala/meridianfx/modules/theme/src/main/java/meridian/theme/MeridianAppearance.java",
+        "/Users/bbuchsbaum/code/scala/meridianfx/modules/theme/src/main/java/meridian/theme/MeridianPreferences.java",
+        "/Users/bbuchsbaum/code/scala/meridianfx/modules/theme/src/main/java/meridian/theme/MeridianTheme.java",
+        "/Users/bbuchsbaum/code/scala/meridianfx/modules/theme/src/main/java/meridian/theme/metrics/MeridianMetrics.java",
+        "/Users/bbuchsbaum/code/scala/meridianfx/modules/sampler/src/main/java/meridian/sampler/SelectionContrastProbe.java"
+      ],
+      "exit_code": 0
+    }
+  ]
+}

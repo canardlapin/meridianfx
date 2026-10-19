@@ -1,0 +1,57 @@
+Prism pipeline init order: mtl es2 sw 
+Using Double Precision Marlin Rasterizer
+Using dirty region optimizations
+Not using texture mask for primitives
+Not forcing power of 2 sizes for textures
+Using hardware CLAMP_TO_ZERO mode
+Opting in for HiDPI pixel scaling
+Not forcing UploadingPainter
+Prism pipeline name = com.sun.prism.mtl.MTLPipeline
+Loading native metal library, named: prism_mtl
+Succeeded: Loading native metal library.
+(X) Got class = class com.sun.prism.mtl.MTLPipeline
+Initialized prism pipeline: com.sun.prism.mtl.MTLPipeline
+ vsync: true vpipe: true
+MTLResourceFactory: Prism - createStockShader: FillPgram_Color
+MTLResourceFactory: Prism - createStockShader: DrawPgram_Color
+MTLResourceFactory: Prism - createStockShader: FillRoundRect_Color
+MTLResourceFactory: Prism - createStockShader: Texture_Color
+new alphas with length = 4096
+MTLResourceFactory: Prism - createStockShader: Mask_TextureSuper
+java.lang.AssertionError: 32 failed states; see violations.txt
+	at meridian.sampler.SelectionContrastProbe$Window.require(SelectionContrastProbe.java:195)
+	at meridian.sampler.SelectionContrastProbe$Window.next(SelectionContrastProbe.java:92)
+	at meridian.sampler.SelectionContrastProbe$Window.lambda$next$0(SelectionContrastProbe.java:146)
+	at javafx.graphics@27/javafx.animation.Animation.runHandler(Animation.java:1147)
+	at javafx.graphics@27/javafx.animation.Animation.finished(Animation.java:1141)
+	at javafx.graphics@27/javafx.animation.AnimationAccessorImpl.finished(AnimationAccessorImpl.java:49)
+	at javafx.graphics@27/com.sun.scenario.animation.shared.SingleLoopClipEnvelope.timePulse(SingleLoopClipEnvelope.java:107)
+	at javafx.graphics@27/javafx.animation.Animation.doTimePulse(Animation.java:1234)
+	at javafx.graphics@27/javafx.animation.Animation$1.timePulse(Animation.java:190)
+	at javafx.graphics@27/com.sun.scenario.animation.AbstractPrimaryTimer.timePulseImpl(AbstractPrimaryTimer.java:326)
+	at javafx.graphics@27/com.sun.scenario.animation.AbstractPrimaryTimer$MainLoop.run(AbstractPrimaryTimer.java:247)
+	at javafx.graphics@27/com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:593)
+	at javafx.graphics@27/com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:577)
+	at javafx.graphics@27/com.sun.javafx.tk.quantum.QuantumToolkit.pulseFromQueue(QuantumToolkit.java:570)
+	at javafx.graphics@27/com.sun.javafx.tk.quantum.QuantumToolkit.lambda$runToolkit$0(QuantumToolkit.java:351)
+	at javafx.graphics@27/com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:95)
+QuantumRenderer: shutdown
+Exception in thread "main" java.lang.IllegalStateException: Selection contrast failed
+	at meridian.sampler.SelectionContrastProbe.main(SelectionContrastProbe.java:38)
+Caused by: java.lang.AssertionError: 32 failed states; see violations.txt
+	at meridian.sampler.SelectionContrastProbe$Window.require(SelectionContrastProbe.java:195)
+	at meridian.sampler.SelectionContrastProbe$Window.next(SelectionContrastProbe.java:92)
+	at meridian.sampler.SelectionContrastProbe$Window.lambda$next$0(SelectionContrastProbe.java:146)
+	at javafx.graphics@27/javafx.animation.Animation.runHandler(Animation.java:1147)
+	at javafx.graphics@27/javafx.animation.Animation.finished(Animation.java:1141)
+	at javafx.graphics@27/javafx.animation.AnimationAccessorImpl.finished(AnimationAccessorImpl.java:49)
+	at javafx.graphics@27/com.sun.scenario.animation.shared.SingleLoopClipEnvelope.timePulse(SingleLoopClipEnvelope.java:107)
+	at javafx.graphics@27/javafx.animation.Animation.doTimePulse(Animation.java:1234)
+	at javafx.graphics@27/javafx.animation.Animation$1.timePulse(Animation.java:190)
+	at javafx.graphics@27/com.sun.scenario.animation.AbstractPrimaryTimer.timePulseImpl(AbstractPrimaryTimer.java:326)
+	at javafx.graphics@27/com.sun.scenario.animation.AbstractPrimaryTimer$MainLoop.run(AbstractPrimaryTimer.java:247)
+	at javafx.graphics@27/com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:593)
+	at javafx.graphics@27/com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:577)
+	at javafx.graphics@27/com.sun.javafx.tk.quantum.QuantumToolkit.pulseFromQueue(QuantumToolkit.java:570)
+	at javafx.graphics@27/com.sun.javafx.tk.quantum.QuantumToolkit.lambda$runToolkit$0(QuantumToolkit.java:351)
+	at javafx.graphics@27/com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:95)

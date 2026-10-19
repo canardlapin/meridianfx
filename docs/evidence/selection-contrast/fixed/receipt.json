@@ -1,0 +1,72 @@
+{
+  "base_head": "9a676597b891d6d9f6b3105d3f0e67b50fb0e46f",
+  "sources": {
+    "modules/theme/src/main/java/meridian/theme/FoundationTheme.java": "401333f54eae0fd74e9d369e5a42a790a62d81757636e75e08ba2151506a11ac",
+    "modules/theme/src/main/java/meridian/theme/MeridianAppearance.java": "8526edc7413053dd58f70dd4a47ac2463f7c9c885f75e659e6f1a00afffdec63",
+    "modules/theme/src/main/java/meridian/theme/MeridianPreferences.java": "310b1cfb91c2cc55ddceb1cfac6c28592be5dac124b44494517c065cb691f3af",
+    "modules/theme/src/main/java/meridian/theme/MeridianTheme.java": "73e54175c1a4b4ebd322af7d90512bea934eea1be6a7c6b0a2dc7ea25887de9a",
+    "modules/theme/src/main/java/meridian/theme/metrics/MeridianMetrics.java": "75f379ac325517d5a2c1e590b632caadcd450724e629d0116cad1ac39053b233",
+    "modules/sampler/src/main/java/meridian/sampler/SelectionContrastProbe.java": "7b34e3cb23ab35590d4ef7ccb35efa273ce9c054e35222572afa1cd0ba22d805"
+  },
+  "resources": {
+    "meridian/theme/themes/generation.json": "db9def3dbcd7227122a4ccea986ee48ede8a4554a6770969ee827c84ee7cbec1",
+    "meridian/theme/themes/meridian-dark-comfortable.css": "2d8d2aa85098854698d5a58f83bbb6c26d7b06e3d1897d045a5b55668f85f357",
+    "meridian/theme/themes/meridian-dark-comfortable.css.manifest": "c2d834bc56db40c5c28447c1940688d229313b2d59b0ef13c0944cf50767cfbb",
+    "meridian/theme/themes/meridian-dark-compact.css": "5e4264ddd3ca3ad5a64357723c71a9bea72a38c0a6ef157999c2913e567175c2",
+    "meridian/theme/themes/meridian-dark-compact.css.manifest": "d6af95d8df371b5962bbd13316544393d1a9f59dcfb0fc598d7ff57f2e8e8766",
+    "meridian/theme/themes/meridian-light-comfortable.css": "c5cf6033104e343f0bba93e3a3eb74ae3e25d8fe56335c540493d53f87d1d284",
+    "meridian/theme/themes/meridian-light-comfortable.css.manifest": "429871e6b0f6e6ec5a1dab2818b03dbf4e147ba55f167f14ded7942986805ea1",
+    "meridian/theme/themes/meridian-light-compact.css": "607687f71609dd571124a6b49a67891b7467c4b0efc4a0f555da8a9814c3bcbb",
+    "meridian/theme/themes/meridian-light-compact.css.manifest": "5e1698eaa8ab4fa2982ed442ebbd694f52b2e90462193e31a0643fb6b44838d7",
+    "meridian/theme/tokens-dark.css": "f6e0f9440cb40770b76535eb4e9ad36c20c0890a3b4b6754d8fa77fc7d49a473",
+    "meridian/theme/tokens-light.css": "48e9f1101e32896967dc452ac2ca3998c6c05657c1a0c51056257a973aa24dc5",
+    "meridian/theme/tokens.json": "99cafd89a779cb3718e3e05b1945f599dda920dcdeb57052410e0eba6152e4f7"
+  },
+  "dependencies": {
+    "/Users/bbuchsbaum/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/openjfx/javafx-base/27/javafx-base-27-mac-aarch64.jar": "3fe8c6c3798ca48b02e15031c5394ae038aaaeedd04df950badefcc291a6fb6e",
+    "/Users/bbuchsbaum/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/openjfx/javafx-controls/27/javafx-controls-27-mac-aarch64.jar": "0d05e5b1190985e0fb5532f300590d5c9fe02fb8d5549292332d087c2ca02444",
+    "/Users/bbuchsbaum/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/openjfx/javafx-graphics/27/javafx-graphics-27-mac-aarch64.jar": "f01749fcdb476dfdf9afc996443fe7871498158fcd6a27477332fbeebdd60e5e",
+    "/Users/bbuchsbaum/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/github/mkpaz/atlantafx-base/3.0.0/atlantafx-base-3.0.0.jar": "6e14976a7ff86627c5ce8fc398443cceb0cf1683642ff59a0c8b77f7f56f904d"
+  },
+  "runs": [
+    {
+      "command": [
+        "/opt/homebrew/opt/openjdk@25/bin/javac",
+        "--release",
+        "25",
+        "-Xlint:all",
+        "--module-path",
+        "/Users/bbuchsbaum/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/openjfx/javafx-base/27/javafx-base-27-mac-aarch64.jar:/Users/bbuchsbaum/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/openjfx/javafx-controls/27/javafx-controls-27-mac-aarch64.jar:/Users/bbuchsbaum/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/openjfx/javafx-graphics/27/javafx-graphics-27-mac-aarch64.jar",
+        "--add-modules",
+        "javafx.controls",
+        "-cp",
+        "/Users/bbuchsbaum/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/github/mkpaz/atlantafx-base/3.0.0/atlantafx-base-3.0.0.jar",
+        "-d",
+        "/var/folders/9h/nkjq6vss7mqdl4ck7q1hd8ph0000gp/T/meridian-selection-27nrxcu0",
+        "/Users/bbuchsbaum/code/scala/meridianfx/modules/theme/src/main/java/meridian/theme/FoundationTheme.java",
+        "/Users/bbuchsbaum/code/scala/meridianfx/modules/theme/src/main/java/meridian/theme/MeridianAppearance.java",
+        "/Users/bbuchsbaum/code/scala/meridianfx/modules/theme/src/main/java/meridian/theme/MeridianPreferences.java",
+        "/Users/bbuchsbaum/code/scala/meridianfx/modules/theme/src/main/java/meridian/theme/MeridianTheme.java",
+        "/Users/bbuchsbaum/code/scala/meridianfx/modules/theme/src/main/java/meridian/theme/metrics/MeridianMetrics.java",
+        "/Users/bbuchsbaum/code/scala/meridianfx/modules/sampler/src/main/java/meridian/sampler/SelectionContrastProbe.java"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "/opt/homebrew/opt/openjdk@25/bin/java",
+        "--module-path",
+        "/Users/bbuchsbaum/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/openjfx/javafx-base/27/javafx-base-27-mac-aarch64.jar:/Users/bbuchsbaum/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/openjfx/javafx-controls/27/javafx-controls-27-mac-aarch64.jar:/Users/bbuchsbaum/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/openjfx/javafx-graphics/27/javafx-graphics-27-mac-aarch64.jar",
+        "--add-modules",
+        "javafx.controls",
+        "--enable-native-access=javafx.graphics",
+        "-Dprism.verbose=true",
+        "-cp",
+        "/var/folders/9h/nkjq6vss7mqdl4ck7q1hd8ph0000gp/T/meridian-selection-27nrxcu0:/Users/bbuchsbaum/code/scala/meridianfx/modules/theme/src/main/resources:/Users/bbuchsbaum/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/github/mkpaz/atlantafx-base/3.0.0/atlantafx-base-3.0.0.jar",
+        "meridian.sampler.SelectionContrastProbe",
+        "/Users/bbuchsbaum/code/scala/meridianfx/docs/evidence/selection-contrast/fixed/native"
+      ],
+      "exit_code": 0
+    }
+  ]
+}

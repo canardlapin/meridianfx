@@ -1,4 +1,4 @@
-/* MeridianFX; source SHA-256 294a4a9a4e589f4ab03db82f6d6a3a588c6f83dbfa9eddd850afdbcd83b8e942; AtlantaFX 61a48371c2873613a6a654e625fda156e3cbdf3f; Sass 1.93.2. */
+/* MeridianFX; source SHA-256 6f00ebd70c2301ec1736bdecda192fce65b1c9e96457d7ecb43af3b8571effd6; AtlantaFX 61a48371c2873613a6a654e625fda156e3cbdf3f; Sass 1.93.2. */
 /*! @module:root:start */
 .root {
   -color-dark: #1b1f24;
@@ -6483,15 +6483,19 @@ Text {
 }
 
 .list-view > .virtual-flow > .clipped-container > .sheet > .list-cell:filled:selected,
-.tree-view > .virtual-flow > .clipped-container > .sheet > .tree-cell:filled:selected {
-  -fx-background-color: -color-cell-bg, -meridian-selection-inactive;
-  -fx-background-insets: 0, 1px 4px 1px 4px;
-  -fx-background-radius: 0, 6px;
+.tree-view > .virtual-flow > .clipped-container > .sheet > .tree-cell:filled:selected,
+.list-view > .virtual-flow > .clipped-container > .sheet > .list-cell:filled:selected:hover,
+.tree-view > .virtual-flow > .clipped-container > .sheet > .tree-cell:filled:selected:hover {
+  -fx-background-color: -color-cell-bg, -meridian-selection-inactive-marker, -meridian-selection-inactive;
+  -fx-background-insets: 0, 1px 4px 1px 4px, 3px 6px 3px 6px;
+  -fx-background-radius: 0, 6px, 4px;
 }
 
 .list-view:focused > .virtual-flow > .clipped-container > .sheet > .list-cell:filled:selected,
-.tree-view:focused > .virtual-flow > .clipped-container > .sheet > .tree-cell:filled:selected {
-  -fx-background-color: -color-cell-bg, -meridian-selection-active;
+.tree-view:focused > .virtual-flow > .clipped-container > .sheet > .tree-cell:filled:selected,
+.list-view:focused > .virtual-flow > .clipped-container > .sheet > .list-cell:filled:selected:hover,
+.tree-view:focused > .virtual-flow > .clipped-container > .sheet > .tree-cell:filled:selected:hover {
+  -fx-background-color: -color-cell-bg, -meridian-selection-marker, -meridian-selection-active;
 }
 
 .list-view > .virtual-flow > .clipped-container > .sheet > .list-cell:filled:hover,
@@ -6529,16 +6533,6 @@ Text {
 
 .context-menu {
   -fx-min-width: -1;
-}
-
-.list-view > .virtual-flow > .clipped-container > .sheet > .list-cell:filled:selected:hover,
-.tree-view > .virtual-flow > .clipped-container > .sheet > .tree-cell:filled:selected:hover {
-  -fx-background-color: -color-cell-bg, -meridian-selection-inactive;
-}
-
-.list-view:focused > .virtual-flow > .clipped-container > .sheet > .list-cell:filled:selected:hover,
-.tree-view:focused > .virtual-flow > .clipped-container > .sheet > .tree-cell:filled:selected:hover {
-  -fx-background-color: -color-cell-bg, -meridian-selection-active;
 }
 
 .table-view .column-header.numeric > .label, .table-view .table-cell.numeric {

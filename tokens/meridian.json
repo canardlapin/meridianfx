@@ -918,6 +918,46 @@
       "kind": "essential",
       "foreground": "status.progress",
       "background": "surface.raised"
+    },
+    "list.selection-cue.active.cell": {
+      "kind": "essential",
+      "foreground": "selection.marker",
+      "background": "surface.canvas"
+    },
+    "list.selection-cue.active.fill": {
+      "kind": "essential",
+      "foreground": "selection.marker",
+      "background": "selection.active"
+    },
+    "list.selection-cue.inactive.cell": {
+      "kind": "essential",
+      "foreground": "selection.inactive-marker",
+      "background": "surface.canvas"
+    },
+    "list.selection-cue.inactive.fill": {
+      "kind": "essential",
+      "foreground": "selection.inactive-marker",
+      "background": "selection.inactive"
+    },
+    "tree.selection-cue.active.cell": {
+      "kind": "essential",
+      "foreground": "selection.marker",
+      "background": "surface.canvas"
+    },
+    "tree.selection-cue.active.fill": {
+      "kind": "essential",
+      "foreground": "selection.marker",
+      "background": "selection.active"
+    },
+    "tree.selection-cue.inactive.cell": {
+      "kind": "essential",
+      "foreground": "selection.inactive-marker",
+      "background": "surface.canvas"
+    },
+    "tree.selection-cue.inactive.fill": {
+      "kind": "essential",
+      "foreground": "selection.inactive-marker",
+      "background": "selection.inactive"
     }
   },
   "mappings": {

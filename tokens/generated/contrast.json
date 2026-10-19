@@ -2316,6 +2316,122 @@
       "appearance": "dark",
       "background_layers": [
         {
+          "role": "surface.canvas",
+          "srgb": "#17191F"
+        }
+      ],
+      "effective_background_rgba": [
+        0.09019607843137255,
+        0.09803921568627451,
+        0.12156862745098039,
+        1.0
+      ],
+      "effective_foreground_rgba": [
+        0.7372549019607844,
+        0.7176470588235294,
+        1.0,
+        1.0
+      ],
+      "exception": null,
+      "foreground_role": "selection.marker",
+      "foreground_srgb": "#BCB7FF",
+      "kind": "essential",
+      "minimum": 3,
+      "passed": true,
+      "ratio": 9.500506094773748,
+      "recipe": "list.selection-cue.active.cell"
+    },
+    {
+      "appearance": "dark",
+      "background_layers": [
+        {
+          "role": "selection.active",
+          "srgb": "#2A2745"
+        }
+      ],
+      "effective_background_rgba": [
+        0.16470588235294117,
+        0.15294117647058825,
+        0.27058823529411763,
+        1.0
+      ],
+      "effective_foreground_rgba": [
+        0.7372549019607844,
+        0.7176470588235294,
+        1.0,
+        1.0
+      ],
+      "exception": null,
+      "foreground_role": "selection.marker",
+      "foreground_srgb": "#BCB7FF",
+      "kind": "essential",
+      "minimum": 3,
+      "passed": true,
+      "ratio": 7.7008986563647275,
+      "recipe": "list.selection-cue.active.fill"
+    },
+    {
+      "appearance": "dark",
+      "background_layers": [
+        {
+          "role": "surface.canvas",
+          "srgb": "#17191F"
+        }
+      ],
+      "effective_background_rgba": [
+        0.09019607843137255,
+        0.09803921568627451,
+        0.12156862745098039,
+        1.0
+      ],
+      "effective_foreground_rgba": [
+        0.42745098039215684,
+        0.4745098039215686,
+        0.5529411764705883,
+        1.0
+      ],
+      "exception": null,
+      "foreground_role": "selection.inactive-marker",
+      "foreground_srgb": "#6D798D",
+      "kind": "essential",
+      "minimum": 3,
+      "passed": true,
+      "ratio": 3.990570563133105,
+      "recipe": "list.selection-cue.inactive.cell"
+    },
+    {
+      "appearance": "dark",
+      "background_layers": [
+        {
+          "role": "selection.inactive",
+          "srgb": "#2B2F3A"
+        }
+      ],
+      "effective_background_rgba": [
+        0.16862745098039217,
+        0.1843137254901961,
+        0.22745098039215686,
+        1.0
+      ],
+      "effective_foreground_rgba": [
+        0.42745098039215684,
+        0.4745098039215686,
+        0.5529411764705883,
+        1.0
+      ],
+      "exception": null,
+      "foreground_role": "selection.inactive-marker",
+      "foreground_srgb": "#6D798D",
+      "kind": "essential",
+      "minimum": 3,
+      "passed": true,
+      "ratio": 3.037278109986793,
+      "recipe": "list.selection-cue.inactive.fill"
+    },
+    {
+      "appearance": "dark",
+      "background_layers": [
+        {
           "role": "surface.raised",
           "srgb": "#20232B"
         }
@@ -4312,6 +4428,122 @@
       "passed": true,
       "ratio": 9.57101659534208,
       "recipe": "status.warning.subtle-title"
+    },
+    {
+      "appearance": "dark",
+      "background_layers": [
+        {
+          "role": "surface.canvas",
+          "srgb": "#17191F"
+        }
+      ],
+      "effective_background_rgba": [
+        0.09019607843137255,
+        0.09803921568627451,
+        0.12156862745098039,
+        1.0
+      ],
+      "effective_foreground_rgba": [
+        0.7372549019607844,
+        0.7176470588235294,
+        1.0,
+        1.0
+      ],
+      "exception": null,
+      "foreground_role": "selection.marker",
+      "foreground_srgb": "#BCB7FF",
+      "kind": "essential",
+      "minimum": 3,
+      "passed": true,
+      "ratio": 9.500506094773748,
+      "recipe": "tree.selection-cue.active.cell"
+    },
+    {
+      "appearance": "dark",
+      "background_layers": [
+        {
+          "role": "selection.active",
+          "srgb": "#2A2745"
+        }
+      ],
+      "effective_background_rgba": [
+        0.16470588235294117,
+        0.15294117647058825,
+        0.27058823529411763,
+        1.0
+      ],
+      "effective_foreground_rgba": [
+        0.7372549019607844,
+        0.7176470588235294,
+        1.0,
+        1.0
+      ],
+      "exception": null,
+      "foreground_role": "selection.marker",
+      "foreground_srgb": "#BCB7FF",
+      "kind": "essential",
+      "minimum": 3,
+      "passed": true,
+      "ratio": 7.7008986563647275,
+      "recipe": "tree.selection-cue.active.fill"
+    },
+    {
+      "appearance": "dark",
+      "background_layers": [
+        {
+          "role": "surface.canvas",
+          "srgb": "#17191F"
+        }
+      ],
+      "effective_background_rgba": [
+        0.09019607843137255,
+        0.09803921568627451,
+        0.12156862745098039,
+        1.0
+      ],
+      "effective_foreground_rgba": [
+        0.42745098039215684,
+        0.4745098039215686,
+        0.5529411764705883,
+        1.0
+      ],
+      "exception": null,
+      "foreground_role": "selection.inactive-marker",
+      "foreground_srgb": "#6D798D",
+      "kind": "essential",
+      "minimum": 3,
+      "passed": true,
+      "ratio": 3.990570563133105,
+      "recipe": "tree.selection-cue.inactive.cell"
+    },
+    {
+      "appearance": "dark",
+      "background_layers": [
+        {
+          "role": "selection.inactive",
+          "srgb": "#2B2F3A"
+        }
+      ],
+      "effective_background_rgba": [
+        0.16862745098039217,
+        0.1843137254901961,
+        0.22745098039215686,
+        1.0
+      ],
+      "effective_foreground_rgba": [
+        0.42745098039215684,
+        0.4745098039215686,
+        0.5529411764705883,
+        1.0
+      ],
+      "exception": null,
+      "foreground_role": "selection.inactive-marker",
+      "foreground_srgb": "#6D798D",
+      "kind": "essential",
+      "minimum": 3,
+      "passed": true,
+      "ratio": 3.037278109986793,
+      "recipe": "tree.selection-cue.inactive.fill"
     },
     {
       "appearance": "light",
@@ -6628,6 +6860,122 @@
       "appearance": "light",
       "background_layers": [
         {
+          "role": "surface.canvas",
+          "srgb": "#FFFFFF"
+        }
+      ],
+      "effective_background_rgba": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "effective_foreground_rgba": [
+        0.34509803921568627,
+        0.30196078431372547,
+        0.7607843137254902,
+        1.0
+      ],
+      "exception": null,
+      "foreground_role": "selection.marker",
+      "foreground_srgb": "#584DC2",
+      "kind": "essential",
+      "minimum": 3,
+      "passed": true,
+      "ratio": 6.450620708006439,
+      "recipe": "list.selection-cue.active.cell"
+    },
+    {
+      "appearance": "light",
+      "background_layers": [
+        {
+          "role": "selection.active",
+          "srgb": "#EEEBFF"
+        }
+      ],
+      "effective_background_rgba": [
+        0.9333333333333333,
+        0.9215686274509803,
+        1.0,
+        1.0
+      ],
+      "effective_foreground_rgba": [
+        0.34509803921568627,
+        0.30196078431372547,
+        0.7607843137254902,
+        1.0
+      ],
+      "exception": null,
+      "foreground_role": "selection.marker",
+      "foreground_srgb": "#584DC2",
+      "kind": "essential",
+      "minimum": 3,
+      "passed": true,
+      "ratio": 5.517664635784848,
+      "recipe": "list.selection-cue.active.fill"
+    },
+    {
+      "appearance": "light",
+      "background_layers": [
+        {
+          "role": "surface.canvas",
+          "srgb": "#FFFFFF"
+        }
+      ],
+      "effective_background_rgba": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "effective_foreground_rgba": [
+        0.4823529411764706,
+        0.5215686274509804,
+        0.5843137254901961,
+        1.0
+      ],
+      "exception": null,
+      "foreground_role": "selection.inactive-marker",
+      "foreground_srgb": "#7B8595",
+      "kind": "essential",
+      "minimum": 3,
+      "passed": true,
+      "ratio": 3.7292311703369303,
+      "recipe": "list.selection-cue.inactive.cell"
+    },
+    {
+      "appearance": "light",
+      "background_layers": [
+        {
+          "role": "selection.inactive",
+          "srgb": "#E6E9EF"
+        }
+      ],
+      "effective_background_rgba": [
+        0.9019607843137255,
+        0.9137254901960784,
+        0.9372549019607843,
+        1.0
+      ],
+      "effective_foreground_rgba": [
+        0.4823529411764706,
+        0.5215686274509804,
+        0.5843137254901961,
+        1.0
+      ],
+      "exception": null,
+      "foreground_role": "selection.inactive-marker",
+      "foreground_srgb": "#7B8595",
+      "kind": "essential",
+      "minimum": 3,
+      "passed": true,
+      "ratio": 3.066238371075754,
+      "recipe": "list.selection-cue.inactive.fill"
+    },
+    {
+      "appearance": "light",
+      "background_layers": [
+        {
           "role": "surface.raised",
           "srgb": "#FFFFFF"
         }
@@ -8624,10 +8972,126 @@
       "passed": true,
       "ratio": 5.92905962383533,
       "recipe": "status.warning.subtle-title"
+    },
+    {
+      "appearance": "light",
+      "background_layers": [
+        {
+          "role": "surface.canvas",
+          "srgb": "#FFFFFF"
+        }
+      ],
+      "effective_background_rgba": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "effective_foreground_rgba": [
+        0.34509803921568627,
+        0.30196078431372547,
+        0.7607843137254902,
+        1.0
+      ],
+      "exception": null,
+      "foreground_role": "selection.marker",
+      "foreground_srgb": "#584DC2",
+      "kind": "essential",
+      "minimum": 3,
+      "passed": true,
+      "ratio": 6.450620708006439,
+      "recipe": "tree.selection-cue.active.cell"
+    },
+    {
+      "appearance": "light",
+      "background_layers": [
+        {
+          "role": "selection.active",
+          "srgb": "#EEEBFF"
+        }
+      ],
+      "effective_background_rgba": [
+        0.9333333333333333,
+        0.9215686274509803,
+        1.0,
+        1.0
+      ],
+      "effective_foreground_rgba": [
+        0.34509803921568627,
+        0.30196078431372547,
+        0.7607843137254902,
+        1.0
+      ],
+      "exception": null,
+      "foreground_role": "selection.marker",
+      "foreground_srgb": "#584DC2",
+      "kind": "essential",
+      "minimum": 3,
+      "passed": true,
+      "ratio": 5.517664635784848,
+      "recipe": "tree.selection-cue.active.fill"
+    },
+    {
+      "appearance": "light",
+      "background_layers": [
+        {
+          "role": "surface.canvas",
+          "srgb": "#FFFFFF"
+        }
+      ],
+      "effective_background_rgba": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "effective_foreground_rgba": [
+        0.4823529411764706,
+        0.5215686274509804,
+        0.5843137254901961,
+        1.0
+      ],
+      "exception": null,
+      "foreground_role": "selection.inactive-marker",
+      "foreground_srgb": "#7B8595",
+      "kind": "essential",
+      "minimum": 3,
+      "passed": true,
+      "ratio": 3.7292311703369303,
+      "recipe": "tree.selection-cue.inactive.cell"
+    },
+    {
+      "appearance": "light",
+      "background_layers": [
+        {
+          "role": "selection.inactive",
+          "srgb": "#E6E9EF"
+        }
+      ],
+      "effective_background_rgba": [
+        0.9019607843137255,
+        0.9137254901960784,
+        0.9372549019607843,
+        1.0
+      ],
+      "effective_foreground_rgba": [
+        0.4823529411764706,
+        0.5215686274509804,
+        0.5843137254901961,
+        1.0
+      ],
+      "exception": null,
+      "foreground_role": "selection.inactive-marker",
+      "foreground_srgb": "#7B8595",
+      "kind": "essential",
+      "minimum": 3,
+      "passed": true,
+      "ratio": 3.066238371075754,
+      "recipe": "tree.selection-cue.inactive.fill"
     }
   ],
-  "passed": 284,
-  "required": 284,
+  "passed": 300,
+  "required": 300,
   "schema": "meridian.contrast.v1",
-  "source_sha256": "294a4a9a4e589f4ab03db82f6d6a3a588c6f83dbfa9eddd850afdbcd83b8e942"
+  "source_sha256": "6f00ebd70c2301ec1736bdecda192fce65b1c9e96457d7ecb43af3b8571effd6"
 }

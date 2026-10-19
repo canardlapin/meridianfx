@@ -4,22 +4,22 @@
     "version": "1.93.2"
   },
   "inputs": {
-    "theme-build/_recipes.scss": "1b4fe87a7bdd5353757e84d54b8fc13f7600cf9a85d5abec2f32c61d2f2e01ed",
+    "theme-build/_recipes.scss": "a6525406e31e8ffd8d8119d6232b92ac81f576722079d51349e127971c5f3c23",
     "theme-build/package-lock.json": "6155d5f249d327d636f3a1355457a3e022aacce93023f275537e83517fbba234",
     "theme-build/package.json": "e54bc641c54480867b8aa163b6cfcb20f7e1fbd7a750a2310312f11f98684e34",
-    "tokens/meridian.json": "294a4a9a4e589f4ab03db82f6d6a3a588c6f83dbfa9eddd850afdbcd83b8e942",
+    "tokens/meridian.json": "6f00ebd70c2301ec1736bdecda192fce65b1c9e96457d7ecb43af3b8571effd6",
     "tools/build_themes.py": "d20d2856984dce7ba28518cb3463d2b5245c145682daf8ab3ef4f8db3a2372c9",
     "upstream/lock.json": "a2ae941442cc99da40faf2d46f6ca960a8e48809db2f53ea374c2b70b198ccfd"
   },
   "outputs": {
-    "modules/theme/src/main/resources/meridian/theme/themes/meridian-dark-comfortable.css": "fa076306637b5ce3858ac4dc94027be03aa4821a4c33fff385ff24eb488fa1ef",
-    "modules/theme/src/main/resources/meridian/theme/themes/meridian-dark-comfortable.css.manifest": "4c9a1419222567a470176542a6148b47f98982a1f1b98fef7e4a2f646940f519",
-    "modules/theme/src/main/resources/meridian/theme/themes/meridian-dark-compact.css": "00c8e82fc16211749735b9151890ec757fa7e40593eb56a020d80b7a01006fa7",
-    "modules/theme/src/main/resources/meridian/theme/themes/meridian-dark-compact.css.manifest": "717a8b9e2f4e232b5fb5d5f94d2caf5bdb668517fd96f88a649548771a388aec",
-    "modules/theme/src/main/resources/meridian/theme/themes/meridian-light-comfortable.css": "97626e2d71108dfe2711d4196b45d4c53d047414f397621443a132111c821d89",
-    "modules/theme/src/main/resources/meridian/theme/themes/meridian-light-comfortable.css.manifest": "3fe7d19c7738a75a0c8745c218e5b0c7c6f04d7b57a87b12fe5fc74220c85d40",
-    "modules/theme/src/main/resources/meridian/theme/themes/meridian-light-compact.css": "c34504d85e54112d4a70b48193753674344e930e74acdae347229a69cd7f3c31",
-    "modules/theme/src/main/resources/meridian/theme/themes/meridian-light-compact.css.manifest": "c309cac6676162cf1159a046e5599d2a8847adeaef9234b3409e8d3b7e237a9b"
+    "modules/theme/src/main/resources/meridian/theme/themes/meridian-dark-comfortable.css": "2d8d2aa85098854698d5a58f83bbb6c26d7b06e3d1897d045a5b55668f85f357",
+    "modules/theme/src/main/resources/meridian/theme/themes/meridian-dark-comfortable.css.manifest": "c2d834bc56db40c5c28447c1940688d229313b2d59b0ef13c0944cf50767cfbb",
+    "modules/theme/src/main/resources/meridian/theme/themes/meridian-dark-compact.css": "5e4264ddd3ca3ad5a64357723c71a9bea72a38c0a6ef157999c2913e567175c2",
+    "modules/theme/src/main/resources/meridian/theme/themes/meridian-dark-compact.css.manifest": "d6af95d8df371b5962bbd13316544393d1a9f59dcfb0fc598d7ff57f2e8e8766",
+    "modules/theme/src/main/resources/meridian/theme/themes/meridian-light-comfortable.css": "c5cf6033104e343f0bba93e3a3eb74ae3e25d8fe56335c540493d53f87d1d284",
+    "modules/theme/src/main/resources/meridian/theme/themes/meridian-light-comfortable.css.manifest": "429871e6b0f6e6ec5a1dab2818b03dbf4e147ba55f167f14ded7942986805ea1",
+    "modules/theme/src/main/resources/meridian/theme/themes/meridian-light-compact.css": "607687f71609dd571124a6b49a67891b7467c4b0efc4a0f555da8a9814c3bcbb",
+    "modules/theme/src/main/resources/meridian/theme/themes/meridian-light-compact.css.manifest": "5e1698eaa8ab4fa2982ed442ebbd694f52b2e90462193e31a0643fb6b44838d7"
   },
   "schema": "meridian.themes.v1",
   "scientific_colors": "upstream generic chart defaults preserved identically; no UI-token scientific palette",

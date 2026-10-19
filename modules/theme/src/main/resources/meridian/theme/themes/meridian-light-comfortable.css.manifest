@@ -44,7 +44,7 @@ toggle-button=5141:5265
 toggle-switch=5266:5316
 toolbar=5317:5409
 tooltip=5410:5423
-meridian=5583:6730
+meridian=5583:6724
 
 [variables]
 color.accent-0=#ddf4ff

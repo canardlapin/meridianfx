@@ -1,0 +1,72 @@
+Prism pipeline init order: mtl es2 sw 
+Using Double Precision Marlin Rasterizer
+Using dirty region optimizations
+Not using texture mask for primitives
+Not forcing power of 2 sizes for textures
+Using hardware CLAMP_TO_ZERO mode
+Opting in for HiDPI pixel scaling
+Not forcing UploadingPainter
+Prism pipeline name = com.sun.prism.mtl.MTLPipeline
+Loading native metal library, named: prism_mtl
+Succeeded: Loading native metal library.
+(X) Got class = class com.sun.prism.mtl.MTLPipeline
+GraphicsPipeline.createPipeline: error initializing pipeline com.sun.prism.mtl.MTLPipeline
+Reason: could not create an instance
+Prism pipeline name = com.sun.prism.es2.ES2Pipeline
+Loading ES2 native library ... prism_es2
+Loading library prism_es2 from resource failed: java.io.IOException: Error copying library /Users/bbuchsbaum/.openjfx/cache/27+30/aarch64/libprism_es2.dylib to cache: /Users/bbuchsbaum/.openjfx/cache/27+30/aarch64/.lock (Operation not permitted)
+java.io.IOException: Error copying library /Users/bbuchsbaum/.openjfx/cache/27+30/aarch64/libprism_es2.dylib to cache: /Users/bbuchsbaum/.openjfx/cache/27+30/aarch64/.lock (Operation not permitted)
+	at javafx.graphics@27/com.sun.glass.utils.NativeLibLoader.cacheLibrary(NativeLibLoader.java:314)
+	at javafx.graphics@27/com.sun.glass.utils.NativeLibLoader.installLibraryFromResource(NativeLibLoader.java:210)
+	at javafx.graphics@27/com.sun.glass.utils.NativeLibLoader.loadLibraryFromResource(NativeLibLoader.java:192)
+	at javafx.graphics@27/com.sun.glass.utils.NativeLibLoader.loadLibraryInternal(NativeLibLoader.java:134)
+	at javafx.graphics@27/com.sun.glass.utils.NativeLibLoader.loadLibrary(NativeLibLoader.java:55)
+	at javafx.graphics@27/com.sun.prism.es2.ES2Pipeline.<clinit>(ES2Pipeline.java:59)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:467)
+	at java.base/java.lang.Class.forName(Class.java:458)
+	at javafx.graphics@27/com.sun.prism.GraphicsPipeline.createPipeline(GraphicsPipeline.java:222)
+	at javafx.graphics@27/com.sun.javafx.tk.quantum.QuantumRenderer$PipelineRunnable.init(QuantumRenderer.java:88)
+	at javafx.graphics@27/com.sun.javafx.tk.quantum.QuantumRenderer$PipelineRunnable.run(QuantumRenderer.java:121)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+Caused by: java.io.FileNotFoundException: /Users/bbuchsbaum/.openjfx/cache/27+30/aarch64/.lock (Operation not permitted)
+	at java.base/java.io.RandomAccessFile.open0(Native Method)
+	at java.base/java.io.RandomAccessFile.open(RandomAccessFile.java:338)
+	at java.base/java.io.RandomAccessFile.<init>(RandomAccessFile.java:257)
+	at java.base/java.io.RandomAccessFile.<init>(RandomAccessFile.java:211)
+	at javafx.graphics@27/com.sun.glass.utils.NativeLibLoader.cacheLibrary(NativeLibLoader.java:301)
+	... 12 more
+GraphicsPipeline.createPipeline failed for com.sun.prism.es2.ES2Pipeline
+java.lang.UnsatisfiedLinkError: no prism_es2 in java.library.path: /Users/bbuchsbaum/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+	at java.base/java.lang.ClassLoader.loadLibrary(ClassLoader.java:2285)
+	at java.base/java.lang.Runtime.loadLibrary0(Runtime.java:822)
+	at java.base/java.lang.System.loadLibrary(System.java:1685)
+	at javafx.graphics@27/com.sun.glass.utils.NativeLibLoader.loadLibraryInternal(NativeLibLoader.java:162)
+	at javafx.graphics@27/com.sun.glass.utils.NativeLibLoader.loadLibrary(NativeLibLoader.java:55)
+	at javafx.graphics@27/com.sun.prism.es2.ES2Pipeline.<clinit>(ES2Pipeline.java:59)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:467)
+	at java.base/java.lang.Class.forName(Class.java:458)
+	at javafx.graphics@27/com.sun.prism.GraphicsPipeline.createPipeline(GraphicsPipeline.java:222)
+	at javafx.graphics@27/com.sun.javafx.tk.quantum.QuantumRenderer$PipelineRunnable.init(QuantumRenderer.java:88)
+	at javafx.graphics@27/com.sun.javafx.tk.quantum.QuantumRenderer$PipelineRunnable.run(QuantumRenderer.java:121)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+*** Fallback to Prism SW pipeline
+Prism pipeline name = com.sun.prism.sw.SWPipeline
+(X) Got class = class com.sun.prism.sw.SWPipeline
+Initialized prism pipeline: com.sun.prism.sw.SWPipeline
+RenderJob.run: internal exception
+java.lang.ArrayIndexOutOfBoundsException: Index 0 out of bounds for length 0
+	at java.base/java.util.Arrays$ArrayList.get(Arrays.java:4225)
+	at java.base/java.util.Collections$UnmodifiableList.get(Collections.java:1505)
+	at javafx.graphics@27/com.sun.glass.ui.Screen.getMainScreen(Screen.java:60)
+	at javafx.graphics@27/com.sun.prism.sw.SWPipeline.getDefaultResourceFactory(SWPipeline.java:90)
+	at javafx.graphics@27/com.sun.prism.GraphicsPipeline.getDefaultResourceFactory(GraphicsPipeline.java:155)
+	at javafx.graphics@27/com.sun.javafx.tk.quantum.QuantumRenderer.lambda$createResourceFactory$1(QuantumRenderer.java:155)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:369)
+	at javafx.graphics@27/com.sun.javafx.tk.RenderJob.run(RenderJob.java:58)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at javafx.graphics@27/com.sun.javafx.tk.quantum.QuantumRenderer$PipelineRunnable.run(QuantumRenderer.java:122)
+	at java.base/java.lang.Thread.run(Thread.java:1474)

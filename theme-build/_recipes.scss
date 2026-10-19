@@ -657,18 +657,22 @@
 }
 
 // ---- v5 ----
-// Tree/list selection: one rounded pill, no marker (the marker's square end notched the pill). Focus is
-// carried by the accent-tinted fill; tables keep the marker. A cell-colour base layer under the pill
-// prevents the view background showing as a halo.
+// Tree/list selection: a rounded inset outline carries state contrast against both the cell
+// and the pale selection fill. The control's outer focus-visible ring remains separate.
+// Matching inner/outer radii avoid the old left marker's square notch.
 .list-view > .virtual-flow > .clipped-container > .sheet > .list-cell:filled:selected,
-.tree-view > .virtual-flow > .clipped-container > .sheet > .tree-cell:filled:selected {
-  -fx-background-color: -color-cell-bg, -meridian-selection-inactive;
-  -fx-background-insets: 0, 1px 4px 1px 4px;
-  -fx-background-radius: 0, 6px;
+.tree-view > .virtual-flow > .clipped-container > .sheet > .tree-cell:filled:selected,
+.list-view > .virtual-flow > .clipped-container > .sheet > .list-cell:filled:selected:hover,
+.tree-view > .virtual-flow > .clipped-container > .sheet > .tree-cell:filled:selected:hover {
+  -fx-background-color: -color-cell-bg, -meridian-selection-inactive-marker, -meridian-selection-inactive;
+  -fx-background-insets: 0, 1px 4px 1px 4px, 3px 6px 3px 6px;
+  -fx-background-radius: 0, 6px, 4px;
 }
 .list-view:focused > .virtual-flow > .clipped-container > .sheet > .list-cell:filled:selected,
-.tree-view:focused > .virtual-flow > .clipped-container > .sheet > .tree-cell:filled:selected {
-  -fx-background-color: -color-cell-bg, -meridian-selection-active;
+.tree-view:focused > .virtual-flow > .clipped-container > .sheet > .tree-cell:filled:selected,
+.list-view:focused > .virtual-flow > .clipped-container > .sheet > .list-cell:filled:selected:hover,
+.tree-view:focused > .virtual-flow > .clipped-container > .sheet > .tree-cell:filled:selected:hover {
+  -fx-background-color: -color-cell-bg, -meridian-selection-marker, -meridian-selection-active;
 }
 .list-view > .virtual-flow > .clipped-container > .sheet > .list-cell:filled:hover,
 .tree-view > .virtual-flow > .clipped-container > .sheet > .tree-cell:filled:hover {
@@ -694,16 +698,6 @@
 
 // Revert v4 context-menu min-width (added empty space; accelerators did not form a column).
 .context-menu { -fx-min-width: -1; }
-
-// Hovering a selected tree/list row keeps the selection pill (hover must not replace it).
-.list-view > .virtual-flow > .clipped-container > .sheet > .list-cell:filled:selected:hover,
-.tree-view > .virtual-flow > .clipped-container > .sheet > .tree-cell:filled:selected:hover {
-  -fx-background-color: -color-cell-bg, -meridian-selection-inactive;
-}
-.list-view:focused > .virtual-flow > .clipped-container > .sheet > .list-cell:filled:selected:hover,
-.tree-view:focused > .virtual-flow > .clipped-container > .sheet > .tree-cell:filled:selected:hover {
-  -fx-background-color: -color-cell-bg, -meridian-selection-active;
-}
 
 // Opt-in numeric columns: add "numeric" to a TableColumn's style class. Header and cells right-align, which
 // also places JavaFX's sort glyph (laid out in code at the header's trailing edge) next to the label.

@@ -1,20 +1,20 @@
 {
   "outputs": {
-    "design-study/generated/tokens.css": "3453f5447120e8766736a9707fdd5336e6ffe41bbf4717531bc8c801b38d3cc3",
-    "modules/scaladock/src/main/resources/meridian/scaladock/tokens-dark.css": "1eedd4261f8b6e5c983457077f046cbcc3b47910e3cbbb3e22f15e3905796c4d",
-    "modules/scaladock/src/main/resources/meridian/scaladock/tokens-light.css": "fa9bace03d9a3d8082c4cc9478b9fbb09eac32d3123c96dd4a50fc72600e7dee",
-    "modules/theme/src/main/java/meridian/theme/metrics/MeridianMetrics.java": "b6934f58a6289b6e3ea92af290a8aa2346e2a489029a3e66b64aa29ff0d7e653",
-    "modules/theme/src/main/resources/meridian/theme/tokens-dark.css": "39e791964e006faea5bac6b1e030322b6fa30422daf4782f4503bdd10be974e6",
-    "modules/theme/src/main/resources/meridian/theme/tokens-light.css": "f54e0237557392cff6c85bf560c92bf499f1787f2a6cae7224ac02d86b9759ac",
-    "modules/theme/src/main/resources/meridian/theme/tokens.json": "3f1dedbbf08aab5bb11f3d37f8a3f21dc89cf060f71f99529948f8769f2e35cf",
-    "tokens/generated/_palette-dark.scss": "d9ffce3024dad09d762f85a419fa8538010e0d2180cdb5b43197bd5287984ee2",
-    "tokens/generated/_palette-light.scss": "69dc23fb43d81dc575cf32499d8779bf2ca668c89b76fb7da1cd7272ebe611c8",
-    "tokens/generated/contrast.json": "8e0cfddfc1866fcd4221f996d206b842ff0dd1faa6c4ad1ee012408bb1638dec",
+    "design-study/generated/tokens.css": "61f18e021d3512f6f76c64053039bab64bd8828882618de852b46dc142d69c42",
+    "modules/scaladock/src/main/resources/meridian/scaladock/tokens-dark.css": "27bcccd4411990edecc3639f4a085f0e838dcacd0ed00e8a8ec0d228c0ff5b39",
+    "modules/scaladock/src/main/resources/meridian/scaladock/tokens-light.css": "c8aa669916155588b61b8c0db828dae6be9fe7e55ca321d13bf24aaa078ac992",
+    "modules/theme/src/main/java/meridian/theme/metrics/MeridianMetrics.java": "75f379ac325517d5a2c1e590b632caadcd450724e629d0116cad1ac39053b233",
+    "modules/theme/src/main/resources/meridian/theme/tokens-dark.css": "f6e0f9440cb40770b76535eb4e9ad36c20c0890a3b4b6754d8fa77fc7d49a473",
+    "modules/theme/src/main/resources/meridian/theme/tokens-light.css": "48e9f1101e32896967dc452ac2ca3998c6c05657c1a0c51056257a973aa24dc5",
+    "modules/theme/src/main/resources/meridian/theme/tokens.json": "99cafd89a779cb3718e3e05b1945f599dda920dcdeb57052410e0eba6152e4f7",
+    "tokens/generated/_palette-dark.scss": "079afec34d3feb64eaae2a16c96f7c72a63d9fffa538405a639f323d0e612a62",
+    "tokens/generated/_palette-light.scss": "c54b583bcd828c564e35de42055cc724510e3b5db4bad3b2d493d5cc93d689b4",
+    "tokens/generated/contrast.json": "cf8d772a3af5e5d383a1dba9c79b0e3b409523b4ac90e93e82381dfcdc928899",
     "tokens/generated/native-expected.tsv": "159457f0b2971a60c8dca6669d5b50a239830a0f49ce6572857dd2127465ed34"
   },
   "schema": "meridian.generation.v1",
   "scientific_colors": "excluded",
   "source": "tokens/meridian.json",
-  "source_sha256": "294a4a9a4e589f4ab03db82f6d6a3a588c6f83dbfa9eddd850afdbcd83b8e942",
+  "source_sha256": "6f00ebd70c2301ec1736bdecda192fce65b1c9e96457d7ecb43af3b8571effd6",
   "timestamps": "intentionally absent"
 }

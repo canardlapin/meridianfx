@@ -50,6 +50,8 @@ REQUIRED_RECIPES = {
        for state in ("default", "hover", "pressed", "focused")},
     **{f"row.{state}": "text" for state in ("default", "hover", "selected", "selected-focused", "inactive-selected", "disabled-selected")},
     **{f"row.marker.{state}": "essential" for state in ("selected", "selected-focused", "inactive-selected", "disabled-selected")},
+    **{f"{control}.selection-cue.{state}.{adjacent}": "essential"
+       for control in ("list", "tree") for state in ("active", "inactive") for adjacent in ("cell", "fill")},
     **{f"{group}.{state}": "text" for group in ("dock.tab", "menu")
        for state in ("default", "hover", "selected", "focused", "inactive-selected")},
     **{f"status.{status}.{state}": "text" for status in ("neutral", "progress", "success", "warning", "danger")
