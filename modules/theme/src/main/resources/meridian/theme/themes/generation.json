@@ -9,7 +9,7 @@
     "theme-build/package.json": "e54bc641c54480867b8aa163b6cfcb20f7e1fbd7a750a2310312f11f98684e34",
     "tokens/meridian.json": "6f00ebd70c2301ec1736bdecda192fce65b1c9e96457d7ecb43af3b8571effd6",
     "tools/build_themes.py": "d20d2856984dce7ba28518cb3463d2b5245c145682daf8ab3ef4f8db3a2372c9",
-    "upstream/lock.json": "a2ae941442cc99da40faf2d46f6ca960a8e48809db2f53ea374c2b70b198ccfd"
+    "upstream/lock.json": "155ea0efa84852f3d9643e2ea56e6be7245dff5a25366567889d32de54d2d713"
   },
   "outputs": {
     "modules/theme/src/main/resources/meridian/theme/themes/meridian-dark-comfortable.css": "2d8d2aa85098854698d5a58f83bbb6c26d7b06e3d1897d045a5b55668f85f357",

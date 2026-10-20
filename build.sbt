@@ -3,7 +3,7 @@ import scala.sys.process._
 
 val javafxVersion     = "27"
 val atlantafxVersion  = "3.0.0"
-val scaladockRevision = "628c46fce92c4d31b0b08459ac0f18777b5ba527"
+val scaladockRevision = "4a7a61bb397a68d5048f809a6ea1c30ce8b45223"
 
 ThisBuild / organization   := "io.github.canardlapin"
 ThisBuild / scalaVersion   := "3.7.4"
@@ -40,6 +40,8 @@ lazy val scaladockFx = ProjectRef(scaladockBuild, "fx")
 
 lazy val writeFoundationReport = taskKey[File]("Write resolved dependencies and runtime classpath.")
 lazy val foundationReport      = taskKey[Seq[File]]("Generate all module foundation reports.")
+lazy val providerResolutionReport =
+  taskKey[File]("Record the actual ScalaDock source checkout used by sbt.")
 
 val commonSettings = Seq(
   javacOptions ++= Seq("--release", "25", "-Xlint:all"),
@@ -86,7 +88,49 @@ lazy val workbench = project.in(file("modules/workbench"))
 lazy val scaladock = project.in(file("modules/scaladock"))
   .dependsOn(theme, scaladockFx)
   .settings(commonSettings)
-  .settings(name := "meridian-scaladock")
+  .settings(
+    name := "meridian-scaladock",
+    providerResolutionReport := {
+      val provider           = (scaladockFx / baseDirectory).value
+      def git(args: String*) = Process(Seq("git") ++ args, provider).!!.trim
+      val observed           = git("rev-parse", "HEAD")
+      val overridePath       = sys.props.get("meridian.scaladock.path")
+      require(
+        overridePath.isDefined || observed == scaladockRevision,
+        s"Resolved ScalaDock $observed differs from configured $scaladockRevision"
+      )
+      val out = target.value / "provider-resolution.tsv"
+      val rows = Seq(
+        "configured"   -> scaladockRevision,
+        "uri"          -> scaladockBuild.toString,
+        "override"     -> overridePath.getOrElse(""),
+        "checkout"     -> git("rev-parse", "--show-toplevel"),
+        "observed"     -> observed,
+        "tree"         -> git("rev-parse", "HEAD^{tree}"),
+        "tracked-diff" -> git("diff", "HEAD", "--stat")
+      )
+      IO.write(out, rows.map { case (key, value) => s"$key\t$value" }.mkString("", "\n", "\n"))
+      streams.value.log.info(
+        s"ScalaDock configured=$scaladockRevision observed=$observed checkout=$provider"
+      )
+      out
+    },
+    Test / fork          := true,
+    Test / baseDirectory := (LocalRootProject / baseDirectory).value,
+    Test / javaOptions := {
+      val nativeJars = (Test / fullClasspath).value.files.filter(f =>
+        f.getName.startsWith("javafx-") && f.getName.endsWith(s"-$fxPlatform.jar")
+      ).sortBy(_.getName)
+      require(nativeJars.size == javafxModules.size, s"Unexpected JavaFX module path: $nativeJars")
+      Seq(
+        "--module-path",
+        nativeJars.map(_.getAbsolutePath).mkString(java.io.File.pathSeparator),
+        "--add-modules",
+        "javafx.controls",
+        "--enable-native-access=javafx.graphics"
+      )
+    }
+  )
 
 lazy val sampler = project.in(file("modules/sampler"))
   .dependsOn(theme, workbench, scaladock)

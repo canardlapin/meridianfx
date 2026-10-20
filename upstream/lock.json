@@ -21,7 +21,7 @@
     "scala": "3.7.4"
   },
   "scaladock": {
-    "commit": "628c46fce92c4d31b0b08459ac0f18777b5ba527",
+    "commit": "4a7a61bb397a68d5048f809a6ea1c30ce8b45223",
     "development_resolution": "full-SHA Git source; local checkout override is explicit",
     "license": "Apache-2.0",
     "repository": "https://github.com/canardlapin/scaladock"

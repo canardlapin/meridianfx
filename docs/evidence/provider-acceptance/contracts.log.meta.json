@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "started_utc": "2026-10-20T00:12:07.118062+00:00",
+  "finished_utc": "2026-10-20T00:12:12.736463+00:00",
+  "duration_seconds": 5.619061,
+  "command": [
+    "zsh",
+    "-c",
+    "python3 tools/generate_tokens.py --check && python3 tools/check_tokens.py && python3 tools/build_themes.py --check && python3 tools/verify_foundation.py && python3 -m unittest discover -s tools/tests -v"
+  ],
+  "cwd": "/Users/bbuchsbaum/code/scala/meridianfx",
+  "log": "/Users/bbuchsbaum/code/scala/meridianfx/docs/evidence/provider-acceptance/contracts.log",
+  "exit_code": 0,
+  "child_returncode": 0,
+  "reason": "exited",
+  "detail": null,
+  "timeout_seconds": 300.0,
+  "log_bytes": 4976
+}

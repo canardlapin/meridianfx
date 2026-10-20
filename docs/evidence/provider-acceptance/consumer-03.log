@@ -1,0 +1,29 @@
+Meridian JDK: /opt/homebrew/Cellar/openjdk/25.0.1
+[info] welcome to sbt 1.12.14 (Homebrew Java 25.0.1)
+[info] loading settings for project meridianfx-build from plugins.sbt...
+[info] loading project definition from /Users/bbuchsbaum/code/scala/meridianfx/project
+[info] loading settings for project root from build.sbt...
+[info] loading settings for project scaladock-build from plugins.sbt...
+[info] loading project definition from /Users/bbuchsbaum/.sbt/1.0/staging/ae58878124cf8bf90b01/scaladock/project
+[info] loading settings for project root from build.sbt...
+[info] set current project to meridianfx (in build file:/Users/bbuchsbaum/code/scala/meridianfx/)
+[info] ScalaDock configured=4a7a61bb397a68d5048f809a6ea1c30ce8b45223 observed=4a7a61bb397a68d5048f809a6ea1c30ce8b45223 checkout=/Users/bbuchsbaum/.sbt/1.0/staging/ae58878124cf8bf90b01/scaladock/modules/fx
+[success] Total time: 0 s, completed Oct 19, 2026, 8:10:19 p.m.
+Meridian theme resource hashes verified (no Sass runtime needed)
+[info] compiling 1 Scala source to /Users/bbuchsbaum/code/scala/meridianfx/modules/scaladock/target/scala-3.7.4/test-classes ...
+[info] done compiling
+[info] running (fork) meridian.scaladock.ProviderAcceptanceProbe docs/evidence/provider-acceptance/native-03
+[error] WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+[error] WARNING: sun.misc.Unsafe::objectFieldOffset has been called by scala.runtime.LazyVals$ (file:/Users/bbuchsbaum/code/scala/meridianfx/target/bg-jobs/sbt_31d92574/target/16f4dc48/adca020a/scala3-library_3-3.7.4.jar)
+[error] WARNING: Please consider reporting this to the maintainers of class scala.runtime.LazyVals$
+[error] WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[info] B0_KEYBOARD_OK actions=6 dispatch=JavaFX-KeyEvent-and-public-action
+[info] B0_PHASE_OK phase=dark-comfortable header=32.0 scheme=DARK panes=4
+[info] B0_PHASE_OK phase=light-compact header=28.0 scheme=LIGHT panes=4
+[info] B0_PHASE_OK phase=dark-compact-floating header=28.0 scheme=DARK panes=4
+[info] B0_PHASE_OK phase=light-comfortable-restored-scaled header=40.0 scheme=LIGHT panes=4
+[info] B0_CONSUMER_OK phases=4 keyboardActions=6 keyboardMenus=4 panes=4 disposed=4
+[success] Total time: 9 s, completed Oct 19, 2026, 8:10:28 p.m.
+Meridian theme resource hashes verified (no Sass runtime needed)
+[info] Wrote foundation report: /Users/bbuchsbaum/code/scala/meridianfx/modules/scaladock/target/foundation
+[success] Total time: 0 s, completed Oct 19, 2026, 8:10:28 p.m.

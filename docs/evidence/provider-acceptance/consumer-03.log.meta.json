@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "started_utc": "2026-10-20T00:10:16.730288+00:00",
+  "finished_utc": "2026-10-20T00:10:28.614617+00:00",
+  "duration_seconds": 11.88414,
+  "command": [
+    "tools/sbt",
+    "scaladock/providerResolutionReport",
+    "scaladock/Test/runMain meridian.scaladock.ProviderAcceptanceProbe docs/evidence/provider-acceptance/native-03",
+    "scaladock/writeFoundationReport"
+  ],
+  "cwd": "/Users/bbuchsbaum/code/scala/meridianfx",
+  "log": "/Users/bbuchsbaum/code/scala/meridianfx/docs/evidence/provider-acceptance/consumer-03.log",
+  "exit_code": 0,
+  "child_returncode": 0,
+  "reason": "exited",
+  "detail": null,
+  "timeout_seconds": 300.0,
+  "log_bytes": 2528
+}

@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "started_utc": "2026-10-20T00:06:38.601566+00:00",
+  "finished_utc": "2026-10-20T00:06:43.177539+00:00",
+  "duration_seconds": 4.575756,
+  "command": [
+    "tools/sbt",
+    "scaladock/providerResolutionReport"
+  ],
+  "cwd": "/Users/bbuchsbaum/code/scala/meridianfx",
+  "log": "/Users/bbuchsbaum/code/scala/meridianfx/docs/evidence/provider-acceptance/baseline-resolution.log",
+  "exit_code": 0,
+  "child_returncode": 0,
+  "reason": "exited",
+  "detail": null,
+  "timeout_seconds": 300.0,
+  "log_bytes": 933
+}

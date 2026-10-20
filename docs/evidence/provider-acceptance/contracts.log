@@ -1,0 +1,58 @@
+{"outputs": 12, "source_sha256": "6f00ebd70c2301ec1736bdecda192fce65b1c9e96457d7ecb43af3b8571effd6", "contrast_required": 300, "contrast_passed": 300, "explicit_exceptions": 12, "mode": "check"}
+{
+  "schema": "meridian.a2-acceptance.v1",
+  "source_sha256": "6f00ebd70c2301ec1736bdecda192fce65b1c9e96457d7ecb43af3b8571effd6",
+  "generated_outputs": 12,
+  "determinism": "two materialized passes identical",
+  "manual_edit_detection": "passed",
+  "missing_output_detection": "passed",
+  "contrast_required": 300,
+  "contrast_passed": 300,
+  "explicit_exceptions": 12,
+  "scientific_colors": "excluded"
+}
+{"themes": 4, "outputs": 9, "mode": "check", "source_sha256": "6f00ebd70c2301ec1736bdecda192fce65b1c9e96457d7ecb43af3b8571effd6"}
+{
+  "source_files": 65,
+  "design_references": 3
+}
+test_exact_default (test_provider_receipt.ProviderResolutionTest.test_exact_default) ... ok
+test_rejects_abbreviated_pin (test_provider_receipt.ProviderResolutionTest.test_rejects_abbreviated_pin) ... ok
+test_rejects_false_provenance (test_provider_receipt.ProviderResolutionTest.test_rejects_false_provenance) ... ok
+test_changed_locked_upstream_rejected (test_theme_build.ThemeBuildTests.test_changed_locked_upstream_rejected) ... ok
+test_chart_defaults_identical_across_all_variants (test_theme_build.ThemeBuildTests.test_chart_defaults_identical_across_all_variants) ... ok
+test_independent_paths_compile_identical_bytes (test_theme_build.ThemeBuildTests.test_independent_paths_compile_identical_bytes) ... ok
+test_manifest_ranges_match_real_module_boundaries (test_theme_build.ThemeBuildTests.test_manifest_ranges_match_real_module_boundaries) ... ok
+test_missing_and_obsolete_theme_outputs_rejected (test_theme_build.ThemeBuildTests.test_missing_and_obsolete_theme_outputs_rejected) ... ok
+test_receipt_detects_changed_source_and_output (test_theme_build.ThemeBuildTests.test_receipt_detects_changed_source_and_output) ... ok
+test_duplicate_json_keys_rejected (test_tokens.TokenTests.test_duplicate_json_keys_rejected) ... ok
+test_focus_cannot_be_decorative (test_tokens.TokenTests.test_focus_cannot_be_decorative) ... ok
+test_fractional_metrics_are_not_rounded_in_java (test_tokens.TokenTests.test_fractional_metrics_are_not_rounded_in_java) ... ok
+test_independent_decimal_reference (test_tokens.TokenTests.test_independent_decimal_reference) ... ok
+test_invalid_color_does_not_generate (test_tokens.TokenTests.test_invalid_color_does_not_generate) ... ok
+test_list_tree_cue_contrast_and_required_coverage (test_tokens.TokenTests.test_list_tree_cue_contrast_and_required_coverage) ... ok
+test_lower_contrast_policy_rejected (test_tokens.TokenTests.test_lower_contrast_policy_rejected) ... ok
+test_manual_edit_missing_and_stale_source_detected (test_tokens.TokenTests.test_manual_edit_missing_and_stale_source_detected) ... ok
+test_meaningful_data_cannot_use_disabled_exemption (test_tokens.TokenTests.test_meaningful_data_cannot_use_disabled_exemption) ... ok
+test_missing_alpha_backdrop_rejected (test_tokens.TokenTests.test_missing_alpha_backdrop_rejected) ... ok
+test_nonfinite_and_boolean_contrast_policy_rejected (test_tokens.TokenTests.test_nonfinite_and_boolean_contrast_policy_rejected) ... ok
+test_nonfinite_and_boolean_metrics_rejected (test_tokens.TokenTests.test_nonfinite_and_boolean_metrics_rejected) ... ok
+test_pale_list_tree_fill_cannot_replace_essential_cue (test_tokens.TokenTests.test_pale_list_tree_fill_cannot_replace_essential_cue) ... ok
+test_required_state_cannot_be_removed (test_tokens.TokenTests.test_required_state_cannot_be_removed) ... ok
+test_scientific_mapping_rejected (test_tokens.TokenTests.test_scientific_mapping_rejected) ... ok
+test_source_over_8bit_alpha (test_tokens.TokenTests.test_source_over_8bit_alpha) ... ok
+test_status_roles_do_not_alias_selection_or_focus (test_tokens.TokenTests.test_status_roles_do_not_alias_selection_or_focus) ... ok
+test_status_text_and_dot_contrast_independent_reference (test_tokens.TokenTests.test_status_text_and_dot_contrast_independent_reference) ... ok
+test_threshold_is_not_rounded (test_tokens.TokenTests.test_threshold_is_not_rounded) ... ok
+test_two_layer_alpha_order (test_tokens.TokenTests.test_two_layer_alpha_order) ... ok
+test_two_materialized_generations_identical (test_tokens.TokenTests.test_two_materialized_generations_identical) ... ok
+test_typography_floors_and_density_defaults (test_tokens.TokenTests.test_typography_floors_and_density_defaults) ... ok
+test_unexpected_generated_output_detected (test_tokens.TokenTests.test_unexpected_generated_output_detected) ... ok
+test_unknown_color_and_role_rejected (test_tokens.TokenTests.test_unknown_color_and_role_rejected) ... ok
+test_unreferenced_scientific_raw_color_rejected (test_tokens.TokenTests.test_unreferenced_scientific_raw_color_rejected) ... ok
+test_white_black_reference (test_tokens.TokenTests.test_white_black_reference) ... ok
+
+----------------------------------------------------------------------
+Ran 35 tests in 3.716s
+
+OK

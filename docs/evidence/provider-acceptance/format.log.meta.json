@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "started_utc": "2026-10-20T00:11:22.259597+00:00",
+  "finished_utc": "2026-10-20T00:11:27.248581+00:00",
+  "duration_seconds": 4.988537,
+  "command": [
+    "tools/sbt",
+    "scaladock/Test/scalafmt",
+    "scalafmtSbt"
+  ],
+  "cwd": "/Users/bbuchsbaum/code/scala/meridianfx",
+  "log": "/Users/bbuchsbaum/code/scala/meridianfx/docs/evidence/provider-acceptance/format.log",
+  "exit_code": 0,
+  "child_returncode": 0,
+  "reason": "exited",
+  "detail": null,
+  "timeout_seconds": 300.0,
+  "log_bytes": 1078
+}
