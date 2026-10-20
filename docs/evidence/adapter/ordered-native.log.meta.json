@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "started_utc": "2026-10-20T00:55:18.901966+00:00",
+  "finished_utc": "2026-10-20T00:55:38.146574+00:00",
+  "duration_seconds": 19.24436,
+  "command": [
+    "tools/sbt",
+    "scaladock/scalafmt",
+    "scaladock/Test/scalafmt",
+    "scaladock/scalafmtCheck",
+    "scaladock/Test/scalafmtCheck",
+    "scaladock/Test/runMain meridian.scaladock.AdapterProbe docs/evidence/adapter/native-ordered"
+  ],
+  "cwd": "/Users/bbuchsbaum/code/scala/meridianfx",
+  "log": "/Users/bbuchsbaum/code/scala/meridianfx/docs/evidence/adapter/ordered-native.log",
+  "exit_code": 0,
+  "child_returncode": 0,
+  "reason": "exited",
+  "detail": null,
+  "timeout_seconds": 300.0,
+  "log_bytes": 3137
+}

@@ -1,0 +1,49 @@
+/* Loaded after ScalaDock's dock.css and generated token mappings. Public selectors only.
+   Keep decorative dividers, selected-pane cues and keyboard focus as separate roles. */
+.dock .dock-tab-close, .dock .dock-header-button, .dock .dock-tab-overflow {
+  -fx-min-width: -meridian-dock-target;
+  -fx-pref-width: -meridian-dock-target;
+  -fx-min-height: -meridian-dock-target;
+  -fx-pref-height: -meridian-dock-target;
+}
+
+.dock .dock-tab:selected,
+.dock .dock-group:active .dock-tab:selected,
+.dock.dock-layout:inactive .dock-group:active .dock-tab:selected {
+  -fx-background-color: -meridian-selection-inactive-marker, -dock-base;
+  -fx-background-insets: 0, 2 0 0 0;
+}
+.dock .dock-tab-close:focused,
+.dock .dock-header-button:focused, .dock .dock-tab-overflow:focused,
+.dock .dock-maximized-badge:focused {
+  -fx-border-width: 0;
+  -fx-border-insets: 0;
+  -fx-background-color: -meridian-focus-ring, -dock-surface;
+  -fx-background-insets: 2, 4;
+  -fx-background-radius: 4, 2;
+}
+/* Paint focus inside the tab; a border would change its natural height and dismiss menus. */
+.dock .dock-tab:focused,
+.dock .dock-group:active .dock-tab:focused,
+.dock.dock-layout:inactive .dock-group:active .dock-tab:focused {
+  -fx-border-width: 0;
+  -fx-border-insets: 0;
+  -fx-background-color: -meridian-selection-inactive-marker, -dock-base, -meridian-focus-ring, -dock-base;
+  -fx-background-insets: 0, 2 0 0 0, 4 2 2 2, 6 4 4 4;
+  -fx-background-radius: 0, 0, 3, 1;
+}
+
+.dock .context-menu, .dock .tooltip, .dock .dock-ghost-chip {
+  -fx-background-color: -meridian-border-control, -dock-surface-raised;
+  -fx-background-insets: 0, 1;
+}
+.dock .dock-ghost-chip { -fx-opacity: 1; }
+.dock .context-menu .menu-item:focused {
+  -fx-background-color: -meridian-selection-active;
+  -fx-border-color: -meridian-focus-ring;
+  -fx-border-width: 2;
+  -fx-border-radius: 3;
+}
+.dock .context-menu .menu-item:focused .label {
+  -fx-text-fill: -meridian-text-primary;
+}

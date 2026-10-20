@@ -1,0 +1,57 @@
+Meridian JDK: /opt/homebrew/Cellar/openjdk/25.0.1
+[info] welcome to sbt 1.12.14 (Homebrew Java 25.0.1)
+[info] loading settings for project meridianfx-build from plugins.sbt...
+[info] loading project definition from /Users/bbuchsbaum/code/scala/meridianfx/project
+[info] loading settings for project root from build.sbt...
+[info] loading settings for project scaladock-build from plugins.sbt...
+[info] loading project definition from /Users/bbuchsbaum/.sbt/1.0/staging/ae58878124cf8bf90b01/scaladock/project
+[info] loading settings for project root from build.sbt...
+[info] set current project to meridianfx (in build file:/Users/bbuchsbaum/code/scala/meridianfx/)
+Meridian theme resource hashes verified (no Sass runtime needed)
+[info] compiling 1 Scala source to /Users/bbuchsbaum/code/scala/meridianfx/modules/scaladock/target/scala-3.7.4/classes ...
+[info] done compiling
+[info] running (fork) meridian.scaladock.AdapterProbe docs/evidence/adapter/native-02
+[error] WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+[error] WARNING: sun.misc.Unsafe::objectFieldOffset has been called by scala.runtime.LazyVals$ (file:/Users/bbuchsbaum/code/scala/meridianfx/target/bg-jobs/sbt_91c8d4ce/target/16f4dc48/adca020a/scala3-library_3-3.7.4.jar)
+[error] WARNING: Please consider reporting this to the maintainers of class scala.runtime.LazyVals$
+[error] WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[error] Oct 19, 2026 8:45:12 P.M. javafx.css.CssParser declaration
+[error] WARNING: CSS Error parsing jar:file:/Users/bbuchsbaum/code/scala/meridianfx/target/bg-jobs/sbt_91c8d4ce/target/5be241a5/51888d81/meridian-scaladock_3-0.1.0-dev.1.jar!/meridian/scaladock/recipes.css: Expected '<number>' while parsing '-fx-font-size' at [5,17]
+[error] Oct 19, 2026 8:45:12 P.M. javafx.css.CssParser declaration
+[error] WARNING: CSS Error parsing jar:file:/Users/bbuchsbaum/code/scala/meridianfx/target/bg-jobs/sbt_91c8d4ce/target/5be241a5/51888d81/meridian-scaladock_3-0.1.0-dev.1.jar!/meridian/scaladock/recipes.css: Expected '<number>' while parsing '-fx-font-size' at [5,17]
+[error] Oct 19, 2026 8:45:12 P.M. javafx.css.CssParser declaration
+[error] WARNING: CSS Error parsing jar:file:/Users/bbuchsbaum/code/scala/meridianfx/target/bg-jobs/sbt_91c8d4ce/target/5be241a5/51888d81/meridian-scaladock_3-0.1.0-dev.1.jar!/meridian/scaladock/recipes.css: Expected '<number>' while parsing '-fx-font-size' at [5,17]
+[error] Oct 19, 2026 8:45:12 P.M. javafx.css.CssParser declaration
+[error] WARNING: CSS Error parsing jar:file:/Users/bbuchsbaum/code/scala/meridianfx/target/bg-jobs/sbt_91c8d4ce/target/5be241a5/51888d81/meridian-scaladock_3-0.1.0-dev.1.jar!/meridian/scaladock/recipes.css: Expected '<number>' while parsing '-fx-font-size' at [5,17]
+[error] Exception in thread "main" java.lang.IllegalStateException: B1 adapter probe failed
+[error] 	at meridian.scaladock.AdapterProbe$.main$$anonfun$1(AdapterProbe.scala:33)
+[error] 	at scala.Option.foreach(Option.scala:437)
+[error] 	at meridian.scaladock.AdapterProbe$.main(AdapterProbe.scala:33)
+[error] 	at meridian.scaladock.AdapterProbe.main(AdapterProbe.scala)
+[error] Caused by: java.lang.IllegalArgumentException: requirement failed: Dock text scale lost
+[error] 	at scala.Predef$.require(Predef.scala:337)
+[error] 	at meridian.scaladock.AdapterApp.checkFrame$$anonfun$2(AdapterProbe.scala:189)
+[error] 	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:15)
+[error] 	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:10)
+[error] 	at scala.collection.immutable.Vector.foreach(Vector.scala:2125)
+[error] 	at meridian.scaladock.AdapterApp.checkFrame(AdapterProbe.scala:182)
+[error] 	at meridian.scaladock.AdapterApp.openMenu$$anonfun$2(AdapterProbe.scala:166)
+[error] 	at meridian.scaladock.AdapterApp.openMenu$$anonfun$adapted$1(AdapterProbe.scala:166)
+[error] 	at scala.Function0.apply$mcV$sp(Function0.scala:42)
+[error] 	at meridian.scaladock.AdapterApp.later$$anonfun$1(AdapterProbe.scala:123)
+[error] 	at javafx.graphics@27/javafx.animation.Animation.runHandler(Animation.java:1147)
+[error] 	at javafx.graphics@27/javafx.animation.Animation.finished(Animation.java:1141)
+[error] 	at javafx.graphics@27/javafx.animation.AnimationAccessorImpl.finished(AnimationAccessorImpl.java:49)
+[error] 	at javafx.graphics@27/com.sun.scenario.animation.shared.SingleLoopClipEnvelope.timePulse(SingleLoopClipEnvelope.java:107)
+[error] 	at javafx.graphics@27/javafx.animation.Animation.doTimePulse(Animation.java:1234)
+[error] 	at javafx.graphics@27/javafx.animation.Animation$1.timePulse(Animation.java:190)
+[error] 	at javafx.graphics@27/com.sun.scenario.animation.AbstractPrimaryTimer.timePulseImpl(AbstractPrimaryTimer.java:326)
+[error] 	at javafx.graphics@27/com.sun.scenario.animation.AbstractPrimaryTimer$MainLoop.run(AbstractPrimaryTimer.java:247)
+[error] 	at javafx.graphics@27/com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:593)
+[error] 	at javafx.graphics@27/com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:577)
+[error] 	at javafx.graphics@27/com.sun.javafx.tk.quantum.QuantumToolkit.pulseFromQueue(QuantumToolkit.java:570)
+[error] 	at javafx.graphics@27/com.sun.javafx.tk.quantum.QuantumToolkit.lambda$runToolkit$0(QuantumToolkit.java:351)
+[error] 	at javafx.graphics@27/com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:95)
+[error] nonzero exit code returned from runner: 1
+[error] (scaladock / Test / runMain) nonzero exit code returned from runner: 1
+[error] Total time: 6 s, completed Oct 19, 2026, 8:45:13 p.m.

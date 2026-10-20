@@ -1,0 +1,126 @@
+{
+  "dark": {
+    "-dock-accent": {
+      "role": "focus.ring",
+      "value": "#BCB7FF"
+    },
+    "-dock-accent-soft": {
+      "role": "drop.fill",
+      "value": "#6258D533"
+    },
+    "-dock-base": {
+      "role": "surface.canvas",
+      "value": "#17191F"
+    },
+    "-dock-drop-scrim": {
+      "role": "drop.scrim",
+      "value": "#00000024"
+    },
+    "-dock-hover": {
+      "role": "state.hover",
+      "value": "#22252E"
+    },
+    "-dock-outline": {
+      "role": "border.decorative",
+      "value": "#2D323D"
+    },
+    "-dock-pressed": {
+      "role": "state.pressed",
+      "value": "#343946"
+    },
+    "-dock-selected-bar": {
+      "role": "selection.inactive-marker",
+      "value": "#6D798D"
+    },
+    "-dock-shadow": {
+      "role": "overlay.shadow",
+      "value": "#00000080"
+    },
+    "-dock-slot-fill": {
+      "role": "drop.slot-fill",
+      "value": "#6258D51A"
+    },
+    "-dock-surface": {
+      "role": "surface.shell",
+      "value": "#111318"
+    },
+    "-dock-surface-raised": {
+      "role": "surface.raised",
+      "value": "#20232B"
+    },
+    "-dock-surface-veil": {
+      "role": "surface.shell",
+      "value": "#111318"
+    },
+    "-dock-text": {
+      "role": "text.secondary",
+      "value": "#A7AFBE"
+    },
+    "-dock-text-strong": {
+      "role": "text.primary",
+      "value": "#EEF0F4"
+    }
+  },
+  "light": {
+    "-dock-accent": {
+      "role": "focus.ring",
+      "value": "#584DC2"
+    },
+    "-dock-accent-soft": {
+      "role": "drop.fill",
+      "value": "#6258D533"
+    },
+    "-dock-base": {
+      "role": "surface.canvas",
+      "value": "#FFFFFF"
+    },
+    "-dock-drop-scrim": {
+      "role": "drop.scrim",
+      "value": "#00000012"
+    },
+    "-dock-hover": {
+      "role": "state.hover",
+      "value": "#F1F3F6"
+    },
+    "-dock-outline": {
+      "role": "border.decorative",
+      "value": "#E0E4EA"
+    },
+    "-dock-pressed": {
+      "role": "state.pressed",
+      "value": "#DCE0E7"
+    },
+    "-dock-selected-bar": {
+      "role": "selection.inactive-marker",
+      "value": "#7B8595"
+    },
+    "-dock-shadow": {
+      "role": "overlay.shadow",
+      "value": "#00000029"
+    },
+    "-dock-slot-fill": {
+      "role": "drop.slot-fill",
+      "value": "#6258D51A"
+    },
+    "-dock-surface": {
+      "role": "surface.shell",
+      "value": "#F3F4F7"
+    },
+    "-dock-surface-raised": {
+      "role": "surface.raised",
+      "value": "#FFFFFF"
+    },
+    "-dock-surface-veil": {
+      "role": "surface.shell",
+      "value": "#F3F4F7"
+    },
+    "-dock-text": {
+      "role": "text.secondary",
+      "value": "#596272"
+    },
+    "-dock-text-strong": {
+      "role": "text.primary",
+      "value": "#20242D"
+    }
+  }
+}

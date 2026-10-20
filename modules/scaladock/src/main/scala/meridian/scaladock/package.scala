@@ -1,6 +1,4 @@
 package meridian
 
-/** ScalaDock integration is isolated from theme and workbench consumers. The adapter implementation
-  * follows the provider acceptance gate B0.
-  */
+/** Public-API appearance integration; see [[meridian.scaladock.MeridianDock]]. */
 package object scaladock {}

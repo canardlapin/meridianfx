@@ -35,6 +35,8 @@ public final class MeridianAppearance implements AutoCloseable {
     private final Theme previousTheme;
     private final Set<String> previousModules;
     private final ReadOnlyObjectWrapper<MeridianPreferences> preferences;
+    private final ReadOnlyObjectWrapper<Presentation> presentation =
+            new ReadOnlyObjectWrapper<>(this, "presentation");
     private final Map<Scene, SceneState> decorated = new WeakHashMap<>();
     private final Map<Scene, Boolean> excluded = new WeakHashMap<>();
     private final Map<Scene, Registration> registered = new IdentityHashMap<>();
@@ -69,6 +71,11 @@ public final class MeridianAppearance implements AutoCloseable {
     }
 
     public ReadOnlyObjectProperty<MeridianPreferences> preferencesProperty() { return preferences.getReadOnlyProperty(); }
+    /** Resolved appearance, published after registered scenes and ThemeManager finish applying it. */
+    public record Presentation(MeridianTheme theme, MeridianPreferences preferences,
+                               MeridianMetrics.DensityMetrics metrics, boolean reducedMotion) {}
+    public ReadOnlyObjectProperty<Presentation> presentationProperty() { return presentation.getReadOnlyProperty(); }
+    public Presentation presentation() { requireOpen(); return presentation.get(); }
     public MeridianPreferences preferences() { return preferences.get(); }
     public void setPreferences(MeridianPreferences value) {
         requireOpen();
@@ -145,6 +152,8 @@ public final class MeridianAppearance implements AutoCloseable {
         manager.setTheme(theme());
         manager.setOption(KEY, preferences());
         for (Scene scene : List.copyOf(registered.keySet())) applyScene(scene);
+        var next = new Presentation(theme(), preferences(), metrics(), reducedMotion());
+        if (!next.equals(presentation.get())) presentation.set(next);
     }
 
     private void applyScene(Scene scene) {

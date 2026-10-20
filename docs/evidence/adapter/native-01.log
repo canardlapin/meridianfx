@@ -1,0 +1,257 @@
+Meridian JDK: /opt/homebrew/Cellar/openjdk/25.0.1
+[info] welcome to sbt 1.12.14 (Homebrew Java 25.0.1)
+[info] loading settings for project meridianfx-build from plugins.sbt...
+[info] loading project definition from /Users/bbuchsbaum/code/scala/meridianfx/project
+[info] loading settings for project root from build.sbt...
+[info] loading settings for project scaladock-build from plugins.sbt...
+[info] loading project definition from /Users/bbuchsbaum/.sbt/1.0/staging/ae58878124cf8bf90b01/scaladock/project
+[info] loading settings for project root from build.sbt...
+[info] set current project to meridianfx (in build file:/Users/bbuchsbaum/code/scala/meridianfx/)
+Meridian theme resource hashes verified (no Sass runtime needed)
+[info] compiling 1 Scala source to /Users/bbuchsbaum/code/scala/meridianfx/modules/scaladock/target/scala-3.7.4/test-classes ...
+[info] done compiling
+[info] running (fork) meridian.scaladock.AdapterProbe docs/evidence/adapter/native-01
+[error] WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+[error] WARNING: sun.misc.Unsafe::objectFieldOffset has been called by scala.runtime.LazyVals$ (file:/Users/bbuchsbaum/code/scala/meridianfx/target/bg-jobs/sbt_cbaac435/target/16f4dc48/adca020a/scala3-library_3-3.7.4.jar)
+[error] WARNING: Please consider reporting this to the maintainers of class scala.runtime.LazyVals$
+[error] WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[error] Oct 19, 2026 8:44:39 P.M. javafx.css.CssParser declaration
+[error] WARNING: CSS Error parsing jar:file:/Users/bbuchsbaum/code/scala/meridianfx/target/bg-jobs/sbt_cbaac435/target/5be241a5/f82d2cf3/meridian-scaladock_3-0.1.0-dev.1.jar!/meridian/scaladock/recipes.css: Expected '<number>' while parsing '-fx-font-size' at [5,17]
+[error] Oct 19, 2026 8:44:39 P.M. javafx.css.CssParser declaration
+[error] WARNING: CSS Error parsing '@import url("jar:file:/Users/bbuchsbaum/code/scala/meridianfx/target/bg-jobs/sbt_cbaac435/target/5be241a5/f82d2cf3/meridian-scaladock_3-0.1.0-dev.1.jar!/meridian/scaladock/tokens-light.css");
+[error] @import url("jar:file:/Users/bbuchsbaum/code/scala/meridianfx/target/bg-jobs/sbt_cbaac435/target/5be241a5/f82d2cf3/meridian-scaladock_3-0.1.0-dev.1.jar!/meridian/scaladock/recipes.css");
+[error] .dock { -meridian-action-default: #6258D5;
+[error] -meridian-action-hover: #695FD9;
+[error] -meridian-action-pressed: #564BC6;
+[error] -meridian-border-control: #7B8595;
+[error] -meridian-border-decorative: #E0E4EA;
+[error] -meridian-border-invalid: #A53A43;
+[error] -meridian-control-indicator: #584DC2;
+[error] -meridian-disabled-foreground: #20242D73;
+[error] -meridian-drop-fill: #6258D533;
+[error] -meridian-drop-scrim: #00000012;
+[error] -meridian-drop-slot-fill: #6258D51A;
+[error] -meridian-focus-ring: #584DC2;
+[error] -meridian-overlay-shadow: #00000029;
+[error] -meridian-selection-active: #EEEBFF;
+[error] -meridian-selection-inactive: #E6E9EF;
+[error] -meridian-selection-inactive-marker: #7B8595;
+[error] -meridian-selection-marker: #584DC2;
+[error] -meridian-state-hover: #F1F3F6;
+[error] -meridian-state-pressed: #DCE0E7;
+[error] -meridian-status-danger: #A53A43;
+[error] -meridian-status-danger-emphasis: #B8323C;
+[error] -meridian-status-danger-muted: #F0C3C6;
+[error] -meridian-status-danger-subtle: #FDF1F1;
+[error] -meridian-status-neutral: #665A48;
+[error] -meridian-status-progress: #096B81;
+[error] -meridian-status-success: #286C51;
+[error] -meridian-status-success-emphasis: #1F7A4D;
+[error] -meridian-status-success-muted: #B9DFCB;
+[error] -meridian-status-success-subtle: #EFF8F3;
+[error] -meridian-status-warning: #7D581E;
+[error] -meridian-status-warning-emphasis: #8A5A00;
+[error] -meridian-status-warning-muted: #EAD5A6;
+[error] -meridian-status-warning-subtle: #FCF6E8;
+[error] -meridian-surface-canvas: #FFFFFF;
+[error] -meridian-surface-page: #E9ECF1;
+[error] -meridian-surface-raised: #FFFFFF;
+[error] -meridian-surface-shell: #F3F4F7;
+[error] -meridian-text-accent: #584DC2;
+[error] -meridian-text-on-action: #FFFFFF;
+[error] -meridian-text-placeholder: #596272;
+[error] -meridian-text-primary: #20242D;
+[error] -meridian-text-secondary: #596272;
+[error]   -fx-font-size: 14.0px;
+[error]   -meridian-dock-font: 14.0px;
+[error]   -meridian-dock-target: 32.0px;
+[error] }
+[error] : Expected '<font-family>' while parsing '-meridian-dock-font' at [46,23]
+[error] Oct 19, 2026 8:44:39 P.M. javafx.css.CssParser declaration
+[error] WARNING: CSS Error parsing jar:file:/Users/bbuchsbaum/code/scala/meridianfx/target/bg-jobs/sbt_cbaac435/target/5be241a5/f82d2cf3/meridian-scaladock_3-0.1.0-dev.1.jar!/meridian/scaladock/recipes.css: Expected '<number>' while parsing '-fx-font-size' at [5,17]
+[error] Oct 19, 2026 8:44:39 P.M. javafx.css.CssParser declaration
+[error] WARNING: CSS Error parsing '@import url("jar:file:/Users/bbuchsbaum/code/scala/meridianfx/target/bg-jobs/sbt_cbaac435/target/5be241a5/f82d2cf3/meridian-scaladock_3-0.1.0-dev.1.jar!/meridian/scaladock/tokens-light.css");
+[error] @import url("jar:file:/Users/bbuchsbaum/code/scala/meridianfx/target/bg-jobs/sbt_cbaac435/target/5be241a5/f82d2cf3/meridian-scaladock_3-0.1.0-dev.1.jar!/meridian/scaladock/recipes.css");
+[error] .dock { -meridian-action-default: #6258D5;
+[error] -meridian-action-hover: #695FD9;
+[error] -meridian-action-pressed: #564BC6;
+[error] -meridian-border-control: #7B8595;
+[error] -meridian-border-decorative: #E0E4EA;
+[error] -meridian-border-invalid: #A53A43;
+[error] -meridian-control-indicator: #584DC2;
+[error] -meridian-disabled-foreground: #20242D73;
+[error] -meridian-drop-fill: #6258D533;
+[error] -meridian-drop-scrim: #00000012;
+[error] -meridian-drop-slot-fill: #6258D51A;
+[error] -meridian-focus-ring: #584DC2;
+[error] -meridian-overlay-shadow: #00000029;
+[error] -meridian-selection-active: #EEEBFF;
+[error] -meridian-selection-inactive: #E6E9EF;
+[error] -meridian-selection-inactive-marker: #7B8595;
+[error] -meridian-selection-marker: #584DC2;
+[error] -meridian-state-hover: #F1F3F6;
+[error] -meridian-state-pressed: #DCE0E7;
+[error] -meridian-status-danger: #A53A43;
+[error] -meridian-status-danger-emphasis: #B8323C;
+[error] -meridian-status-danger-muted: #F0C3C6;
+[error] -meridian-status-danger-subtle: #FDF1F1;
+[error] -meridian-status-neutral: #665A48;
+[error] -meridian-status-progress: #096B81;
+[error] -meridian-status-success: #286C51;
+[error] -meridian-status-success-emphasis: #1F7A4D;
+[error] -meridian-status-success-muted: #B9DFCB;
+[error] -meridian-status-success-subtle: #EFF8F3;
+[error] -meridian-status-warning: #7D581E;
+[error] -meridian-status-warning-emphasis: #8A5A00;
+[error] -meridian-status-warning-muted: #EAD5A6;
+[error] -meridian-status-warning-subtle: #FCF6E8;
+[error] -meridian-surface-canvas: #FFFFFF;
+[error] -meridian-surface-page: #E9ECF1;
+[error] -meridian-surface-raised: #FFFFFF;
+[error] -meridian-surface-shell: #F3F4F7;
+[error] -meridian-text-accent: #584DC2;
+[error] -meridian-text-on-action: #FFFFFF;
+[error] -meridian-text-placeholder: #596272;
+[error] -meridian-text-primary: #20242D;
+[error] -meridian-text-secondary: #596272;
+[error]   -fx-font-size: 14.0px;
+[error]   -meridian-dock-font: 14.0px;
+[error]   -meridian-dock-target: 32.0px;
+[error] }
+[error] : Expected '<font-family>' while parsing '-meridian-dock-font' at [46,23]
+[error] Oct 19, 2026 8:44:40 P.M. javafx.css.CssParser declaration
+[error] WARNING: CSS Error parsing jar:file:/Users/bbuchsbaum/code/scala/meridianfx/target/bg-jobs/sbt_cbaac435/target/5be241a5/f82d2cf3/meridian-scaladock_3-0.1.0-dev.1.jar!/meridian/scaladock/recipes.css: Expected '<number>' while parsing '-fx-font-size' at [5,17]
+[error] Oct 19, 2026 8:44:40 P.M. javafx.css.CssParser declaration
+[error] WARNING: CSS Error parsing '@import url("jar:file:/Users/bbuchsbaum/code/scala/meridianfx/target/bg-jobs/sbt_cbaac435/target/5be241a5/f82d2cf3/meridian-scaladock_3-0.1.0-dev.1.jar!/meridian/scaladock/tokens-dark.css");
+[error] @import url("jar:file:/Users/bbuchsbaum/code/scala/meridianfx/target/bg-jobs/sbt_cbaac435/target/5be241a5/f82d2cf3/meridian-scaladock_3-0.1.0-dev.1.jar!/meridian/scaladock/recipes.css");
+[error] .dock { -meridian-action-default: #6258D5;
+[error] -meridian-action-hover: #695FD9;
+[error] -meridian-action-pressed: #564BC6;
+[error] -meridian-border-control: #6D798D;
+[error] -meridian-border-decorative: #2D323D;
+[error] -meridian-border-invalid: #F0A3A6;
+[error] -meridian-control-indicator: #BCB7FF;
+[error] -meridian-disabled-foreground: #EEF0F473;
+[error] -meridian-drop-fill: #6258D533;
+[error] -meridian-drop-scrim: #00000024;
+[error] -meridian-drop-slot-fill: #6258D51A;
+[error] -meridian-focus-ring: #BCB7FF;
+[error] -meridian-overlay-shadow: #00000080;
+[error] -meridian-selection-active: #2A2745;
+[error] -meridian-selection-inactive: #2B2F3A;
+[error] -meridian-selection-inactive-marker: #6D798D;
+[error] -meridian-selection-marker: #BCB7FF;
+[error] -meridian-state-hover: #22252E;
+[error] -meridian-state-pressed: #343946;
+[error] -meridian-status-danger: #F0A3A6;
+[error] -meridian-status-danger-emphasis: #B8323C;
+[error] -meridian-status-danger-muted: #5E2E33;
+[error] -meridian-status-danger-subtle: #261618;
+[error] -meridian-status-neutral: #C1B9AE;
+[error] -meridian-status-progress: #79C8DB;
+[error] -meridian-status-success: #87C9AB;
+[error] -meridian-status-success-emphasis: #1F7A4D;
+[error] -meridian-status-success-muted: #2A5440;
+[error] -meridian-status-success-subtle: #132119;
+[error] -meridian-status-warning: #E5BE80;
+[error] -meridian-status-warning-emphasis: #8A5A00;
+[error] -meridian-status-warning-muted: #5A4822;
+[error] -meridian-status-warning-subtle: #231D10;
+[error] -meridian-surface-canvas: #17191F;
+[error] -meridian-surface-page: #0D0F13;
+[error] -meridian-surface-raised: #20232B;
+[error] -meridian-surface-shell: #111318;
+[error] -meridian-text-accent: #BCB7FF;
+[error] -meridian-text-on-action: #FFFFFF;
+[error] -meridian-text-placeholder: #A7AFBE;
+[error] -meridian-text-primary: #EEF0F4;
+[error] -meridian-text-secondary: #A7AFBE;
+[error]   -fx-font-size: 14.0px;
+[error]   -meridian-dock-font: 14.0px;
+[error]   -meridian-dock-target: 32.0px;
+[error] }
+[error] : Expected '<font-family>' while parsing '-meridian-dock-font' at [46,23]
+[error] Oct 19, 2026 8:44:40 P.M. javafx.css.CssParser declaration
+[error] WARNING: CSS Error parsing jar:file:/Users/bbuchsbaum/code/scala/meridianfx/target/bg-jobs/sbt_cbaac435/target/5be241a5/f82d2cf3/meridian-scaladock_3-0.1.0-dev.1.jar!/meridian/scaladock/recipes.css: Expected '<number>' while parsing '-fx-font-size' at [5,17]
+[error] Oct 19, 2026 8:44:40 P.M. javafx.css.CssParser declaration
+[error] WARNING: CSS Error parsing '@import url("jar:file:/Users/bbuchsbaum/code/scala/meridianfx/target/bg-jobs/sbt_cbaac435/target/5be241a5/f82d2cf3/meridian-scaladock_3-0.1.0-dev.1.jar!/meridian/scaladock/tokens-dark.css");
+[error] @import url("jar:file:/Users/bbuchsbaum/code/scala/meridianfx/target/bg-jobs/sbt_cbaac435/target/5be241a5/f82d2cf3/meridian-scaladock_3-0.1.0-dev.1.jar!/meridian/scaladock/recipes.css");
+[error] .dock { -meridian-action-default: #6258D5;
+[error] -meridian-action-hover: #695FD9;
+[error] -meridian-action-pressed: #564BC6;
+[error] -meridian-border-control: #6D798D;
+[error] -meridian-border-decorative: #2D323D;
+[error] -meridian-border-invalid: #F0A3A6;
+[error] -meridian-control-indicator: #BCB7FF;
+[error] -meridian-disabled-foreground: #EEF0F473;
+[error] -meridian-drop-fill: #6258D533;
+[error] -meridian-drop-scrim: #00000024;
+[error] -meridian-drop-slot-fill: #6258D51A;
+[error] -meridian-focus-ring: #BCB7FF;
+[error] -meridian-overlay-shadow: #00000080;
+[error] -meridian-selection-active: #2A2745;
+[error] -meridian-selection-inactive: #2B2F3A;
+[error] -meridian-selection-inactive-marker: #6D798D;
+[error] -meridian-selection-marker: #BCB7FF;
+[error] -meridian-state-hover: #22252E;
+[error] -meridian-state-pressed: #343946;
+[error] -meridian-status-danger: #F0A3A6;
+[error] -meridian-status-danger-emphasis: #B8323C;
+[error] -meridian-status-danger-muted: #5E2E33;
+[error] -meridian-status-danger-subtle: #261618;
+[error] -meridian-status-neutral: #C1B9AE;
+[error] -meridian-status-progress: #79C8DB;
+[error] -meridian-status-success: #87C9AB;
+[error] -meridian-status-success-emphasis: #1F7A4D;
+[error] -meridian-status-success-muted: #2A5440;
+[error] -meridian-status-success-subtle: #132119;
+[error] -meridian-status-warning: #E5BE80;
+[error] -meridian-status-warning-emphasis: #8A5A00;
+[error] -meridian-status-warning-muted: #5A4822;
+[error] -meridian-status-warning-subtle: #231D10;
+[error] -meridian-surface-canvas: #17191F;
+[error] -meridian-surface-page: #0D0F13;
+[error] -meridian-surface-raised: #20232B;
+[error] -meridian-surface-shell: #111318;
+[error] -meridian-text-accent: #BCB7FF;
+[error] -meridian-text-on-action: #FFFFFF;
+[error] -meridian-text-placeholder: #A7AFBE;
+[error] -meridian-text-primary: #EEF0F4;
+[error] -meridian-text-secondary: #A7AFBE;
+[error]   -fx-font-size: 14.0px;
+[error]   -meridian-dock-font: 14.0px;
+[error]   -meridian-dock-target: 32.0px;
+[error] }
+[error] : Expected '<font-family>' while parsing '-meridian-dock-font' at [46,23]
+[error] Exception in thread "main" java.lang.IllegalStateException: B1 adapter probe failed
+[error] 	at meridian.scaladock.AdapterProbe$.main$$anonfun$1(AdapterProbe.scala:33)
+[error] 	at scala.Option.foreach(Option.scala:437)
+[error] 	at meridian.scaladock.AdapterProbe$.main(AdapterProbe.scala:33)
+[error] 	at meridian.scaladock.AdapterProbe.main(AdapterProbe.scala)
+[error] Caused by: java.lang.IllegalArgumentException: requirement failed: Dock text scale lost
+[error] 	at scala.Predef$.require(Predef.scala:337)
+[error] 	at meridian.scaladock.AdapterApp.checkFrame$$anonfun$2(AdapterProbe.scala:189)
+[error] 	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:15)
+[error] 	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:10)
+[error] 	at scala.collection.immutable.Vector.foreach(Vector.scala:2125)
+[error] 	at meridian.scaladock.AdapterApp.checkFrame(AdapterProbe.scala:182)
+[error] 	at meridian.scaladock.AdapterApp.openMenu$$anonfun$2(AdapterProbe.scala:166)
+[error] 	at meridian.scaladock.AdapterApp.openMenu$$anonfun$adapted$1(AdapterProbe.scala:166)
+[error] 	at scala.Function0.apply$mcV$sp(Function0.scala:42)
+[error] 	at meridian.scaladock.AdapterApp.later$$anonfun$1(AdapterProbe.scala:123)
+[error] 	at javafx.graphics@27/javafx.animation.Animation.runHandler(Animation.java:1147)
+[error] 	at javafx.graphics@27/javafx.animation.Animation.finished(Animation.java:1141)
+[error] 	at javafx.graphics@27/javafx.animation.AnimationAccessorImpl.finished(AnimationAccessorImpl.java:49)
+[error] 	at javafx.graphics@27/com.sun.scenario.animation.shared.SingleLoopClipEnvelope.timePulse(SingleLoopClipEnvelope.java:107)
+[error] 	at javafx.graphics@27/javafx.animation.Animation.doTimePulse(Animation.java:1234)
+[error] 	at javafx.graphics@27/javafx.animation.Animation$1.timePulse(Animation.java:190)
+[error] 	at javafx.graphics@27/com.sun.scenario.animation.AbstractPrimaryTimer.timePulseImpl(AbstractPrimaryTimer.java:326)
+[error] 	at javafx.graphics@27/com.sun.scenario.animation.AbstractPrimaryTimer$MainLoop.run(AbstractPrimaryTimer.java:247)
+[error] 	at javafx.graphics@27/com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:593)
+[error] 	at javafx.graphics@27/com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:577)
+[error] 	at javafx.graphics@27/com.sun.javafx.tk.quantum.QuantumToolkit.pulseFromQueue(QuantumToolkit.java:570)
+[error] 	at javafx.graphics@27/com.sun.javafx.tk.quantum.QuantumToolkit.lambda$runToolkit$0(QuantumToolkit.java:351)
+[error] 	at javafx.graphics@27/com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:95)
+[error] nonzero exit code returned from runner: 1
+[error] (scaladock / Test / runMain) nonzero exit code returned from runner: 1
+[error] Total time: 8 s, completed Oct 19, 2026, 8:44:41 p.m.

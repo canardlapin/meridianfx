@@ -1,0 +1,150 @@
+{
+  "status": "pass",
+  "java": "25.0.1",
+  "javafx": "27+30",
+  "os": "Mac OS X",
+  "arch": "aarch64",
+  "phases": [
+    {
+      "phase": "dark-comfortable",
+      "tokens": 15,
+      "header": 33,
+      "font": 14,
+      "mainFloatMenuGhostPaints": "pass",
+      "motionDragContinuity": "pass"
+    },
+    {
+      "phase": "light-compact",
+      "tokens": 15,
+      "header": 29,
+      "font": 14,
+      "mainFloatMenuGhostPaints": "pass",
+      "motionDragContinuity": "pass"
+    },
+    {
+      "phase": "dark-compact-new-float",
+      "tokens": 15,
+      "header": 29,
+      "font": 14,
+      "mainFloatMenuGhostPaints": "pass",
+      "motionDragContinuity": "pass"
+    },
+    {
+      "phase": "light-comfortable-scaled-restored",
+      "tokens": 15,
+      "header": 41,
+      "font": 17.5,
+      "mainFloatMenuGhostPaints": "pass",
+      "motionDragContinuity": "pass"
+    }
+  ],
+  "changes": 100,
+  "rebinds": 20,
+  "retiredWindows": 22,
+  "retainedWindows": 0,
+  "subscriptions": 0,
+  "registrations": 0,
+  "built": 4,
+  "disposed": 4,
+  "capture": "Owned scene snapshots and JavaFX event dispatch; synthetic scientific swatches",
+  "modules": [
+    {
+      "name": "javafx.base",
+      "version": "27"
+    },
+    {
+      "name": "javafx.graphics",
+      "version": "27"
+    },
+    {
+      "name": "javafx.controls",
+      "version": "27"
+    }
+  ],
+  "runtimeArtifacts": [
+    {
+      "path": "/Users/bbuchsbaum/code/scala/meridianfx/target/bg-jobs/sbt_f84fa40f/job-1/target/8cf94f5e/aaffc376/meridian-scaladock_3-0.1.0-dev.1-tests.jar",
+      "sha256": "e21c143abc3330913eda7787f576ff41f153a14871e2c2c03918db44cda4e81e"
+    },
+    {
+      "path": "/Users/bbuchsbaum/code/scala/meridianfx/target/bg-jobs/sbt_f84fa40f/target/5be241a5/5807c505/meridian-scaladock_3-0.1.0-dev.1.jar",
+      "sha256": "0fbb5e0f70f87486afc3005653687cbff7a7d221bc81e36f9d4c2b5bceb8d11f"
+    },
+    {
+      "path": "/Users/bbuchsbaum/code/scala/meridianfx/target/bg-jobs/sbt_f84fa40f/target/529650b5/00720f56/meridian-theme-0.1.0-dev.1.jar",
+      "sha256": "c65c143abbaae9a0df7f5a34f45aa9ac30f5bf67fc63331dd72ff7424e20ac26"
+    },
+    {
+      "path": "/Users/bbuchsbaum/code/scala/meridianfx/target/bg-jobs/sbt_f84fa40f/target/639ebe1a/c68d60b7/scaladock-fx_3-0.1.0-SNAPSHOT.jar",
+      "sha256": "1ee770b1cdc5eee0ba78b0de4587e6c73edcfc660bc09cdbd33dd02611243972"
+    },
+    {
+      "path": "/Users/bbuchsbaum/code/scala/meridianfx/target/bg-jobs/sbt_f84fa40f/target/7675fe0f/d9a94c5f/scaladock-core_3-0.1.0-SNAPSHOT.jar",
+      "sha256": "1b93dab8cc3c39a8eae686d72cf15b6bfab936f5a49f6c9ec1ededd63eb89924"
+    },
+    {
+      "path": "/Users/bbuchsbaum/code/scala/meridianfx/target/bg-jobs/sbt_f84fa40f/target/16f4dc48/adca020a/scala3-library_3-3.7.4.jar",
+      "sha256": "73089d33f763b94758170e0a66be978f9397c14b7795e343898aa89b3d7b6639"
+    },
+    {
+      "path": "/Users/bbuchsbaum/code/scala/meridianfx/target/bg-jobs/sbt_f84fa40f/target/765bf216/92612663/javafx-base-27-mac-aarch64.jar",
+      "sha256": "3fe8c6c3798ca48b02e15031c5394ae038aaaeedd04df950badefcc291a6fb6e"
+    },
+    {
+      "path": "/Users/bbuchsbaum/code/scala/meridianfx/target/bg-jobs/sbt_f84fa40f/target/1cadf992/35522551/javafx-graphics-27-mac-aarch64.jar",
+      "sha256": "f01749fcdb476dfdf9afc996443fe7871498158fcd6a27477332fbeebdd60e5e"
+    },
+    {
+      "path": "/Users/bbuchsbaum/code/scala/meridianfx/target/bg-jobs/sbt_f84fa40f/target/b8d28507/b2cb0cfb/javafx-controls-27-mac-aarch64.jar",
+      "sha256": "0d05e5b1190985e0fb5532f300590d5c9fe02fb8d5549292332d087c2ca02444"
+    },
+    {
+      "path": "/Users/bbuchsbaum/code/scala/meridianfx/target/bg-jobs/sbt_f84fa40f/target/8351f2ca/ee13a15c/atlantafx-base-3.0.0.jar",
+      "sha256": "6e14976a7ff86627c5ce8fc398443cceb0cf1683642ff59a0c8b77f7f56f904d"
+    },
+    {
+      "path": "/Users/bbuchsbaum/code/scala/meridianfx/target/bg-jobs/sbt_f84fa40f/target/7f4ecf83/fad3f224/scala-library-2.13.16.jar",
+      "sha256": "1ebb2b6f9e4eb4022497c19b1e1e825019c08514f962aaac197145f88ed730f1"
+    },
+    {
+      "path": "/Users/bbuchsbaum/code/scala/meridianfx/target/bg-jobs/sbt_f84fa40f/target/f38dc0dc/50afeeab/javafx-base-27.jar",
+      "sha256": "96d6cf65983b431a39e7f6c4cd9aae245f9ec986e71537ef800353dc615d16b9"
+    },
+    {
+      "path": "/Users/bbuchsbaum/code/scala/meridianfx/target/bg-jobs/sbt_f84fa40f/target/eff96a0c/eed940dc/javafx-graphics-27.jar",
+      "sha256": "3c491d46bdbf2e6b2654834b29eb6f26da290c35acb1d58d78defccecfe8bb5b"
+    },
+    {
+      "path": "/Users/bbuchsbaum/code/scala/meridianfx/target/bg-jobs/sbt_f84fa40f/target/3152ccd9/274a97b3/javafx-controls-27.jar",
+      "sha256": "c784433ff123030dace20263dd9a1963337ad913ffb447353388ad76b66dac30"
+    },
+    {
+      "path": "/Users/bbuchsbaum/code/scala/meridianfx/target/bg-jobs/sbt_f84fa40f/target/193b5a73/c7cd970a/upickle_3-4.1.0.jar",
+      "sha256": "36d3566e73726a6922ae816cea6b924f42044e8e6637343a0095883d023d97f8"
+    },
+    {
+      "path": "/Users/bbuchsbaum/code/scala/meridianfx/target/bg-jobs/sbt_f84fa40f/target/712c13e5/075a1ae6/ujson_3-4.1.0.jar",
+      "sha256": "6a6fc2c9c8643cedb0ebd02e957b4c50dc09d1aef6573ca1e15a8a424c4fa535"
+    },
+    {
+      "path": "/Users/bbuchsbaum/code/scala/meridianfx/target/bg-jobs/sbt_f84fa40f/target/2dbd812f/b3c03312/upack_3-4.1.0.jar",
+      "sha256": "94901d8f63d6c80b332bbf78248a1fbc08c4ca293598d093716e1eaa4e181c42"
+    },
+    {
+      "path": "/Users/bbuchsbaum/code/scala/meridianfx/target/bg-jobs/sbt_f84fa40f/target/0b29dffb/743426e3/upickle-implicits_3-4.1.0.jar",
+      "sha256": "faff41c45f65807ba0e285d96cc342680a1f47857ee83770c852c9b9a60c34a4"
+    },
+    {
+      "path": "/Users/bbuchsbaum/code/scala/meridianfx/target/bg-jobs/sbt_f84fa40f/target/7aa1b957/73264769/upickle-core_3-4.1.0.jar",
+      "sha256": "3d4dbd23edca088a83d722998472c1c5c27678bd01f13572c36627d7061cf596"
+    },
+    {
+      "path": "/Users/bbuchsbaum/code/scala/meridianfx/target/bg-jobs/sbt_f84fa40f/target/f46e4e23/38316204/geny_3-1.1.1.jar",
+      "sha256": "39658649f90b631a4fd63187724f16ba8a045e1b10a513528f34517fb2edf98b"
+    }
+  ],
+  "providerClassSha256": {
+    "scaladock/fx/Dock.class": "f739f47c99c9fd9b0ccb5c9943cc0d95a6b34506edc2e2d4b318b5605da22faa",
+    "scaladock/LayoutState.class": "f954550ecdb272e99b8bb6f88b2a845c95cc0927828b717c31ba932429c1ef29"
+  }
+}

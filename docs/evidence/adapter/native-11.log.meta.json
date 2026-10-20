@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "started_utc": "2026-10-20T00:52:59.817578+00:00",
+  "finished_utc": "2026-10-20T00:53:12.860303+00:00",
+  "duration_seconds": 13.042527,
+  "command": [
+    "tools/sbt",
+    "scaladock/Test/runMain meridian.scaladock.AdapterProbe docs/evidence/adapter/native-11"
+  ],
+  "cwd": "/Users/bbuchsbaum/code/scala/meridianfx",
+  "log": "/Users/bbuchsbaum/code/scala/meridianfx/docs/evidence/adapter/native-11.log",
+  "exit_code": 0,
+  "child_returncode": 0,
+  "reason": "exited",
+  "detail": null,
+  "timeout_seconds": 300.0,
+  "log_bytes": 1804
+}

@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "started_utc": "2026-10-20T00:42:19.277949+00:00",
+  "finished_utc": "2026-10-20T00:42:27.370077+00:00",
+  "duration_seconds": 8.091912,
+  "command": [
+    "tools/sbt",
+    "scaladock/compile"
+  ],
+  "cwd": "/Users/bbuchsbaum/code/scala/meridianfx",
+  "log": "/Users/bbuchsbaum/code/scala/meridianfx/docs/evidence/adapter/compile-01.log",
+  "exit_code": 0,
+  "child_returncode": 0,
+  "reason": "exited",
+  "detail": null,
+  "timeout_seconds": 300.0,
+  "log_bytes": 940
+}

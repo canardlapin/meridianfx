@@ -1,0 +1,81 @@
+Meridian JDK: /opt/homebrew/Cellar/openjdk/25.0.1
+[info] welcome to sbt 1.12.14 (Homebrew Java 25.0.1)
+[info] loading settings for project meridianfx-build from plugins.sbt...
+[info] loading project definition from /Users/bbuchsbaum/code/scala/meridianfx/project
+[info] loading settings for project root from build.sbt...
+[info] loading settings for project scaladock-build from plugins.sbt...
+[info] loading project definition from /Users/bbuchsbaum/.sbt/1.0/staging/ae58878124cf8bf90b01/scaladock/project
+[info] loading settings for project root from build.sbt...
+[info] set current project to meridianfx (in build file:/Users/bbuchsbaum/code/scala/meridianfx/)
+[info] waiting for lock on /Users/bbuchsbaum/.ivy2/.sbt.ivy.lock to be available...
+[info] waiting for lock on /Users/bbuchsbaum/.ivy2/.sbt.ivy.lock to be available...
+[info] scalafmt: Formatting 1 Scala sources (/Users/bbuchsbaum/code/scala/meridianfx/modules/scaladock)...
+[info] scalafmt: Reformatted 1 Scala sources
+[success] Total time: 3 s, completed Oct 19, 2026, 8:53:52 p.m.
+[success] Total time: 0 s, completed Oct 19, 2026, 8:53:52 p.m.
+[success] Total time: 0 s, completed Oct 19, 2026, 8:53:52 p.m.
+[info] ScalaDock configured=4a7a61bb397a68d5048f809a6ea1c30ce8b45223 observed=4a7a61bb397a68d5048f809a6ea1c30ce8b45223 checkout=/Users/bbuchsbaum/.sbt/1.0/staging/ae58878124cf8bf90b01/scaladock/modules/fx
+[success] Total time: 0 s, completed Oct 19, 2026, 8:53:52 p.m.
+Meridian theme resource hashes verified (no Sass runtime needed)
+[info] compiling 1 Scala source to /Users/bbuchsbaum/code/scala/meridianfx/modules/scaladock/target/scala-3.7.4/test-classes ...
+[info] done compiling
+[info] running (fork) meridian.scaladock.AdapterProbe docs/evidence/adapter/native-final
+[error] WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+[error] WARNING: sun.misc.Unsafe::objectFieldOffset has been called by scala.runtime.LazyVals$ (file:/Users/bbuchsbaum/code/scala/meridianfx/target/bg-jobs/sbt_f84fa40f/target/16f4dc48/adca020a/scala3-library_3-3.7.4.jar)
+[error] WARNING: Please consider reporting this to the maintainers of class scala.runtime.LazyVals$
+[error] WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[info] B1_FRAME_OK phase=dark-comfortable tokens=15 header=33.0
+[error] Oct 19, 2026 8:53:59 P.M. javafx.scene.CssStyleHelper calculateValue
+[error] WARNING: Caught 'java.lang.ClassCastException: class java.lang.String cannot be cast to class javafx.scene.paint.Color (java.lang.String is in module java.base of loader 'bootstrap'; javafx.scene.paint.Color is in module javafx.graphics@27 of loader 'app')' while converting value for '-fx-effect' from rule '*.dock *.context-menu' in stylesheet jar:file:/Users/bbuchsbaum/code/scala/meridianfx/target/bg-jobs/sbt_f84fa40f/target/639ebe1a/c68d60b7/scaladock-fx_3-0.1.0-SNAPSHOT.jar!/scaladock/dock.css
+[error] Oct 19, 2026 8:54:00 P.M. javafx.scene.CssStyleHelper calculateValue
+[error] WARNING: Caught 'java.lang.ClassCastException: class java.lang.String cannot be cast to class javafx.scene.paint.Paint (java.lang.String is in module java.base of loader 'bootstrap'; javafx.scene.paint.Paint is in module javafx.graphics@27 of loader 'app')' while converting value for '-fx-background-color'
+[error] Oct 19, 2026 8:54:00 P.M. javafx.scene.CssStyleHelper calculateValue
+[error] WARNING: Could not resolve '-dock-text-strong' while resolving lookups for '-fx-text-fill' from rule '*.dock *.context-menu *.menu-item *.label' in stylesheet jar:file:/Users/bbuchsbaum/code/scala/meridianfx/target/bg-jobs/sbt_f84fa40f/target/639ebe1a/c68d60b7/scaladock-fx_3-0.1.0-SNAPSHOT.jar!/scaladock/dock.css
+[error] Oct 19, 2026 8:54:00 P.M. javafx.scene.CssStyleHelper calculateValue
+[error] WARNING: Caught 'java.lang.ClassCastException: class java.lang.String cannot be cast to class javafx.scene.paint.Paint (java.lang.String is in module java.base of loader 'bootstrap'; javafx.scene.paint.Paint is in module javafx.graphics@27 of loader 'app')' while converting value for '-fx-border-color' from rule '*.dock *.context-menu *.separator *.line' in stylesheet jar:file:/Users/bbuchsbaum/code/scala/meridianfx/target/bg-jobs/sbt_f84fa40f/target/639ebe1a/c68d60b7/scaladock-fx_3-0.1.0-SNAPSHOT.jar!/scaladock/dock.css
+[error] Oct 19, 2026 8:54:00 P.M. javafx.scene.CssStyleHelper calculateValue
+[error] WARNING: Caught 'java.lang.ClassCastException: class java.lang.String cannot be cast to class javafx.scene.paint.Paint (java.lang.String is in module java.base of loader 'bootstrap'; javafx.scene.paint.Paint is in module javafx.graphics@27 of loader 'app')' while converting value for '-fx-background-color' from rule '*.menu-up-arrow' in stylesheet jar:file:/Users/bbuchsbaum/code/scala/meridianfx/target/bg-jobs/sbt_f84fa40f/target/529650b5/00720f56/meridian-theme-0.1.0-dev.1.jar!/meridian/theme/themes/meridian-dark-comfortable.css
+[error] Oct 19, 2026 8:54:00 P.M. javafx.scene.CssStyleHelper calculateValue
+[error] WARNING: Caught 'java.lang.ClassCastException: class java.lang.String cannot be cast to class javafx.scene.paint.Paint (java.lang.String is in module java.base of loader 'bootstrap'; javafx.scene.paint.Paint is in module javafx.graphics@27 of loader 'app')' while converting value for '-fx-background-color' from rule '*.menu-down-arrow' in stylesheet jar:file:/Users/bbuchsbaum/code/scala/meridianfx/target/bg-jobs/sbt_f84fa40f/target/529650b5/00720f56/meridian-theme-0.1.0-dev.1.jar!/meridian/theme/themes/meridian-dark-comfortable.css
+[info] B1_FRAME_OK phase=light-compact tokens=15 header=29.0
+[error] Oct 19, 2026 8:54:00 P.M. javafx.scene.CssStyleHelper calculateValue
+[error] WARNING: Caught 'java.lang.ClassCastException: class java.lang.String cannot be cast to class javafx.scene.paint.Color (java.lang.String is in module java.base of loader 'bootstrap'; javafx.scene.paint.Color is in module javafx.graphics@27 of loader 'app')' while converting value for '-fx-effect' from rule '*.dock *.context-menu' in stylesheet jar:file:/Users/bbuchsbaum/code/scala/meridianfx/target/bg-jobs/sbt_f84fa40f/target/639ebe1a/c68d60b7/scaladock-fx_3-0.1.0-SNAPSHOT.jar!/scaladock/dock.css
+[error] Oct 19, 2026 8:54:00 P.M. javafx.scene.CssStyleHelper calculateValue
+[error] WARNING: Caught 'java.lang.ClassCastException: class java.lang.String cannot be cast to class javafx.scene.paint.Paint (java.lang.String is in module java.base of loader 'bootstrap'; javafx.scene.paint.Paint is in module javafx.graphics@27 of loader 'app')' while converting value for '-fx-background-color'
+[error] Oct 19, 2026 8:54:00 P.M. javafx.scene.CssStyleHelper calculateValue
+[error] WARNING: Could not resolve '-dock-text-strong' while resolving lookups for '-fx-text-fill' from rule '*.dock *.context-menu *.menu-item *.label' in stylesheet jar:file:/Users/bbuchsbaum/code/scala/meridianfx/target/bg-jobs/sbt_f84fa40f/target/639ebe1a/c68d60b7/scaladock-fx_3-0.1.0-SNAPSHOT.jar!/scaladock/dock.css
+[error] Oct 19, 2026 8:54:00 P.M. javafx.scene.CssStyleHelper calculateValue
+[error] WARNING: Caught 'java.lang.ClassCastException: class java.lang.String cannot be cast to class javafx.scene.paint.Paint (java.lang.String is in module java.base of loader 'bootstrap'; javafx.scene.paint.Paint is in module javafx.graphics@27 of loader 'app')' while converting value for '-fx-border-color' from rule '*.dock *.context-menu *.separator *.line' in stylesheet jar:file:/Users/bbuchsbaum/code/scala/meridianfx/target/bg-jobs/sbt_f84fa40f/target/639ebe1a/c68d60b7/scaladock-fx_3-0.1.0-SNAPSHOT.jar!/scaladock/dock.css
+[error] Oct 19, 2026 8:54:00 P.M. javafx.scene.CssStyleHelper calculateValue
+[error] WARNING: Caught 'java.lang.ClassCastException: class java.lang.String cannot be cast to class javafx.scene.paint.Paint (java.lang.String is in module java.base of loader 'bootstrap'; javafx.scene.paint.Paint is in module javafx.graphics@27 of loader 'app')' while converting value for '-fx-background-color' from rule '*.menu-up-arrow' in stylesheet jar:file:/Users/bbuchsbaum/code/scala/meridianfx/target/bg-jobs/sbt_f84fa40f/target/529650b5/00720f56/meridian-theme-0.1.0-dev.1.jar!/meridian/theme/themes/meridian-light-compact.css
+[error] Oct 19, 2026 8:54:00 P.M. javafx.scene.CssStyleHelper calculateValue
+[error] WARNING: Caught 'java.lang.ClassCastException: class java.lang.String cannot be cast to class javafx.scene.paint.Paint (java.lang.String is in module java.base of loader 'bootstrap'; javafx.scene.paint.Paint is in module javafx.graphics@27 of loader 'app')' while converting value for '-fx-background-color' from rule '*.menu-down-arrow' in stylesheet jar:file:/Users/bbuchsbaum/code/scala/meridianfx/target/bg-jobs/sbt_f84fa40f/target/529650b5/00720f56/meridian-theme-0.1.0-dev.1.jar!/meridian/theme/themes/meridian-light-compact.css
+[info] B1_FRAME_OK phase=dark-compact-new-float tokens=15 header=29.0
+[error] Oct 19, 2026 8:54:01 P.M. javafx.scene.CssStyleHelper calculateValue
+[error] WARNING: Caught 'java.lang.ClassCastException: class java.lang.String cannot be cast to class javafx.scene.paint.Color (java.lang.String is in module java.base of loader 'bootstrap'; javafx.scene.paint.Color is in module javafx.graphics@27 of loader 'app')' while converting value for '-fx-effect' from rule '*.dock *.context-menu' in stylesheet jar:file:/Users/bbuchsbaum/code/scala/meridianfx/target/bg-jobs/sbt_f84fa40f/target/639ebe1a/c68d60b7/scaladock-fx_3-0.1.0-SNAPSHOT.jar!/scaladock/dock.css
+[error] Oct 19, 2026 8:54:01 P.M. javafx.scene.CssStyleHelper calculateValue
+[error] WARNING: Caught 'java.lang.ClassCastException: class java.lang.String cannot be cast to class javafx.scene.paint.Paint (java.lang.String is in module java.base of loader 'bootstrap'; javafx.scene.paint.Paint is in module javafx.graphics@27 of loader 'app')' while converting value for '-fx-background-color'
+[error] Oct 19, 2026 8:54:01 P.M. javafx.scene.CssStyleHelper calculateValue
+[error] WARNING: Could not resolve '-dock-text-strong' while resolving lookups for '-fx-text-fill' from rule '*.dock *.context-menu *.menu-item *.label' in stylesheet jar:file:/Users/bbuchsbaum/code/scala/meridianfx/target/bg-jobs/sbt_f84fa40f/target/639ebe1a/c68d60b7/scaladock-fx_3-0.1.0-SNAPSHOT.jar!/scaladock/dock.css
+[error] Oct 19, 2026 8:54:01 P.M. javafx.scene.CssStyleHelper calculateValue
+[error] WARNING: Caught 'java.lang.ClassCastException: class java.lang.String cannot be cast to class javafx.scene.paint.Paint (java.lang.String is in module java.base of loader 'bootstrap'; javafx.scene.paint.Paint is in module javafx.graphics@27 of loader 'app')' while converting value for '-fx-border-color' from rule '*.dock *.context-menu *.separator *.line' in stylesheet jar:file:/Users/bbuchsbaum/code/scala/meridianfx/target/bg-jobs/sbt_f84fa40f/target/639ebe1a/c68d60b7/scaladock-fx_3-0.1.0-SNAPSHOT.jar!/scaladock/dock.css
+[error] Oct 19, 2026 8:54:01 P.M. javafx.scene.CssStyleHelper calculateValue
+[error] WARNING: Caught 'java.lang.ClassCastException: class java.lang.String cannot be cast to class javafx.scene.paint.Paint (java.lang.String is in module java.base of loader 'bootstrap'; javafx.scene.paint.Paint is in module javafx.graphics@27 of loader 'app')' while converting value for '-fx-background-color' from rule '*.menu-up-arrow' in stylesheet jar:file:/Users/bbuchsbaum/code/scala/meridianfx/target/bg-jobs/sbt_f84fa40f/target/529650b5/00720f56/meridian-theme-0.1.0-dev.1.jar!/meridian/theme/themes/meridian-dark-compact.css
+[error] Oct 19, 2026 8:54:01 P.M. javafx.scene.CssStyleHelper calculateValue
+[error] WARNING: Caught 'java.lang.ClassCastException: class java.lang.String cannot be cast to class javafx.scene.paint.Paint (java.lang.String is in module java.base of loader 'bootstrap'; javafx.scene.paint.Paint is in module javafx.graphics@27 of loader 'app')' while converting value for '-fx-background-color' from rule '*.menu-down-arrow' in stylesheet jar:file:/Users/bbuchsbaum/code/scala/meridianfx/target/bg-jobs/sbt_f84fa40f/target/529650b5/00720f56/meridian-theme-0.1.0-dev.1.jar!/meridian/theme/themes/meridian-dark-compact.css
+[info] B1_FRAME_OK phase=light-comfortable-scaled-restored tokens=15 header=41.0
+[error] Oct 19, 2026 8:54:02 P.M. javafx.scene.CssStyleHelper calculateValue
+[error] WARNING: Caught 'java.lang.ClassCastException: class java.lang.String cannot be cast to class javafx.scene.paint.Color (java.lang.String is in module java.base of loader 'bootstrap'; javafx.scene.paint.Color is in module javafx.graphics@27 of loader 'app')' while converting value for '-fx-effect' from rule '*.dock *.context-menu' in stylesheet jar:file:/Users/bbuchsbaum/code/scala/meridianfx/target/bg-jobs/sbt_f84fa40f/target/639ebe1a/c68d60b7/scaladock-fx_3-0.1.0-SNAPSHOT.jar!/scaladock/dock.css
+[error] Oct 19, 2026 8:54:02 P.M. javafx.scene.CssStyleHelper calculateValue
+[error] WARNING: Caught 'java.lang.ClassCastException: class java.lang.String cannot be cast to class javafx.scene.paint.Paint (java.lang.String is in module java.base of loader 'bootstrap'; javafx.scene.paint.Paint is in module javafx.graphics@27 of loader 'app')' while converting value for '-fx-background-color'
+[error] Oct 19, 2026 8:54:02 P.M. javafx.scene.CssStyleHelper calculateValue
+[error] WARNING: Could not resolve '-dock-text-strong' while resolving lookups for '-fx-text-fill' from rule '*.dock *.context-menu *.menu-item *.label' in stylesheet jar:file:/Users/bbuchsbaum/code/scala/meridianfx/target/bg-jobs/sbt_f84fa40f/target/639ebe1a/c68d60b7/scaladock-fx_3-0.1.0-SNAPSHOT.jar!/scaladock/dock.css
+[error] Oct 19, 2026 8:54:02 P.M. javafx.scene.CssStyleHelper calculateValue
+[error] WARNING: Caught 'java.lang.ClassCastException: class java.lang.String cannot be cast to class javafx.scene.paint.Paint (java.lang.String is in module java.base of loader 'bootstrap'; javafx.scene.paint.Paint is in module javafx.graphics@27 of loader 'app')' while converting value for '-fx-border-color' from rule '*.dock *.context-menu *.separator *.line' in stylesheet jar:file:/Users/bbuchsbaum/code/scala/meridianfx/target/bg-jobs/sbt_f84fa40f/target/639ebe1a/c68d60b7/scaladock-fx_3-0.1.0-SNAPSHOT.jar!/scaladock/dock.css
+[error] Oct 19, 2026 8:54:02 P.M. javafx.scene.CssStyleHelper calculateValue
+[error] WARNING: Caught 'java.lang.ClassCastException: class java.lang.String cannot be cast to class javafx.scene.paint.Paint (java.lang.String is in module java.base of loader 'bootstrap'; javafx.scene.paint.Paint is in module javafx.graphics@27 of loader 'app')' while converting value for '-fx-background-color' from rule '*.menu-up-arrow' in stylesheet jar:file:/Users/bbuchsbaum/code/scala/meridianfx/target/bg-jobs/sbt_f84fa40f/target/529650b5/00720f56/meridian-theme-0.1.0-dev.1.jar!/meridian/theme/themes/meridian-light-comfortable.css
+[error] Oct 19, 2026 8:54:02 P.M. javafx.scene.CssStyleHelper calculateValue
+[error] WARNING: Caught 'java.lang.ClassCastException: class java.lang.String cannot be cast to class javafx.scene.paint.Paint (java.lang.String is in module java.base of loader 'bootstrap'; javafx.scene.paint.Paint is in module javafx.graphics@27 of loader 'app')' while converting value for '-fx-background-color' from rule '*.menu-down-arrow' in stylesheet jar:file:/Users/bbuchsbaum/code/scala/meridianfx/target/bg-jobs/sbt_f84fa40f/target/529650b5/00720f56/meridian-theme-0.1.0-dev.1.jar!/meridian/theme/themes/meridian-light-comfortable.css
+[info] B1_STRESS_OK changes=100 rebinds=20 retiredWindows=22 subscriptions=0 registrations=0
+[info] B1_ADAPTER_OK changes=100 rebinds=20 retainedWindows=0
+[success] Total time: 14 s, completed Oct 19, 2026, 8:54:07 p.m.

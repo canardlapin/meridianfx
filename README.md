@@ -57,15 +57,18 @@ ScalaFX or ScalaDock.
 |---|---|---|
 | `theme` | Four compiled user-agent themes, semantic tokens, metrics and appearance binding | Exhaustive control/context qualification |
 | `workbench` | Java ViewHeader and semantic dot+label StatusIndicator; depends on theme | Navigation, inspectors and command composition |
-| `scaladock` | Isolated provider dependency and generated public-token palettes | Adapter through qualified generic provider hooks |
+| `scaladock` | Live appearance adapter, generated public-token palettes and native lifecycle gate | Docked-workspace and packaged-consumer qualification |
 | `sampler` | Native foundation, token and theme probes | Docked fixtures and complete interaction scenarios |
 
 Theme and workbench carry no ScalaDock, mandatory ScalaFX or Scala runtime.
 The adapter uses Scala3.7.4. Its default provider source dependency is pinned to
-`628c46fce92c4d31b0b08459ac0f18777b5ba527`; a local override requires
+`4a7a61bb397a68d5048f809a6ea1c30ce8b45223`; a local override requires
 `-Dmeridian.scaladock.path=/absolute/checkout`. A sibling is never selected
 automatically. Source-composite development is not published-artifact closure;
 the full consumer gate remains D6.
+
+[ScalaDock adapter usage](docs/SCALADOCK.md) explains binding and ownership;
+[B1 evidence](docs/evidence/adapter/README.md) records native paint and lifecycle checks.
 
 Runtime pins are JDK25, JavaFX27 and AtlantaFX3.0.0; sbt is 1.12.14.
 Native artifacts are selected for macOS/Linux/Windows x64 and available macOS/Linux
