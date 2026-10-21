@@ -28,6 +28,7 @@ jobs:
           'scaladock/Test/runMain meridian.scaladock.ProviderAcceptanceProbe target/native-b0'
           'scaladock/Test/runMain meridian.scaladock.AdapterProbe target/native-b1'
           'scaladock/Test/runMain meridian.scaladock.AuxiliaryTypographyProbe target/native-auxiliary'
+          'scaladock/Test/runMain meridian.scaladock.MinimizedSelectionProbe target/native-minimized'
       - name: Preserve native observations
         if: always()
         uses: actions/upload-artifact@v4
@@ -37,4 +38,5 @@ jobs:
             target/native-b0
             target/native-b1
             target/native-auxiliary
+            target/native-minimized
           if-no-files-found: warn
