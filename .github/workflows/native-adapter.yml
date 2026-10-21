@@ -1,0 +1,40 @@
+name: Native adapter
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  adapter:
+    runs-on: macos-15
+    timeout-minutes: 30
+    env:
+      JDK_JAVA_OPTIONS: '-Dprism.order=sw'
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-java@v5
+        with:
+          distribution: temurin
+          java-version: '25.0.4.1+1'
+      - uses: sbt/setup-sbt@v1
+      - name: Check formatting and actual dock behavior
+        run: >-
+          sbt scalafmtCheckAll
+          'scaladock/Test/runMain meridian.scaladock.ProviderAcceptanceProbe target/native-b0'
+          'scaladock/Test/runMain meridian.scaladock.AdapterProbe target/native-b1'
+          'scaladock/Test/runMain meridian.scaladock.AuxiliaryTypographyProbe target/native-auxiliary'
+      - name: Preserve native observations
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: native-adapter-evidence
+          path: |
+            target/native-b0
+            target/native-b1
+            target/native-auxiliary
+          if-no-files-found: warn

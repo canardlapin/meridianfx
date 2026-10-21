@@ -109,5 +109,8 @@ object MeridianDock:
 .dock .dock-ghost-title, .dock .context-menu .menu-item .label, .dock .tooltip {
   -fx-font-size: ${text.general()}px;
 }
+.dock .dock-tab-overflow > .label, .dock .dock-maximized-badge {
+  -fx-font-size: ${text.metadata()}px;
+}
 """
     "data:text/css;base64," + Base64.getEncoder.encodeToString(css.getBytes(UTF_8))
