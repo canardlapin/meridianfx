@@ -33,6 +33,25 @@
   -fx-background-radius: 0, 0, 3, 1;
 }
 
+/* A minimized group is a restore target, not a selected content surface. Keep
+   this stronger than the active/inactive selection recipes above. Focus is an
+   inset ring on the header surface, without the selected-pane marker. */
+.dock .dock-group:minimized .dock-tab:selected,
+.dock .dock-group:minimized:active .dock-tab:selected,
+.dock.dock-layout:inactive .dock-group:minimized:active .dock-tab:selected {
+  -fx-background-color: transparent;
+  -fx-background-insets: 0;
+}
+.dock .dock-group:minimized .dock-tab:focused,
+.dock .dock-group:minimized:active .dock-tab:focused,
+.dock.dock-layout:inactive .dock-group:minimized:active .dock-tab:focused {
+  -fx-border-width: 0;
+  -fx-border-insets: 0;
+  -fx-background-color: -meridian-focus-ring, -dock-surface;
+  -fx-background-insets: 4 2 2 2, 6 4 4 4;
+  -fx-background-radius: 3, 1;
+}
+
 .dock .context-menu, .dock .tooltip, .dock .dock-ghost-chip {
   -fx-background-color: -meridian-border-control, -dock-surface-raised;
   -fx-background-insets: 0, 1;

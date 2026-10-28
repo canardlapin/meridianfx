@@ -14,8 +14,11 @@ import _root_.scaladock.fx.{Dock, DockMotion, DockTheme}
   * windows or pane content. Close it before closing the application appearance service; closing
   * stops future updates and leaves the last presentation installed in the dock.
   */
-final class MeridianDock private (dock: Dock, appearance: MeridianAppearance)
-    extends AutoCloseable:
+final class MeridianDock private (
+    dock: Dock,
+    appearance: MeridianAppearance,
+    headerMinHeight: Double
+) extends AutoCloseable:
   private var closed                        = false
   private val changed: InvalidationListener = _ => refresh()
 
@@ -34,7 +37,7 @@ final class MeridianDock private (dock: Dock, appearance: MeridianAppearance)
       val metrics      = presentation.metrics()
       val theme = DockTheme.CustomWithScheme(MeridianDock.stylesheet(dark, scale, metrics), dark)
       val settings = dock.requestedSettings.copy(
-        headerPx = metrics.headerMinHeight(),
+        headerPx = math.max(headerMinHeight, metrics.headerMinHeight()),
         dividerPx = MeridianMetrics.GEOMETRY.divider()
       )
       val motion = if presentation.reducedMotion() then DockMotion.Reduced else DockMotion.Full
@@ -56,13 +59,24 @@ object MeridianDock:
 
   /** A dock has one appearance owner. Duplicate live bindings fail before changing presentation. */
   def bind(dock: Dock, appearance: MeridianAppearance): MeridianDock =
+    bind(dock, appearance, 0)
+
+  /** Retain an application header/restore-strip minimum in logical pixels across preferences. Zero
+    * uses only Meridian's generated density minimum. Text and control preferred sizes can raise the
+    * effective height further; this minimum never reduces accessibility floors.
+    */
+  def bind(dock: Dock, appearance: MeridianAppearance, headerMinHeight: Double): MeridianDock =
     requireFx()
+    require(
+      headerMinHeight.isFinite && headerMinHeight >= 0,
+      "Header minimum must be finite and nonnegative"
+    )
     require(dock != null && appearance != null, "A dock and application appearance are required")
     require(
       !dock.view.getProperties.containsKey(bindingKey),
       "This dock already has an appearance binding"
     )
-    val binding = new MeridianDock(dock, appearance)
+    val binding = new MeridianDock(dock, appearance, headerMinHeight)
     binding.start()
     dock.view.getProperties.put(bindingKey, binding)
     binding
@@ -108,6 +122,9 @@ object MeridianDock:
 .dock .dock-tab-title, .dock .dock-strip-title, .dock .dock-window-title,
 .dock .dock-ghost-title, .dock .context-menu .menu-item .label, .dock .tooltip {
   -fx-font-size: ${text.general()}px;
+}
+.dock .dock-tab-overflow > .label, .dock .dock-maximized-badge {
+  -fx-font-size: ${text.metadata()}px;
 }
 """
     "data:text/css;base64," + Base64.getEncoder.encodeToString(css.getBytes(UTF_8))

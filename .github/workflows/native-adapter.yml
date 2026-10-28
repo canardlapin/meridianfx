@@ -1,0 +1,67 @@
+name: Native adapter
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  adapter:
+    runs-on: macos-15
+    timeout-minutes: 30
+    env:
+      JDK_JAVA_OPTIONS: '-Dprism.order=sw'
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+      # setup-java parses SemVer and rejects this four-part Java patch version.
+      # Keep the exact qualified runtime rather than replacing it with floating 25.
+      - name: Install exact qualified Temurin archive
+        shell: bash
+        run: |
+          case "$(uname -m)" in
+            arm64)
+              jdk_arch=aarch64
+              jdk_sha=61979887f7506a24a57439ff99adb8b3a7fc89977d9cfe3b8984f58a981b7b9d
+              ;;
+            x86_64)
+              jdk_arch=x64
+              jdk_sha=e6229d9504f7922053ab31821b9e6bee8761daf7b026a3476d1a027563009880
+              ;;
+            *) echo 'Unqualified native CI architecture' >&2; exit 1 ;;
+          esac
+          jdk_archive="$RUNNER_TEMP/meridian-jdk25.tar.gz"
+          curl --fail --location --retry 3 \
+            "https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.4.1%2B1/OpenJDK25U-jdk_${jdk_arch}_mac_hotspot_25.0.4.1_1.tar.gz" \
+            --output "$jdk_archive"
+          printf '%s  %s\n' "$jdk_sha" "$jdk_archive" | shasum -a 256 -c -
+          mkdir "$RUNNER_TEMP/meridian-jdk25"
+          tar -xzf "$jdk_archive" -C "$RUNNER_TEMP/meridian-jdk25"
+          qualified_jdk_home="$RUNNER_TEMP/meridian-jdk25/jdk-25.0.4.1+1/Contents/Home"
+          python3 tools/verify-native-ci-jdk.py --java "$qualified_jdk_home/bin/java"
+          echo "JAVA_HOME=$qualified_jdk_home" >> "$GITHUB_ENV"
+          echo "$qualified_jdk_home/bin" >> "$GITHUB_PATH"
+      - uses: sbt/setup-sbt@v1
+      - name: Check formatting and actual dock behavior
+        run: >-
+          sbt scalafmtCheckAll
+          'scaladock/Test/runMain meridian.scaladock.ProviderAcceptanceProbe target/native-b0'
+          'scaladock/Test/runMain meridian.scaladock.AdapterProbe target/native-b1'
+          'scaladock/Test/runMain meridian.scaladock.AuxiliaryTypographyProbe target/native-auxiliary'
+          'scaladock/Test/runMain meridian.scaladock.MinimizedSelectionProbe target/native-minimized'
+          'scaladock/Test/runMain meridian.scaladock.HeaderMinimumProbe target/native-header-minimum'
+      - name: Preserve native observations
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: native-adapter-evidence
+          path: |
+            target/native-b0
+            target/native-b1
+            target/native-auxiliary
+            target/native-minimized
+            target/native-header-minimum
+          if-no-files-found: warn
