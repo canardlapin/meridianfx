@@ -45,6 +45,16 @@ palette choices. It owns the dock theme, header minimum, divider thickness and
 motion policy; other `LayoutSettings` fields retain the host's values. Effective
 headers may exceed the requested minimum to fit text and controls.
 
+Applications that require a larger header or restore-strip target can use
+`MeridianDock.bind(dock, appearance, headerMinHeight = 32)`. This is a finite,
+nonnegative minimum in logical pixels, retained by that binding across theme,
+density, text-scale and motion changes. The binding requests the maximum of this
+application minimum and the generated, text-scaled density minimum; ScalaDock
+then raises it if text or controls require more space. Zero (the two-argument
+bind default) preserves the original generated-density policy. The application
+minimum itself is not multiplied by text scale. Close and rebind to change it;
+calling `dock.setSettings` directly does not change the binding's minimum.
+
 A dock has one appearance binding. A second live bind is rejected before making
 changes. Close and rebind when replacing the appearance owner. `close()` is
 idempotent, removes the listeners and leaves the last presentation installed; it
